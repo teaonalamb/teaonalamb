@@ -1,0 +1,6 @@
+{
+  "name": "Teaonalamb Portfolio",
+  "description": "Cozy retro desktop portfolio website for streamer and Tea Talks podcast host Teaonalamb with playful animations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
