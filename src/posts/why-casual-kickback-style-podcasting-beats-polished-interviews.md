@@ -1,9 +1,9 @@
 ---
-title: Why Casual Kickback-Style Podcasting Beats Polished Interviews
+title: "Why Casual Kickback-Style Podcasting Beats Polished Interviews"
 date: 2026-10-18 12:00
 category: Tea Talks
 tags: Tea Talks, Podcasting, Casual Vibes, Kickback
-excerpt: Let's be real for a second. We've all clicked on a podcast expecting an actual vibe, only to hear someone read off a rigid list of questions like they're conducting a corporate background check...
+excerpt: "Let's be real for a second. We've all clicked on a podcast expecting an actual vibe, only to hear someone read off a rigid list of questions like they're conducting a corporate background check..."
 ---
 
 Let’s be real for a second. We’ve all clicked on a podcast expecting an actual vibe, only to hear someone read off a rigid list of questions like they're conducting a corporate background check.

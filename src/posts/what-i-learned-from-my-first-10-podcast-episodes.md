@@ -1,9 +1,9 @@
 ---
-title: What I learned from my first 10 podcast episodes
+title: "What I learned from my first 10 podcast episodes"
 date: 2026-10-01 12:00
 category: Tea Talks
 tags: Tea Talks, Podcasting, Behind The Scenes, Season 2
-excerpt: Doing a podcast is easy... but it is also hella hard. The easy part? Literally just hitting record and yapping. The hard part? Editing, time limits, ADHD tangents, and Google Calendar nightmares.
+excerpt: "Doing a podcast is easy... but it is also hella hard. The easy part? Literally just hitting record and yapping. The hard part? Editing, time limits, ADHD tangents, and Google Calendar nightmares."
 ---
 
 Doing a podcast is easy… but it’s also hella hard.

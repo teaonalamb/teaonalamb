@@ -22,6 +22,8 @@ No code, no AI. Just a text file.
 
 Read time is worked out for you.
 
+**Keep `title:` and `excerpt:` inside double quotes**, like `title: "My post: part 2"`. This stops GitHub from showing a red "Error in user YAML" box when the text has a colon. The site works either way, but the quotes keep GitHub happy. Do not use double quote marks inside the text itself, use single quotes there.
+
 ## Writing
 
 Blank line between paragraphs. `## Heading`, `### Smaller heading`, `**bold**`, `*italic*`, `[link text](url)`, `* bullet`, `> quote`, and `---` for a divider.
