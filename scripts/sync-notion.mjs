@@ -40,6 +40,7 @@ export function richText(arr = []) {
 export async function blocksToMd(blocks, ctx) {
   const out = [];
   let prevList = false;
+  let num = 0;
   for (const b of blocks) {
     const t = b.type;
     const rt = b[t]?.rich_text ? richText(b[t].rich_text) : '';
@@ -48,7 +49,8 @@ export async function blocksToMd(blocks, ctx) {
     if (t === 'paragraph') piece = rt;
     else if (t === 'heading_1' || t === 'heading_2') piece = `## ${rt}`;
     else if (t === 'heading_3') piece = `### ${rt}`;
-    else if (t === 'bulleted_list_item' || t === 'numbered_list_item' || t === 'to_do') { piece = `* ${rt}`; isList = true; }
+    else if (t === 'bulleted_list_item' || t === 'to_do') { piece = `* ${rt}`; isList = true; }
+    else if (t === 'numbered_list_item') { num += 1; piece = `${num}. ${rt}`; }
     else if (t === 'quote' || t === 'callout') piece = `> ${rt}`;
     else if (t === 'divider') piece = '---';
     else if (t === 'code') piece = rt;
@@ -63,6 +65,7 @@ export async function blocksToMd(blocks, ctx) {
       const sub = await blocksToMd(kids, ctx);
       if (sub.trim()) piece += (isList ? '\n' : '\n\n') + sub.split('\n').filter((l) => l.trim()).map((l) => (isList ? l : l)).join(isList ? '\n' : '\n\n');
     }
+    if (t !== 'numbered_list_item') num = 0;
     if (!piece.trim()) continue;
     out.push(isList && prevList ? '\n' + piece : (out.length ? '\n\n' : '') + piece);
     prevList = isList;
@@ -103,7 +106,7 @@ async function main() {
     },
   };
 
-  // 1. get Ready and Published rows
+  // 1. get Ready rows (to write) and Published rows (to keep)
   let rows = [], cursor;
   do {
     const q = await call('POST', `/databases/${dbId}/query`, {
@@ -124,6 +127,8 @@ async function main() {
     const date = toPacific(p['Publish Date']?.date?.start) ||
       new Date().toLocaleDateString('en-CA', { timeZone: 'America/Los_Angeles' });
     const tags = (p.Tags?.multi_select || []).map((x) => x.name).join(', ');
+    // Published rows are left alone. Set a row back to Ready to publish its changes.
+    if (p.Status?.status?.name === 'Published') { keep.add(`${slug}.md`); continue; }
     const body = await blocksToMd(await children(row.id), ctx);
     const fm = ['---', `title: "${title}"`, `date: ${date}`, `category: ${clean(p.Category?.select?.name) || 'Blog'}`,
       `tags: ${tags}`];
