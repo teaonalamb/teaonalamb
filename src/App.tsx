@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { PageTab, SOCIALS_DATA, BLOG_POSTS, BlogPostData } from './types';
+import { PageTab, SOCIALS_DATA, BlogPostData } from './types';
+import { BLOG_POSTS } from './blog';
 import { MascotSheep } from './components/MascotSheep';
 import { MascotCup } from './components/MascotCup';
 import { StartMenu } from './components/StartMenu';
@@ -488,7 +489,7 @@ export default function App() {
                                   Newest on the blog
                                 </h3>
                                 <p className="text-xs text-[#5E778C] leading-relaxed">
-                                  The story behind the name &quot;Teaonalamb&quot; and high school jerseys.
+                                  {BLOG_POSTS[0] ? BLOG_POSTS[0].title : 'New posts coming soon.'}
                                 </p>
                               </div>
                               <button

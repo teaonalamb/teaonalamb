@@ -133,6 +133,26 @@ function renderContent(content: string) {
       );
     }
 
+    // Image: ![alt text](/blog/picture.png)
+    const imgMatch = trimmed.match(/^!\[(.*?)\]\((.*?)\)$/);
+    if (imgMatch) {
+      return (
+        <figure key={idx} className="my-6">
+          <img
+            src={imgMatch[2]}
+            alt={imgMatch[1]}
+            loading="lazy"
+            className="w-full h-auto rounded-xl border-2 border-[#b5c9ea] shadow-[0_4px_0_rgba(9,50,144,0.12)]"
+          />
+          {imgMatch[1] && (
+            <figcaption className="mt-2 text-center text-xs text-[#5E778C] font-pixel">
+              {imgMatch[1]}
+            </figcaption>
+          )}
+        </figure>
+      );
+    }
+
     // Blockquote: > "Quote..."
     if (trimmed.startsWith('>')) {
       const quoteText = trimmed.replace(/^>\s*/, '').replace(/^"|"$/g, '');
