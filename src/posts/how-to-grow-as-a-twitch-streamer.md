@@ -1,6 +1,6 @@
 ---
 title: "How to grow as a Twitch Streamer"
-date: 2026-11-09 19:00
+date: 2026-11-08 19:00
 category: Guides and Tutorials
 tags: Tips, Behind The Scenes, How to
 excerpt: 
