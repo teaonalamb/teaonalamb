@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { PODCAST_EPISODES, PodcastEpisode } from '../types';
+import syncedEpisodes from '../podcast-episodes.json';
 import { playRetroClick, toggleLofiLounge } from '../audio';
+
+const ALL_EPISODES: PodcastEpisode[] =
+  Array.isArray(syncedEpisodes) && syncedEpisodes.length > 0
+    ? (syncedEpisodes as PodcastEpisode[])
+    : PODCAST_EPISODES;
 
 interface PodcastPlayerProps {
   soundEnabled: boolean;
@@ -13,7 +19,7 @@ export const PodcastPlayer: React.FC<PodcastPlayerProps> = ({
   isPlayingMusic,
   onMusicStateChange,
 }) => {
-  const [selectedEp, setSelectedEp] = useState<PodcastEpisode>(PODCAST_EPISODES[0]);
+  const [selectedEp, setSelectedEp] = useState<PodcastEpisode>(ALL_EPISODES[0]);
   const [playbackSeconds, setPlaybackSeconds] = useState(0);
 
   useEffect(() => {
@@ -142,8 +148,8 @@ export const PodcastPlayer: React.FC<PodcastPlayerProps> = ({
           </a>
         </div>
 
-        <div className="space-y-2.5">
-          {PODCAST_EPISODES.map((ep) => {
+        <div className="space-y-2.5 max-h-[460px] overflow-y-auto pr-1">
+          {ALL_EPISODES.map((ep) => {
             const isSelected = selectedEp.id === ep.id;
             return (
               <div

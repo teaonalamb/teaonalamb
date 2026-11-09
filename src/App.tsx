@@ -11,6 +11,8 @@ import { BlogList } from './components/BlogList';
 import { BlogPostView } from './components/BlogPostView';
 import { CounterNumber } from './components/CounterNumber';
 import { GuestbookCorkboard } from './components/GuestbookCorkboard';
+import { DeskHotspotTour } from './components/DeskHotspotTour';
+import { MerchShelf } from './components/MerchShelf';
 import { playRetroClick, playChime, toggleLofiLounge } from './audio';
 
 export default function App() {
@@ -31,7 +33,15 @@ export default function App() {
       const rawHash = window.location.hash.replace('#', '');
       const parts = rawHash.split('/');
       const tab = parts[0] as PageTab;
-      const validTabs: PageTab[] = ['home', 'socials', 'blog', 'twitch', 'podcast'];
+      const validTabs: PageTab[] = [
+        'home',
+        'socials',
+        'blog',
+        'twitch',
+        'podcast',
+        'guestbook',
+        'merch',
+      ];
 
       if (validTabs.includes(tab)) {
         setActiveTab(tab);
@@ -270,10 +280,10 @@ export default function App() {
                 </div>
               </div>
 
-              {/* Window Strip: Full-Width 6 Tabs */}
+              {/* Window Strip: Full-Width 7 Tabs */}
               <div className="flex items-end px-1 sm:px-2 pt-1 sm:pt-1.5 bg-gradient-to-b from-[#c9d9f3] to-[#b3c8ec] border-b border-[#a6bfdf]">
                 <div
-                  className="grid grid-cols-6 items-end gap-0.5 sm:gap-1 w-full"
+                  className="grid grid-cols-7 items-end gap-0.5 sm:gap-1 w-full"
                   role="tablist"
                   aria-label="Site pages"
                 >
@@ -283,7 +293,8 @@ export default function App() {
                     { id: 'blog', label: 'Blog', shortLabel: 'Blog', icon: '✎' },
                     { id: 'twitch', label: 'Twitch', shortLabel: 'Twitch', icon: '▶' },
                     { id: 'podcast', label: 'Podcast', shortLabel: 'Pod', icon: '♪' },
-                    { id: 'guestbook', label: 'Guestbook', shortLabel: 'Notes', icon: '📌' },
+                    { id: 'guestbook', label: 'Guestbook', shortLabel: 'Notes', icon: '✉' },
+                    { id: 'merch', label: 'Shop', shortLabel: 'Shop', icon: '♡' },
                   ].map((tab) => {
                     const isSelected = activeTab === tab.id;
                     return (
@@ -292,7 +303,7 @@ export default function App() {
                         role="tab"
                         aria-selected={isSelected}
                         onClick={() => switchTab(tab.id as PageTab)}
-                        className={`relative z-10 flex flex-col sm:flex-row items-center justify-center gap-0.5 sm:gap-1 px-0.5 sm:px-2.5 py-1.5 sm:py-2 rounded-t-lg transition-colors text-center ${
+                        className={`relative z-10 flex flex-col sm:flex-row items-center justify-center gap-0.5 sm:gap-1 px-0.5 sm:px-2 py-1.5 sm:py-2 rounded-t-lg transition-colors text-center ${
                           isSelected
                             ? 'text-[#0D1D56] font-bold'
                             : 'text-[#33477f] hover:bg-white/40'
@@ -306,7 +317,7 @@ export default function App() {
                           />
                         )}
                         <span className="text-[#4974C1] text-xs sm:text-sm">{tab.icon}</span>
-                        <span className="text-[10px] sm:text-xs md:text-sm truncate w-full sm:w-auto leading-tight">
+                        <span className="text-[9px] sm:text-xs md:text-sm truncate w-full sm:w-auto leading-tight">
                           <span className="sm:hidden">{tab.shortLabel}</span>
                           <span className="hidden sm:inline">{tab.label}</span>
                         </span>
@@ -559,8 +570,34 @@ export default function App() {
                             className="card rounded-lg overflow-hidden border border-[#b5c9ea] bg-white shadow-[0_4px_0_rgba(9,50,144,0.12)]"
                           >
                             <div className="px-3 py-1.5 bg-gradient-to-r from-[#093290] to-[#5870B3] text-white font-pixel text-xs flex items-center justify-between">
+                              <span>desk_tour.exe</span>
+                              <span>🎧</span>
+                            </div>
+                            <div className="p-4 flex flex-col justify-between h-[calc(100%-28px)]">
+                              <div>
+                                <h3 className="font-semibold text-base text-[#0D1D56] mb-1">
+                                  Cozy Desk Tour
+                                </h3>
+                                <p className="text-xs text-[#5E778C] leading-relaxed">
+                                  Inspect mic, tea kettle, lighting, and streaming equipment.
+                                </p>
+                              </div>
+                              <button
+                                onClick={() => switchTab('twitch')}
+                                className="mt-4 inline-block text-center px-4 py-1.5 rounded-md bg-[#093290] text-white font-semibold text-xs shadow-[0_3px_0_#000425] hover:bg-[#4974C1] transition-colors"
+                              >
+                                View desk setup 🎧
+                              </button>
+                            </div>
+                          </motion.div>
+
+                          <motion.div
+                            whileHover={{ y: -4 }}
+                            className="card rounded-lg overflow-hidden border border-[#b5c9ea] bg-white shadow-[0_4px_0_rgba(9,50,144,0.12)]"
+                          >
+                            <div className="px-3 py-1.5 bg-gradient-to-r from-[#093290] to-[#5870B3] text-white font-pixel text-xs flex items-center justify-between">
                               <span>corkboard.app</span>
-                              <span>📌</span>
+                              <span>✉</span>
                             </div>
                             <div className="p-4 flex flex-col justify-between h-[calc(100%-28px)]">
                               <div>
@@ -575,7 +612,33 @@ export default function App() {
                                 onClick={() => switchTab('guestbook')}
                                 className="mt-4 inline-block text-center px-4 py-1.5 rounded-md bg-[#093290] text-white font-semibold text-xs shadow-[0_3px_0_#000425] hover:bg-[#4974C1] transition-colors"
                               >
-                                View corkboard 📌
+                                View corkboard ✉
+                              </button>
+                            </div>
+                          </motion.div>
+
+                          <motion.div
+                            whileHover={{ y: -4 }}
+                            className="card rounded-lg overflow-hidden border border-[#b5c9ea] bg-white shadow-[0_4px_0_rgba(9,50,144,0.12)]"
+                          >
+                            <div className="px-3 py-1.5 bg-gradient-to-r from-[#093290] to-[#5870B3] text-white font-pixel text-xs flex items-center justify-between">
+                              <span>merch_shelf.exe</span>
+                              <span>♡</span>
+                            </div>
+                            <div className="p-4 flex flex-col justify-between h-[calc(100%-28px)]">
+                              <div>
+                                <h3 className="font-semibold text-base text-[#0D1D56] mb-1">
+                                  Fourthwall Merch Room
+                                </h3>
+                                <p className="text-xs text-[#5E778C] leading-relaxed">
+                                  Official t-shirts, hoodies, music player desk mats, and stickers!
+                                </p>
+                              </div>
+                              <button
+                                onClick={() => switchTab('merch')}
+                                className="mt-4 inline-block text-center px-4 py-1.5 rounded-md bg-[#093290] text-white font-semibold text-xs shadow-[0_3px_0_#000425] hover:bg-[#4974C1] transition-colors"
+                              >
+                                Browse Merch ♡
                               </button>
                             </div>
                           </motion.div>
@@ -686,7 +749,7 @@ export default function App() {
                               </h2>
                             </div>
                             <p className="text-[#33477f] text-sm mb-6">
-                              Streaming life, podcast behind the scenes, and the occasional cloud-gazing.
+                              Guides and tutorials, personal stories, podcast behind the scenes, and anything in between.
                             </p>
 
                             <BlogList
@@ -781,7 +844,12 @@ export default function App() {
                           </div>
                         </div>
 
-                        <div className="h-4" />
+                        <div className="h-6" />
+
+                        {/* Interactive Desk Hotspot Tour (Idea 4) */}
+                        <DeskHotspotTour soundEnabled={soundEnabled} />
+
+                        <div className="h-6" />
 
                         {/* About the Stream */}
                         <div className="card rounded-lg overflow-hidden border border-[#b5c9ea] bg-white shadow-[0_4px_0_rgba(9,50,144,0.12)]">
@@ -936,6 +1004,22 @@ export default function App() {
                       <div className="porcelain-bar" />
                       <div className="max-w-5xl mx-auto px-4 py-8 pb-16">
                         <GuestbookCorkboard soundEnabled={soundEnabled} />
+                      </div>
+                    </motion.div>
+                  )}
+
+                  {/* MERCH SHELF TAB (Idea 5) */}
+                  {activeTab === 'merch' && (
+                    <motion.div
+                      key="merch"
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      transition={{ duration: 0.25 }}
+                    >
+                      <div className="porcelain-bar" />
+                      <div className="max-w-5xl mx-auto px-4 py-8 pb-16">
+                        <MerchShelf soundEnabled={soundEnabled} />
                       </div>
                     </motion.div>
                   )}

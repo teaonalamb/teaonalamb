@@ -1,0 +1,2258 @@
+[
+  {
+    "id": "fourthwall-tea-in-a-cup-t-shirt",
+    "slug": "tea-in-a-cup-t-shirt",
+    "name": "Tea in a Cup T-Shirt",
+    "category": "Apparel",
+    "tag": "Community Favorite",
+    "price": 20,
+    "currency": "USD",
+    "images": [
+      "https://imgproxy.fourthwall.dev/vLejZW9nxcunyVwqyswndNX8CvpSm7Bt3PD1d-SAsWc/w:1920/sm:1/enc/RE_hKtRIJ0Dfa9aP/5A-AGFvyXPm0H7U6/massd5PkLZKUEBsV/8zms9GuxkQj2qHTe/y8cAhcErLnzvZCla/jY-kn97hBn98yR2S/Je5cxFRUpgTeF490/04j3ycPcxzlbsVAH/LyvQuOPky-aVjpoF/9ZwWoxE05ST_rpMy/a6sN0xZwGlFEuIhZ/c_YMBaL9wQuMVXaZ/NFwzly2NAncmnkc-/vyRr8JwGKLXRs252/qRDoCY7LI84.jpg",
+      "https://imgproxy.fourthwall.dev/B3i1LJ6AN4UO_vF-KhfzxeT86W4Zu0Fn_vH5iXkUQ28/w:1920/sm:1/enc/QL0p7flBJ6YdksYT/pazeBxVKZPd5XX_Z/LmLZIKm4Pu1gzydB/6J0riKhqslDfW1lb/B_z9dqmH_IZm_Q6c/FbpoKZVI0M1rTRgR/DCV_iB9-dckYXAiV/fZAaAc2cdI7dhFZo/KHYsS_8hI7pGbCZz/zMBtBBoUTW2KUmH2/CwsyFyeFUxux54Ss/D4-zplr_bcSqUQ4B/budIu8K9aZIw9xo3/WXbwTVCJQGOrTb7i/MUPskNUo700.jpg",
+      "https://imgproxy.fourthwall.dev/VVLyMupwPQCwRrFuFkdorSbKik-aLMO2FNSXMIR6pwE/w:1920/sm:1/enc/peuyss8RoJVuJrjU/AoKXacpwiERBG8Wr/XKnfty1yC328TwVV/XH7lBhCA8qA5QXBI/gy-puDFojIEvyfI_/lsl9v2eoYGEGS6Pb/CjNn6ronh-ARBcdL/0ZqO_yNoDi3lae8A/lCedsnwUsZttCD85/65pJKprjoi8RSp8D/sda2IqTYarPV-ZXZ/LiCszYUOA7wX6Fht/Ra4uIswpvRzqfOdW/DcbISUjCpdMEaNCQ/9jF284ul2IY.jpg"
+    ],
+    "description": "Tea in a Cup T-Shirt, featuring a reclining Tea in a cozy teacup. 100% cotton with a relaxed cut, perfect for adding a touch of fantasy to your streetwear collection.",
+    "fourthwallUrl": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt",
+    "variants": [
+      {
+        "name": "Carolina Blue, S",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=43463117-57cf-4732-9d40-c3ec0a560879",
+        "inStock": true
+      },
+      {
+        "name": "Carolina Blue, M",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=ba5c7e2e-1773-47c0-b614-d80db30a945e",
+        "inStock": true
+      },
+      {
+        "name": "Carolina Blue, L",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=df2ceb80-aabe-4a29-98fd-e1162339091a",
+        "inStock": true
+      },
+      {
+        "name": "Carolina Blue, XL",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=3be9acf2-8582-4705-a098-cbbca28e35df",
+        "inStock": true
+      },
+      {
+        "name": "Carolina Blue, 2XL",
+        "price": 22,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=7cb5a77b-71b8-48b3-a2bb-3e38bd895a1a",
+        "inStock": true
+      },
+      {
+        "name": "Carolina Blue, 3XL",
+        "price": 24,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=00a7c33e-aead-4688-8b07-dd2e22d98d08",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, S",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=b4c37749-ec45-4198-97f2-4dda6ee7db79",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, M",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=d8cc2fd6-16af-49ce-8a7d-37fba8c5e6c1",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, L",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=9c87520e-295d-419d-97bf-317dcd3deb45",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, XL",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=39aa15f5-7737-4bf5-b3a6-b0aa51d27587",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, 2XL",
+        "price": 22,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=35756893-3947-43cb-968e-56b8150b57bc",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, 3XL",
+        "price": 24,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=8dc81db3-8738-412a-9eaf-e3b7b6bf7452",
+        "inStock": true
+      },
+      {
+        "name": "Navy, S",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=97c0a676-0a1a-4d49-b5ec-95562f054184",
+        "inStock": true
+      },
+      {
+        "name": "Navy, M",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=f30d9826-7fff-42b5-b33a-62b19537297e",
+        "inStock": true
+      },
+      {
+        "name": "Navy, L",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=d387ff4a-16e6-43ef-90ea-fdb4cf097dfd",
+        "inStock": true
+      },
+      {
+        "name": "Navy, XL",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=06d8c5c4-4299-4f67-8241-100cd9a0fbbe",
+        "inStock": true
+      },
+      {
+        "name": "Navy, 2XL",
+        "price": 22,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=eb8c6e75-1851-44a0-b467-af6d726c8b9b",
+        "inStock": true
+      },
+      {
+        "name": "Navy, 3XL",
+        "price": 24,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=d2069d37-260f-4c89-81b2-efbc0dec9dd7",
+        "inStock": true
+      },
+      {
+        "name": "Navy, 4XL",
+        "price": 26,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=81b5352d-1371-4bdf-b397-f3fe3d428aca",
+        "inStock": true
+      },
+      {
+        "name": "Navy, 5XL",
+        "price": 28,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=590eb0eb-ee35-4241-a7a7-2ddbd215f091",
+        "inStock": true
+      },
+      {
+        "name": "Dark Chocolate, S",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=c4853ec1-a765-4681-a0dd-bb4c3c88c974",
+        "inStock": true
+      },
+      {
+        "name": "Dark Chocolate, M",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=c5a57fc6-39f0-462e-a13a-de98fe30ee6a",
+        "inStock": true
+      },
+      {
+        "name": "Dark Chocolate, L",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=9f6414d8-b796-4af4-907c-ecaf086569ad",
+        "inStock": true
+      },
+      {
+        "name": "Dark Chocolate, XL",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=0e62c191-4f0e-49cc-a6c1-6d5729bc3ea0",
+        "inStock": true
+      },
+      {
+        "name": "Dark Chocolate, 2XL",
+        "price": 22,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=71bc214d-5491-42d5-8a4a-44a3c246a91a",
+        "inStock": true
+      },
+      {
+        "name": "Dark Chocolate, 3XL",
+        "price": 24,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=e59a9a5a-b9e2-48fa-9295-209e4a8c588c",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, S",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=4cce6e07-f7d8-4d6a-ad86-239b15507318",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, M",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=6035807e-7d18-4bfd-85fc-bf2ac51036c9",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, L",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=127ed8c7-782a-4961-ab94-6f7d3fd38c6a",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, XL",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=7eecb238-ee38-4fad-ad1a-34393806fcad",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, 2XL",
+        "price": 22,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=f3814af1-69b6-4ac5-86cc-3bbf803a20e1",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, 3XL",
+        "price": 24,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=c74b991a-cef0-4aa0-b0b0-83e2be6565ed",
+        "inStock": true
+      },
+      {
+        "name": "Sand, S",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=a2a5f907-f7ce-4d0a-828b-823388d7bb08",
+        "inStock": true
+      },
+      {
+        "name": "Sand, M",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=a6f2feb9-1004-4033-a64a-7bb51cc79aad",
+        "inStock": true
+      },
+      {
+        "name": "Sand, L",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=f7497384-5038-4653-821c-053aae4e94c5",
+        "inStock": true
+      },
+      {
+        "name": "Sand, XL",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=c707ac23-8a35-4455-bf50-41757bbd384a",
+        "inStock": true
+      },
+      {
+        "name": "Sand, 2XL",
+        "price": 22,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=4dd2d0b1-8fe0-4d1d-9a3a-03fc0e8967f1",
+        "inStock": true
+      },
+      {
+        "name": "Sand, 3XL",
+        "price": 24,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=d0c3a2ef-db82-4853-8dfc-c405558c6349",
+        "inStock": true
+      },
+      {
+        "name": "Black, S",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=fd11ef52-76ed-408b-8a35-11bbeeeb9141",
+        "inStock": true
+      },
+      {
+        "name": "Black, M",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=6c61afba-b973-413f-b864-a40fa14cbae7",
+        "inStock": true
+      },
+      {
+        "name": "Black, L",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=74a3a427-f544-4378-bd6c-be2ec6e45573",
+        "inStock": true
+      },
+      {
+        "name": "Black, XL",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=ca2aac0e-a100-4898-9255-00355d580160",
+        "inStock": true
+      },
+      {
+        "name": "Black, 2XL",
+        "price": 22,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=7e8e913b-f321-47db-b229-c35179f7ba6a",
+        "inStock": true
+      },
+      {
+        "name": "Black, 3XL",
+        "price": 24,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=e809bcc7-6b75-4068-81cd-5ec0f26c9b33",
+        "inStock": true
+      },
+      {
+        "name": "Black, 4XL",
+        "price": 26,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=5ea5618e-2bbb-4774-a1d7-96eb1a9ee274",
+        "inStock": true
+      },
+      {
+        "name": "Black, 5XL",
+        "price": 28,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=609f9417-8201-4e39-820b-ea430cede62f",
+        "inStock": true
+      },
+      {
+        "name": "White, S",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=ae7194b2-c9e5-4279-85bf-926c12024f71",
+        "inStock": true
+      },
+      {
+        "name": "White, M",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=250ac260-1f65-410a-8980-d08f54cad642",
+        "inStock": true
+      },
+      {
+        "name": "White, L",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=416145cf-e8b2-48f9-81dd-f255ffbe45c4",
+        "inStock": true
+      },
+      {
+        "name": "White, XL",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=c30862e0-86d3-4dba-85c6-f6a98513a611",
+        "inStock": true
+      },
+      {
+        "name": "White, 2XL",
+        "price": 22,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=fe7acd9f-6ed7-419f-af08-0b1a4e938ce8",
+        "inStock": true
+      },
+      {
+        "name": "White, 3XL",
+        "price": 24,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=7cd38322-bd63-4772-9263-637c9b765adb",
+        "inStock": true
+      },
+      {
+        "name": "White, 4XL",
+        "price": 26,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=c12d83a1-6ae3-4e8a-b55c-68bc41f1cc73",
+        "inStock": true
+      },
+      {
+        "name": "White, 5XL",
+        "price": 28,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-t-shirt?variant=f6dbec03-4416-429a-b101-cf35fea1cdda",
+        "inStock": true
+      }
+    ],
+    "details": [
+      "Ultra-comfortable premium ring-spun cotton fabric",
+      "Pre-shrunk relaxed unisex streetwear fit",
+      "54 sizes and colorways available",
+      "Official Teaonalamb custom illustrated graphic"
+    ]
+  },
+  {
+    "id": "fourthwall-mini-tea-in-a-cup-t-shirt",
+    "slug": "mini-tea-in-a-cup-t-shirt",
+    "name": "Mini Tea in a Cup T-Shirt",
+    "category": "Apparel",
+    "tag": "Community Favorite",
+    "price": 20,
+    "currency": "USD",
+    "images": [
+      "https://imgproxy.fourthwall.dev/Z28rbLXtWyJn_M0C8l-jLoi0PhEXkRNS2ZZ3SizMmsU/w:1920/sm:1/enc/3GMqPjec8aWLD12C/cQa8lN1jMPMhK5YD/JX-Yg0bLL6D1MVD8/GTs9u3P8UjJmNR_-/sESszvQHXahSKOsW/sZWErltVv7QhY-zL/WzP56jOvmTms_RO6/cDYR7BDYsJqeDQFN/7VWIxRd2lx10oQoU/i8bzeCbvOr_oW6iE/A-cWkl-2245R1iuK/oLle5JCYr5PqSTlP/rBHzxabooSBZJVW_/u3_yOBaW3Q_IZEgO/6jyI2hb3mZg.jpg",
+      "https://imgproxy.fourthwall.dev/4_BxeA48uhQDGEUXvZdeBHelo-t0fJjneX_zF47FZAA/w:1920/sm:1/enc/gGu5cvb70y0lRlsD/YlwLmw3QrMWr1zEm/AIKrHQNFodu1Nc1r/qpasTwI3WYT3yBqQ/Sbu_Vp5jT7ie9_8W/4L0tmD2MNY_vCaWo/GezIUiWWm9lJp0Xg/S6A2g14515Lz8Exm/vXx-aRMA3V-c6xHk/c8Q30zpygJXCiNxq/OdmQh-NPbTN3N1pe/Xnh4SGjuJxTg0sKM/Ui6LYpO_ClVxi0fb/WkBp3z1tpLVRBKQw/K-pQRzm-YPg.jpg",
+      "https://imgproxy.fourthwall.dev/hTDtvpXkdPuTZioH08pZ3ln33Ycu0mDfxy_mxLycvo8/w:1920/sm:1/enc/izyT_XwFiCVu_kTr/ViSB6htUbJuKzTpD/cHsDcJzBEGis-4el/YnJ-GJcHC3r-_w-h/QcKq2-5HXkKKGRGQ/kUtvc-V7SrYFrINL/_f2XqCdHy6k-wwdo/yB5fF_gZUPh9ovMN/1KV_eLKocoFoIlM8/T3AoXATDcIXghft1/-CC_HaeOU5H8I48m/bsakrQvIoybFTcmr/02HvhpWgNg-YYgiM/f6qCTZUKCl3uPizp/hBEX8HE4Ph0.jpg"
+    ],
+    "description": "Mini Tea in a Cup T-Shirt, featuring a small illustration of a reclining Tea in a cozy teacup. 100% cotton with a relaxed cut, perfect for adding a touch of fantasy to your streetwear collection.",
+    "fourthwallUrl": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt",
+    "variants": [
+      {
+        "name": "Carolina Blue, S",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=4c61e795-b693-4672-9fef-bc2502e4d2c2",
+        "inStock": true
+      },
+      {
+        "name": "Carolina Blue, M",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=54c28f63-3004-46fc-ae5c-c1c64c48e1d8",
+        "inStock": true
+      },
+      {
+        "name": "Carolina Blue, L",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=328f96d8-6f18-4907-a41f-712e7ab495cc",
+        "inStock": true
+      },
+      {
+        "name": "Carolina Blue, XL",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=48d08604-65da-4dde-b52b-401c44aea1e7",
+        "inStock": true
+      },
+      {
+        "name": "Carolina Blue, 2XL",
+        "price": 22,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=4161506c-1dbd-45e7-a985-0262bac72015",
+        "inStock": true
+      },
+      {
+        "name": "Carolina Blue, 3XL",
+        "price": 24,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=e31a976f-e42a-4b0f-81f9-3381481dd9f1",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, S",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=fe9fff89-076d-455f-9da4-0494af0fd211",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, M",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=225d2a95-0c53-4977-a058-075293b3ec4a",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, L",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=0e2622a6-ccdb-440d-aa65-83cf67179474",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, XL",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=9389d2be-953a-4c66-8105-f28a925774ab",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, 2XL",
+        "price": 22,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=6dd8f481-5ca7-4697-9ad7-3acdcaf059b0",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, 3XL",
+        "price": 24,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=d5b6e491-dd37-4ae9-b14f-5435d47c5fac",
+        "inStock": true
+      },
+      {
+        "name": "Navy, S",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=3f89811a-fd1c-4a5c-9e66-7ee389988d4a",
+        "inStock": true
+      },
+      {
+        "name": "Navy, M",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=485dd1b9-994c-40c4-a80a-c6f35eda56be",
+        "inStock": true
+      },
+      {
+        "name": "Navy, L",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=1cde9f28-3539-42fb-a195-aab42a3c79e8",
+        "inStock": true
+      },
+      {
+        "name": "Navy, XL",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=b9fb9612-932a-499b-adac-40cd234217e0",
+        "inStock": true
+      },
+      {
+        "name": "Navy, 2XL",
+        "price": 22,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=c73c07bc-9438-457c-9386-3815572cbd8d",
+        "inStock": true
+      },
+      {
+        "name": "Navy, 3XL",
+        "price": 24,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=986e81e6-5567-4526-a43b-780be29b5977",
+        "inStock": true
+      },
+      {
+        "name": "Navy, 4XL",
+        "price": 26,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=a51f0ec2-7275-4201-aa57-824c73df4d63",
+        "inStock": true
+      },
+      {
+        "name": "Navy, 5XL",
+        "price": 28,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=f65cf7bc-d2df-48ed-8d54-732d663c82ae",
+        "inStock": true
+      },
+      {
+        "name": "Dark Chocolate, S",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=40f35166-b03b-4aa9-a87c-5847b91a8495",
+        "inStock": true
+      },
+      {
+        "name": "Dark Chocolate, M",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=80035a56-4a1a-4c71-96bf-7b7633a0a080",
+        "inStock": true
+      },
+      {
+        "name": "Dark Chocolate, L",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=5b789b16-525b-4718-9ae9-d9e244b14335",
+        "inStock": true
+      },
+      {
+        "name": "Dark Chocolate, XL",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=b077b215-7996-4bf3-8320-a029b950ea99",
+        "inStock": true
+      },
+      {
+        "name": "Dark Chocolate, 2XL",
+        "price": 22,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=e03a51ca-2f17-49df-a02d-47c354ffb72a",
+        "inStock": true
+      },
+      {
+        "name": "Dark Chocolate, 3XL",
+        "price": 24,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=16368d07-7cd2-4c94-ab5a-76d6c241d175",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, S",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=75110404-8280-4f47-b5ac-3ddc4e543bbc",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, M",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=4d076b87-00c5-4524-8927-7bc4c71d5c2d",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, L",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=0f64e2b0-f1de-4ff3-97e8-d53fbce39824",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, XL",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=8e275918-0d0b-4685-897d-ac0f0ae589db",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, 2XL",
+        "price": 22,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=cc4410f4-1d6a-428d-be50-9ff7294e4275",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, 3XL",
+        "price": 24,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=e43fe7c9-582f-4540-b875-ec8a1da80771",
+        "inStock": true
+      },
+      {
+        "name": "Sand, S",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=224dc163-2208-4da1-af38-62d598e5ad30",
+        "inStock": true
+      },
+      {
+        "name": "Sand, M",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=81e69ae5-7390-48dd-b273-dac34736412b",
+        "inStock": true
+      },
+      {
+        "name": "Sand, L",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=d27c1746-6410-4da7-ad8b-e7110b6e3d31",
+        "inStock": true
+      },
+      {
+        "name": "Sand, XL",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=6d53d9db-89ef-44ba-8278-d6e55b01b05d",
+        "inStock": true
+      },
+      {
+        "name": "Sand, 2XL",
+        "price": 22,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=5051e58c-508f-499a-987a-7b4c765af2a2",
+        "inStock": true
+      },
+      {
+        "name": "Sand, 3XL",
+        "price": 24,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=cfb33d3c-627c-4d6f-8de4-131a3917d192",
+        "inStock": true
+      },
+      {
+        "name": "Black, S",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=34fd8c4c-2539-4e87-a334-bb3702b51c5e",
+        "inStock": true
+      },
+      {
+        "name": "Black, M",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=a5225d06-db8d-4216-a820-e5c3707ccdbe",
+        "inStock": true
+      },
+      {
+        "name": "Black, L",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=dcdf8c19-135b-4420-bca4-0e3901efa653",
+        "inStock": true
+      },
+      {
+        "name": "Black, XL",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=68415d5d-e732-462e-8593-c698f666de5d",
+        "inStock": true
+      },
+      {
+        "name": "Black, 2XL",
+        "price": 22,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=c72a8ab8-2500-467b-b2c8-53709815fb96",
+        "inStock": true
+      },
+      {
+        "name": "Black, 3XL",
+        "price": 24,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=0ee6ef8c-c772-47b4-b125-afe77ab96093",
+        "inStock": true
+      },
+      {
+        "name": "Black, 4XL",
+        "price": 26,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=e0669846-4d95-42a4-9aad-45ee5d4d8486",
+        "inStock": true
+      },
+      {
+        "name": "Black, 5XL",
+        "price": 28,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=e26d45cd-f011-4ce6-b701-0aae3e76c948",
+        "inStock": true
+      },
+      {
+        "name": "White, S",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=3fab97d1-f48c-4c7c-9cf9-1633b74c1d18",
+        "inStock": true
+      },
+      {
+        "name": "White, M",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=22e62853-1976-4d90-95c5-3b908f2b1409",
+        "inStock": true
+      },
+      {
+        "name": "White, L",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=fd65c5be-69cf-4a5b-bdd7-116bfe8ae0d5",
+        "inStock": true
+      },
+      {
+        "name": "White, XL",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=0226f01d-0f69-49d9-a8e1-090fa7a307eb",
+        "inStock": true
+      },
+      {
+        "name": "White, 2XL",
+        "price": 22,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=d18fe9d6-dd3d-496b-b686-78d511ddd84c",
+        "inStock": true
+      },
+      {
+        "name": "White, 3XL",
+        "price": 24,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=b07b368e-d969-45a8-a40b-8d377226b5a4",
+        "inStock": true
+      },
+      {
+        "name": "White, 4XL",
+        "price": 26,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=cbe020e4-e359-4ea5-bf6b-e9cc5a1b37e2",
+        "inStock": true
+      },
+      {
+        "name": "White, 5XL",
+        "price": 28,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-t-shirt?variant=4cd844f1-535b-44d7-a717-eb7e2a3faf06",
+        "inStock": true
+      }
+    ],
+    "details": [
+      "Ultra-comfortable premium ring-spun cotton fabric",
+      "Pre-shrunk relaxed unisex streetwear fit",
+      "54 sizes and colorways available",
+      "Official Teaonalamb custom illustrated graphic"
+    ]
+  },
+  {
+    "id": "fourthwall-tea-in-a-cup-hoodie",
+    "slug": "tea-in-a-cup-hoodie",
+    "name": "Tea in a Cup Hoodie",
+    "category": "Apparel",
+    "tag": "Ultra Cozy",
+    "price": 30,
+    "currency": "USD",
+    "images": [
+      "https://imgproxy.fourthwall.dev/h9pb9W5CynQ33HD1YsXoBgkhIXkNkcY0rBHPT6LSAtQ/w:1920/sm:1/enc/_33aIGpu_Yl2bmCL/RQo2FetEX4qunVx3/2gAUfbewl0TSzDzb/BJaaWcIQ3X6V5HPs/WvdKBOeWt1tn24ZT/Tr5kOX5yFaAhYSul/VF9ZFgWe6bCVgOyQ/rQksPQJpiIzP4yaf/kt7l24FVhBNPrNkY/gw7XMm2BrjTK0syS/GVX6br-N0boiTKB9/5Ibgebo96wAET3xr/2DYyNU7vag4jnKe5/LrdrFvTw0VXZuTa9/pvuCxpGkYV8.jpg",
+      "https://imgproxy.fourthwall.dev/7H83aNO_HcyjCkNIPY4gZKTS1AZNaaQQ8osiakz7KdA/w:1920/sm:1/enc/BELmqRxY6rf0DTBJ/_Zmawn7prrHhPupd/rRrJlCP9S6dQn84h/r2xDY8BQsNjnV58K/GYll4CR9dFcOqWgL/5dUAyfV9V_QtvJ4B/4sfGLA8Or4wB--EY/i3saN2dcHVvFYZ0B/cBEnfdiVHD8SkFgr/rvrc0zQVYiN2ED8k/uWLMCmZF0iXLNKuX/108QmYQhmDcGlob3/_AdswpQPK2XzbIXW/Fy80xIu_QtcXkrLe/02FWQPst5As.jpg",
+      "https://imgproxy.fourthwall.dev/0E6O6xM5bC5dRAWGydTMh8-REpfdJpxVOjOmXeELlsw/w:1920/sm:1/enc/GqfHMRa242S9jrmD/ukOtun5igfZvEUxB/YSCyY1L2SChriDZ5/SxSMICEBYjNGJZpy/lvllv8dr8QqN7qIM/Y6S8-gU9yhE-iu0a/DGfKV8U5NSgyTJvh/HEznq4Vk38W0LeZu/JMZ1OvVQghOzWfBA/OsTUvHEoiC28xq5u/ccM1uI4fg6LWr27r/RzwebkE4cD5MYAgl/kc_E4L_-S-CgTsfc/o7Yj-6CQjjNiDC8V/OlqFWxVjcgg.jpg"
+    ],
+    "description": "Embrace the stars with our 'Tea in a Cup' hoodie, featuring a double-lined hood and a midweight fabric for all your adventures. With a playful design and unisex sizing, this high-quality classic is a steal! Perfect for Tea lovers and trendsetters alike.",
+    "fourthwallUrl": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie",
+    "variants": [
+      {
+        "name": "Carolina Blue, S",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=58817267-6025-48ac-8cf0-4465d3a06fa1",
+        "inStock": true
+      },
+      {
+        "name": "Carolina Blue, M",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=63aeade3-b269-4ac5-8348-e7b13fdde588",
+        "inStock": true
+      },
+      {
+        "name": "Carolina Blue, L",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=c4b4d7b9-fecd-4f54-9f41-5907302a204b",
+        "inStock": true
+      },
+      {
+        "name": "Carolina Blue, XL",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=572d98f6-0117-40ec-abd9-25dbb07938bf",
+        "inStock": true
+      },
+      {
+        "name": "Carolina Blue, 2XL",
+        "price": 32,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=1b60e275-a98a-486e-9ed1-b87e2558f7dd",
+        "inStock": true
+      },
+      {
+        "name": "Carolina Blue, 3XL",
+        "price": 34,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=63286d83-a392-4f16-986a-c0e613326559",
+        "inStock": true
+      },
+      {
+        "name": "Carolina Blue, 4XL",
+        "price": 36,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=d8ec38b5-b572-468b-b63a-ecd84928c692",
+        "inStock": true
+      },
+      {
+        "name": "Carolina Blue, 5XL",
+        "price": 38,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=1146b03a-969f-4441-beef-9498ed04f314",
+        "inStock": true
+      },
+      {
+        "name": "Black, S",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=5ea5b3e5-0bd8-44b9-9ed4-786046281d15",
+        "inStock": true
+      },
+      {
+        "name": "Black, M",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=51489237-6ae7-4725-a11d-93580d606171",
+        "inStock": true
+      },
+      {
+        "name": "Black, L",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=2b480f2b-3513-4871-9583-e4cec37aaf0b",
+        "inStock": true
+      },
+      {
+        "name": "Black, XL",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=a04ba8a6-d18e-467b-9f45-73b843985714",
+        "inStock": true
+      },
+      {
+        "name": "Black, 2XL",
+        "price": 32,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=41c98746-2b98-4243-b33c-4417daaf5b56",
+        "inStock": true
+      },
+      {
+        "name": "Black, 3XL",
+        "price": 34,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=3e1baafe-63d9-46a7-b045-ce2e4770cc07",
+        "inStock": true
+      },
+      {
+        "name": "Black, 4XL",
+        "price": 36,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=ef7d46bf-af7c-4d67-be8a-a188267303b3",
+        "inStock": true
+      },
+      {
+        "name": "Black, 5XL",
+        "price": 38,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=6ecc7ea0-f53b-4154-b0d8-1d45a970257d",
+        "inStock": true
+      },
+      {
+        "name": "Navy, S",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=2545db0d-844f-4817-a7b6-a3a23d49e327",
+        "inStock": true
+      },
+      {
+        "name": "Navy, M",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=6bc23818-dfef-4922-88d0-dc52946314f0",
+        "inStock": true
+      },
+      {
+        "name": "Navy, L",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=9aff0143-2a93-4413-98ef-7c6441e93bef",
+        "inStock": true
+      },
+      {
+        "name": "Navy, XL",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=cd88b178-fc89-4af1-80d5-680d478367a3",
+        "inStock": true
+      },
+      {
+        "name": "Navy, 2XL",
+        "price": 32,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=6a1fa2f7-e13c-4a02-bf16-1a73299e524a",
+        "inStock": true
+      },
+      {
+        "name": "Navy, 3XL",
+        "price": 34,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=2080f775-a4d0-4413-9a73-0d3c06411a9d",
+        "inStock": true
+      },
+      {
+        "name": "Navy, 4XL",
+        "price": 36,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=5151c83b-0594-4984-8981-0ff184bf1c85",
+        "inStock": true
+      },
+      {
+        "name": "Navy, 5XL",
+        "price": 38,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=4d97942e-f807-4050-bb81-4c3a6870346b",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, S",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=9b87093e-03b0-4946-a4ac-8ac475432c24",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, M",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=d1d2fa12-866f-4d29-8587-f09f983d6e7a",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, L",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=68cf07f6-664a-4f54-b80d-4b9fd88b79ba",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, XL",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=e47c2c07-137c-46f4-9cb9-1d666f89704c",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, 2XL",
+        "price": 32,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=fb9b3412-bd70-47d9-a5f0-924d68b308e6",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, 3XL",
+        "price": 34,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=ed3e01bb-6848-4f61-94c6-579da20b69ca",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, 4XL",
+        "price": 36,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=5963a446-70c3-481b-99bc-390bb80833f7",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, 5XL",
+        "price": 38,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=b3309984-321a-40b1-a990-95386c06c77d",
+        "inStock": true
+      },
+      {
+        "name": "Royal, S",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=7385a5c1-e739-4c12-8ef0-a5795fc02c5d",
+        "inStock": true
+      },
+      {
+        "name": "Royal, M",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=1ed8d6d8-2d75-4be4-921d-ce7a2b69b357",
+        "inStock": true
+      },
+      {
+        "name": "Royal, L",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=eda9b53e-42b3-4275-9647-bbed28b491cb",
+        "inStock": true
+      },
+      {
+        "name": "Royal, XL",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=3530780e-c0f6-44a2-a787-5779943c80bf",
+        "inStock": true
+      },
+      {
+        "name": "Royal, 2XL",
+        "price": 32,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=ccf3532f-18a3-4a4e-a5c8-7433031ded3d",
+        "inStock": true
+      },
+      {
+        "name": "Royal, 3XL",
+        "price": 34,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=580be154-1615-46d9-9ae9-88de0ee5ff14",
+        "inStock": true
+      },
+      {
+        "name": "Heather Sport Dark Navy, S",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=b6f58f91-2524-4092-aa15-c7e6e8e3d485",
+        "inStock": true
+      },
+      {
+        "name": "Heather Sport Dark Navy, M",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=e5cf2a09-00dd-4ddd-bf3f-c5d1cf28387f",
+        "inStock": true
+      },
+      {
+        "name": "Heather Sport Dark Navy, L",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=013175da-65ff-4443-a143-a7c3cb466f07",
+        "inStock": true
+      },
+      {
+        "name": "Heather Sport Dark Navy, XL",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=a7a53da6-8a20-4af8-bbd9-3291beeb4524",
+        "inStock": true
+      },
+      {
+        "name": "Heather Sport Dark Navy, 2XL",
+        "price": 32,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=b8159919-267d-425d-8f59-2cd0a8c4937c",
+        "inStock": true
+      },
+      {
+        "name": "Heather Sport Dark Navy, 3XL",
+        "price": 34,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=715e3d1b-c538-443b-aa1c-092d821deb63",
+        "inStock": true
+      },
+      {
+        "name": "Indigo Blue, S",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=15988f6c-aed8-493d-a3eb-38eb3058cd91",
+        "inStock": true
+      },
+      {
+        "name": "Indigo Blue, M",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=6c9679c0-8247-4d76-8d4b-d06efb586bdb",
+        "inStock": true
+      },
+      {
+        "name": "Indigo Blue, L",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=5025ca22-0880-4fbf-ad80-5b4d0ed94017",
+        "inStock": true
+      },
+      {
+        "name": "Indigo Blue, XL",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=07f4fdc8-bec2-43f3-a479-5d004c9de511",
+        "inStock": true
+      },
+      {
+        "name": "Indigo Blue, 2XL",
+        "price": 32,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=c5bae256-61b4-4334-aa89-bbd5a9789336",
+        "inStock": true
+      },
+      {
+        "name": "Indigo Blue, 3XL",
+        "price": 34,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=6e146f3e-9d87-4b00-9bb5-f9bfdc64dc42",
+        "inStock": true
+      },
+      {
+        "name": "Dark Heather, S",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=57689bca-4f9e-4d2c-b76a-932bfea84ea4",
+        "inStock": true
+      },
+      {
+        "name": "Dark Heather, M",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=71b4d3a9-b784-429c-a7df-9aeda020fcd5",
+        "inStock": true
+      },
+      {
+        "name": "Dark Heather, L",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=61f9f866-ca2c-4778-ac65-9ac38ad2726a",
+        "inStock": true
+      },
+      {
+        "name": "Dark Heather, XL",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=79d20e13-0c2a-403c-a8d3-d5029d407e3c",
+        "inStock": true
+      },
+      {
+        "name": "Dark Heather, 2XL",
+        "price": 32,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=d6df01a6-b953-44c6-b5c3-1e71655296dd",
+        "inStock": true
+      },
+      {
+        "name": "Dark Heather, 3XL",
+        "price": 34,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=cd2483e3-69f2-42fe-85c4-1a49e1cadf40",
+        "inStock": true
+      },
+      {
+        "name": "Dark Heather, 4XL",
+        "price": 36,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=c4df7189-65e8-4de4-9405-fe4ca0a3921e",
+        "inStock": true
+      },
+      {
+        "name": "Dark Heather, 5XL",
+        "price": 38,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=8472bee0-7472-4f29-99b8-028b9b1f9379",
+        "inStock": true
+      },
+      {
+        "name": "Sport Grey, S",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=51c135b2-20e0-49f0-973d-bc76786d1207",
+        "inStock": true
+      },
+      {
+        "name": "Sport Grey, M",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=2e740afd-ea11-492d-b252-a1fce62348d8",
+        "inStock": true
+      },
+      {
+        "name": "Sport Grey, L",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=4091424e-876c-4101-a1df-3bba66be6dfd",
+        "inStock": true
+      },
+      {
+        "name": "Sport Grey, XL",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=d564096e-c6d3-4135-a2f6-a613b9e0b2b4",
+        "inStock": true
+      },
+      {
+        "name": "Sport Grey, 2XL",
+        "price": 32,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=21c90364-b40c-44cb-8cd5-4681bdb23148",
+        "inStock": true
+      },
+      {
+        "name": "Sport Grey, 3XL",
+        "price": 34,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=71af2d6a-3dd1-4dd5-88ca-403193ad12ee",
+        "inStock": true
+      },
+      {
+        "name": "Sport Grey, 4XL",
+        "price": 36,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=46dbcb28-521b-4fa4-ae45-2284871e2797",
+        "inStock": true
+      },
+      {
+        "name": "Sport Grey, 5XL",
+        "price": 38,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=3efa2616-d55e-4f02-8e71-a1cb03a26ada",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, S",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=731eed10-e67a-4b53-986c-df2a520e7041",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, M",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=6921972b-7f18-451b-95be-d1b8039368b2",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, L",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=f135c580-1138-4f1a-a710-6b9c63886364",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, XL",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=ffc07d7b-bd97-43d7-90e8-625686ac2aba",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, 2XL",
+        "price": 32,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=8b6cb0ea-6b3a-486e-8080-42eb70d9379f",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, 3XL",
+        "price": 34,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=cfb95c09-66d8-4416-a896-945e7280df9d",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, 4XL",
+        "price": 36,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=e8974509-e7c7-4d46-b3cf-2b04d6695f9a",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, 5XL",
+        "price": 38,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=b161cf6e-15ee-4332-8d93-39ac6b3d3059",
+        "inStock": true
+      },
+      {
+        "name": "Ash, S",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=d4a853c7-9b01-488d-8b3d-d5b372e0cbac",
+        "inStock": true
+      },
+      {
+        "name": "Ash, M",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=caee209e-4e15-48ed-a2d0-af87da30c5f1",
+        "inStock": true
+      },
+      {
+        "name": "Ash, L",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=9ce0375f-45b1-4f83-8c0c-16f3a8a6d5f5",
+        "inStock": true
+      },
+      {
+        "name": "Ash, XL",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=48711f47-3e29-491e-9cee-ef801a59def3",
+        "inStock": true
+      },
+      {
+        "name": "Ash, 2XL",
+        "price": 32,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=02e8f95d-f5b4-4175-b36c-98c3001b1512",
+        "inStock": true
+      },
+      {
+        "name": "Ash, 3XL",
+        "price": 34,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=661feee5-7349-4125-9733-647be8ac6735",
+        "inStock": true
+      },
+      {
+        "name": "Ash, 4XL",
+        "price": 36,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=dfba2526-8322-4ec5-9d00-91bae776ff0a",
+        "inStock": true
+      },
+      {
+        "name": "Ash, 5XL",
+        "price": 38,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=ebb648d9-f628-453d-8c80-1bdd7d235bb3",
+        "inStock": true
+      },
+      {
+        "name": "White, S",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=516939a1-4f93-4ef9-adf1-3d946e8ea458",
+        "inStock": true
+      },
+      {
+        "name": "White, M",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=09a7a4b4-a160-474f-89e0-c37d5acf9048",
+        "inStock": true
+      },
+      {
+        "name": "White, L",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=5d532f85-0421-4f96-a936-59979b032eae",
+        "inStock": true
+      },
+      {
+        "name": "White, XL",
+        "price": 30,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=0d75623e-c80a-4e8a-8d39-0fbc0253753e",
+        "inStock": true
+      },
+      {
+        "name": "White, 2XL",
+        "price": 32,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=841e74d5-c1ae-4be8-8419-c8d391e5eea3",
+        "inStock": true
+      },
+      {
+        "name": "White, 3XL",
+        "price": 34,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=1ab9402c-8a0c-4f5b-abda-bb4f0577d56c",
+        "inStock": true
+      },
+      {
+        "name": "White, 4XL",
+        "price": 36,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=db59c08d-6fad-440e-9ea1-c4882028a5ec",
+        "inStock": true
+      },
+      {
+        "name": "White, 5XL",
+        "price": 38,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-hoodie?variant=53d4d1f8-969e-4538-bc62-88dc005420d9",
+        "inStock": true
+      }
+    ],
+    "details": [
+      "Ultra-comfortable premium ring-spun cotton fabric",
+      "Pre-shrunk relaxed unisex streetwear fit",
+      "90 sizes and colorways available",
+      "Official Teaonalamb custom illustrated graphic"
+    ]
+  },
+  {
+    "id": "fourthwall-mini-tea-in-a-cup-hoodie",
+    "slug": "mini-tea-in-a-cup-hoodie",
+    "name": "Mini Tea in a Cup Hoodie",
+    "category": "Apparel",
+    "tag": "Ultra Cozy",
+    "price": 25,
+    "currency": "USD",
+    "images": [
+      "https://imgproxy.fourthwall.dev/SzYh-zeseQl4JAFixSc-3zpGUmlzaKqh8EAYP6Cz744/w:1920/sm:1/enc/nq1GIiXfIWnIZZs8/4wQ2pLxBaT1V6orP/Gx-Brga6QIh6zxqk/HZN5EXrzZlwY8LWV/wEw2pu7uf2njLEk9/l0v1boWOa-RhWVde/FTi1lIlE0ID1-Zwy/nnRlKMSLwB0eWr_X/X2vX_8SOEI9qoq8-/IrTK3eAKaffuTmjF/0t0GHIgzaDxiWJaM/Xnl_aq5BXuqBM5A2/NDsKl6937Esj2lw5/XvbQEQfqr3UBGz2P/FTQVJINLDyQ.jpg",
+      "https://imgproxy.fourthwall.dev/AdxlJsmsic9lU8j1EzHYqbKJpNCnWblSTmBcY8xYmUc/w:1920/sm:1/enc/8vGWvRE-36T5J0ii/YrsfJ9F0lxJUrT3Y/62CpABg04m9-u7jv/HXH86OA80RzB0XqV/YUO_1QC_eMbTmbGA/Wdy8XAfkkrNHEi6x/1_9MpGbOfBdIAGBy/7xqRWfZGfBx9leQa/PegaGoAmGzNwEm_R/J0vUrw4pHKjxpY6L/4hSIzmJgs56r1YFR/5V5EuBNqMEx_PxS9/HdeSBzLaoeqj_A7i/EC4DYEeEKDy0QvoV/rAkX-NCwVNg.jpg",
+      "https://imgproxy.fourthwall.dev/sqlSxa1bd40lRjnH8TPzUJlHCcVPrXkW2ELJLfXStqk/w:1920/sm:1/enc/F6yC20v0beECAG1M/RmLzpoN8Z37Dp38c/jWo1IxVvwpUgl90c/13472gqtc9HbpKSM/Wv5yaNapZ8uAIF0c/1o_hJs0lL0iEyZLN/nJdqr3pV774uDI5b/BcopStaimzhjVQGe/C92mmudtTh6dpLZp/olgwkZRrSHHEdGeu/oGU1mQTYRhKjWLFz/69tjiDbAchfZwTSA/AvGoWploQ3SlECa4/09QrlDpP1pTcSBeJ/NKvlA_PgdVw.jpg"
+    ],
+    "description": "Step into a world of whimsy with our Gildan Classic Hoodie featuring a reclining Tea in a cozy teacup. Embrace comfort and style with a double-lined hood, unisex sizing, and midweight fabric. Perfect for any adventure. Get yours now!",
+    "fourthwallUrl": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie",
+    "variants": [
+      {
+        "name": "Carolina Blue, S",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=64b8fc9c-ef52-4603-a1d5-170a6a360401",
+        "inStock": true
+      },
+      {
+        "name": "Carolina Blue, M",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=2559e179-d6a5-472e-b591-93adb6425c12",
+        "inStock": true
+      },
+      {
+        "name": "Carolina Blue, L",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=8d5f80f5-eb20-4869-972e-ea10b9be21bf",
+        "inStock": true
+      },
+      {
+        "name": "Carolina Blue, XL",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=9c8763ba-9c97-4eab-9dfb-6f3d3f8553f6",
+        "inStock": true
+      },
+      {
+        "name": "Carolina Blue, 2XL",
+        "price": 27,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=f28f005b-7f1e-4c02-bc8d-7814086bf4f5",
+        "inStock": true
+      },
+      {
+        "name": "Carolina Blue, 3XL",
+        "price": 29,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=f3c46068-0fb9-49ef-8f11-e55582b265a2",
+        "inStock": true
+      },
+      {
+        "name": "Carolina Blue, 4XL",
+        "price": 31,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=0b51844d-dfc7-45f4-b930-e5d57583689f",
+        "inStock": true
+      },
+      {
+        "name": "Carolina Blue, 5XL",
+        "price": 33,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=236ba250-3dcd-40a2-9ba9-99e4920d1853",
+        "inStock": true
+      },
+      {
+        "name": "Dark Chocolate, S",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=a74185c1-3995-4499-9704-eecb23438a25",
+        "inStock": true
+      },
+      {
+        "name": "Dark Chocolate, M",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=95209194-a4eb-4b2e-8a6f-c0f9e1105446",
+        "inStock": true
+      },
+      {
+        "name": "Dark Chocolate, L",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=e14d0e44-bafe-4bbe-a8f2-1cdef7d19451",
+        "inStock": true
+      },
+      {
+        "name": "Dark Chocolate, XL",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=792562ac-6c08-49ba-b5c8-524767c66755",
+        "inStock": true
+      },
+      {
+        "name": "Dark Chocolate, 2XL",
+        "price": 27,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=a6788f07-377e-47ea-9276-4412b09efb3e",
+        "inStock": true
+      },
+      {
+        "name": "Dark Chocolate, 3XL",
+        "price": 29,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=785b06e4-99a3-4d27-a9f4-716d63bd9c34",
+        "inStock": true
+      },
+      {
+        "name": "Sand, S",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=1965d440-efbe-4123-8d4a-8ac5f25045bd",
+        "inStock": true
+      },
+      {
+        "name": "Sand, M",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=203269c5-0de7-4903-87ce-687c5cc804be",
+        "inStock": true
+      },
+      {
+        "name": "Sand, L",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=a38c2dc6-0321-4d14-94ad-e133665e228a",
+        "inStock": true
+      },
+      {
+        "name": "Sand, XL",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=a454ad88-8817-4e65-9e97-f8d933a22001",
+        "inStock": true
+      },
+      {
+        "name": "Sand, 2XL",
+        "price": 27,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=28df0949-fbdc-4d6e-9dd6-8e711704296b",
+        "inStock": true
+      },
+      {
+        "name": "Sand, 3XL",
+        "price": 29,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=2665cf2c-1d64-4b77-bc3c-7093ee4abcc8",
+        "inStock": true
+      },
+      {
+        "name": "Black, S",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=7df95fb8-186d-461a-beda-fd52294d8a78",
+        "inStock": true
+      },
+      {
+        "name": "Black, M",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=2d8f7978-350b-4d7c-a4cd-c1bb049949aa",
+        "inStock": true
+      },
+      {
+        "name": "Black, L",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=0b040438-8223-443b-b700-0a744085113e",
+        "inStock": true
+      },
+      {
+        "name": "Black, XL",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=2ba0b7b7-5984-4c4d-aec7-0a5cc40345eb",
+        "inStock": true
+      },
+      {
+        "name": "Black, 2XL",
+        "price": 27,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=10752040-1fb0-439b-b41f-06d657d75e25",
+        "inStock": true
+      },
+      {
+        "name": "Black, 3XL",
+        "price": 29,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=01c79117-6939-4e55-b650-3491a4b3bc16",
+        "inStock": true
+      },
+      {
+        "name": "Black, 4XL",
+        "price": 31,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=d8beb319-8b31-4c3d-9cb2-de27400ff007",
+        "inStock": true
+      },
+      {
+        "name": "Black, 5XL",
+        "price": 33,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=4d4de38e-99cf-4f0e-a489-66f79a21dfd6",
+        "inStock": true
+      },
+      {
+        "name": "Navy, S",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=0d7ef7b5-176b-4275-a1ca-0ea4d1b6908d",
+        "inStock": true
+      },
+      {
+        "name": "Navy, M",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=5bec1c54-ba2d-4076-95c2-6b7d8785ca2b",
+        "inStock": true
+      },
+      {
+        "name": "Navy, L",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=090d2140-822a-4390-9599-1cbf085d4b4e",
+        "inStock": true
+      },
+      {
+        "name": "Navy, XL",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=b9c1b126-392a-4742-8b57-3b180e9b8813",
+        "inStock": true
+      },
+      {
+        "name": "Navy, 2XL",
+        "price": 27,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=850d5db3-d6f1-4ab4-bf42-e46ceb4b7830",
+        "inStock": true
+      },
+      {
+        "name": "Navy, 3XL",
+        "price": 29,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=b2f1feb1-2110-40b4-a164-15edf6887bf2",
+        "inStock": true
+      },
+      {
+        "name": "Navy, 4XL",
+        "price": 31,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=bc706751-e45e-4511-b3f9-019cfd7a8b09",
+        "inStock": true
+      },
+      {
+        "name": "Navy, 5XL",
+        "price": 33,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=95421f7e-6e55-4d56-80c4-aeb438172579",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, S",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=a4c6b5d4-52a6-4d6a-ac46-e4068404fd20",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, M",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=a0e66980-9809-4595-9e0e-a0e1997830e5",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, L",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=5ebc04ca-c2b5-4e7f-adc5-a8f2eb8deb74",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, XL",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=00a60388-eb2c-4164-a26d-df6ff1c73d74",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, 2XL",
+        "price": 27,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=c67d8b1c-5181-4370-9511-60ecd7b52993",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, 3XL",
+        "price": 29,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=ce6d0aae-4a77-433b-a800-75334b9bae9e",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, 4XL",
+        "price": 31,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=df76554e-6945-4cdb-bf39-30ef1b8df82e",
+        "inStock": true
+      },
+      {
+        "name": "Charcoal, 5XL",
+        "price": 33,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=d5ae737c-c9e6-401d-828a-4b490665e0be",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, S",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=a216c05c-a474-46b1-99d4-9b2ce538b165",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, M",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=f828eb7a-d3f0-4cca-912b-ac70926d2bf3",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, L",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=39b686a8-35b9-4654-8c1b-5d54833c77c3",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, XL",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=b8ac605e-597a-4d89-a809-6440f4f766a3",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, 2XL",
+        "price": 27,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=ead604a0-00d3-4348-9fae-2bc6c6f1d3a8",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, 3XL",
+        "price": 29,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=b8858241-bc46-4b94-abae-56409b2407d3",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, 4XL",
+        "price": 31,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=6067116e-65aa-4c57-acd9-0fced9babe28",
+        "inStock": true
+      },
+      {
+        "name": "Light Blue, 5XL",
+        "price": 33,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=5ae04686-d926-42b9-b110-1983f6618ef0",
+        "inStock": true
+      },
+      {
+        "name": "White, S",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=8e3860a5-02c5-4bb8-bf3c-a70c91391362",
+        "inStock": true
+      },
+      {
+        "name": "White, M",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=e7307df3-6885-49a5-8515-e6222160d2c1",
+        "inStock": true
+      },
+      {
+        "name": "White, L",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=eef69f4b-e53c-443e-8a80-2fee76e81019",
+        "inStock": true
+      },
+      {
+        "name": "White, XL",
+        "price": 25,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=39c053df-9e5e-4c51-8fc7-246c58a09e11",
+        "inStock": true
+      },
+      {
+        "name": "White, 2XL",
+        "price": 27,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=c0c4443f-1544-41f2-b6e0-bfa7ede7e6b2",
+        "inStock": true
+      },
+      {
+        "name": "White, 3XL",
+        "price": 29,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=2fe72329-944c-4e2a-b5c8-2367d1c6e13c",
+        "inStock": true
+      },
+      {
+        "name": "White, 4XL",
+        "price": 31,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=4fa8b336-3d72-4ede-beb8-898491e8b57d",
+        "inStock": true
+      },
+      {
+        "name": "White, 5XL",
+        "price": 33,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/mini-tea-in-a-cup-hoodie?variant=09ecac45-a746-42a5-88ea-04689ab302ed",
+        "inStock": true
+      }
+    ],
+    "details": [
+      "Ultra-comfortable premium ring-spun cotton fabric",
+      "Pre-shrunk relaxed unisex streetwear fit",
+      "60 sizes and colorways available",
+      "Official Teaonalamb custom illustrated graphic"
+    ]
+  },
+  {
+    "id": "fourthwall-embroidered-logo-dad-cap",
+    "slug": "embroidered-logo-dad-cap",
+    "name": "Embroidered Logo dad cap",
+    "category": "Apparel",
+    "tag": "Embroidered",
+    "price": 20,
+    "currency": "USD",
+    "images": [
+      "https://imgproxy.fourthwall.dev/7dJijnM7H2c_9mnTPSgsIJoqF5Lqy4r8aQ5fJ5YrShs/w:1920/sm:1/enc/sW4vq9clguS0Orek/uIAprHTMhvgXME_-/YB08s79nQdpHfifm/0ljdwP_kbt_pnL-n/TzqomaCab6GlAd38/OJTTbJ2B2ARgnEWo/2MvDEgAdHwuQkeZO/d9Ds7bCc7zvN9GDX/XtEFna-i0dUpHHVq/0t4taUKiTSV17c7j/RTw3Sf3u6eM3p_2U/13VyJvEUq6zvV5Ns/z7gp69KHEMJrqIka/kZkNOyMdF10go0JD/rwTVB9K6H-s.jpg",
+      "https://imgproxy.fourthwall.dev/s9on4ODADkqjQvWO72GZHrfVbqqJWtNxO7vkHuoopRg/w:1920/sm:1/enc/5U8V7oLxrUhZ3Lma/E1ALIbuk5O0Y7zT-/F40-L5xGPJZ979ok/-Hv145xNAk2ychPh/tN-onc79SttdI7kD/-tAhvaC0-yqr2V1t/rF0uLWAHn0qGSS14/PeDi-wULeCgzRDWm/aZKHINT-p_FcEMF0/m41cP2YamlGSq8ju/AtIKZqHr-Ie9Mi0A/Y-shSQYkdU1iSAsI/OxVhdp4OAhtDu3p2/UQA43ftddxCU9iaU/g3jOFGP90vQ.jpg",
+      "https://imgproxy.fourthwall.dev/NDa0Lq1lMzILfW15Kkyn08YZPHQM1ahZRuE-qgeSdkw/w:1920/sm:1/enc/zDcbTPkd9Kc7K7oh/NaFBGj7tS91mf9mg/AUXp9aojs3Fos5QG/HF9u2IeXYpHOoBnR/yjIUY7YGhDtq0qq5/X_CXrJskfQNBsQEh/slVgvGezHyBdY9m3/KTTERAUrmEq1VVq4/iQV61YDuVnXCvfcj/aVdJ_P55Hm8tBEL7/dyDW0VRQfhG26kIG/NlYbzXBLFL5LuyG2/Dpq91tevRZMIhaoZ/2BHs0Cu6GAP6GOsL/YdbLpwjmlRA.jpg"
+    ],
+    "description": "",
+    "fourthwallUrl": "https://teaonalamb-shop.fourthwall.com/products/embroidered-logo-dad-cap",
+    "variants": [
+      {
+        "name": "Black, One size",
+        "price": 20,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/embroidered-logo-dad-cap?variant=d3e6f2c9-d84d-4b99-93fd-33b8af948bcb",
+        "inStock": true
+      }
+    ],
+    "details": [
+      "Ultra-comfortable premium ring-spun cotton fabric",
+      "Pre-shrunk relaxed unisex streetwear fit",
+      "1 sizes and colorways available",
+      "Official Teaonalamb custom illustrated graphic"
+    ]
+  },
+  {
+    "id": "fourthwall-embroidered-logo-vintage-wash-dad-hat",
+    "slug": "embroidered-logo-vintage-wash-dad-hat",
+    "name": "Embroidered Logo Vintage Wash Dad Hat",
+    "category": "Apparel",
+    "tag": "Embroidered",
+    "price": 22,
+    "currency": "USD",
+    "images": [
+      "https://imgproxy.fourthwall.dev/Wg_Z41MMlF0Jr5lZ0-LngG7AiSNpbP5zu2uQgAHLVcA/w:1920/sm:1/enc/f5_-TBff5Bif5Xu-/qbEeqNzO3Trz1YBr/Miz8i7fNRUHfZ38q/IkzCsHnVVeN3Cmlx/jwAVVT5-0rPN-lg7/Iy9ZYcLtYr3BycQo/i58ULybhpPz3Tm0x/fhYTVatnhRtalfr1/Z-9BaEcwxxPfzN3X/ZxYFyU3ZjEuw7GIJ/WPxZl7SdWaARtSem/tCpkEHxa46_YerAY/nz2olpADya19bxeE/9Fd3itSNXTDf67PJ/39PSbsk26Do.jpg",
+      "https://imgproxy.fourthwall.dev/oKDxEDgqZwcl8PZISfoEOL69C7SLB1A_QwSHBEa3sdc/w:1920/sm:1/enc/bqs41FbY4tcIIpuW/tkumd8ccE6iyoyOi/E-xqTtnde8fpCeQ7/IsHAP6Ihep04JXMu/FF-t9QiHe77zU1f_/Tdjgw-c3Vwco70Mn/bIeG97xTYNXlWHut/k5pOMEnkSR8SydZY/akNWbDxrzjd6SUQ2/vcfPfcXKywR314k9/DfZUp9wIZLVhSnSC/zG1mfPwJDoOORP2C/stmUgr9JpIntgXK3/aZzCj5xkuyj2XnZM/MtE0NO-T6L0.jpg",
+      "https://imgproxy.fourthwall.dev/D-kKUfX7Wq7gpK-W9Qh_20B80kxHW_3RuLhl36PMhNQ/w:1920/sm:1/enc/jumF98lXHJZjkgwI/dwq55aDcEP-12T_l/MEAVU9eufU2z_VzF/a-N4b6c3BpaZwQQq/aqvKOhs-rW_QbaSF/gFo6vaTQYwpXxUna/3tXl7mxRaEnbqpBR/neK0hRtDV1oXMCoT/bgBqYDADN7Pua__Q/VwOYPTgRXXXGy-TB/OOj9wHnu_w0x3_jm/vy8SnN366QJTWLkz/uFHGxyVmRAGvfyy9/Ecsi_UUkQ9Be2bx1/unGlOJ5_mA8.jpg"
+    ],
+    "description": "Enjoy this embroidered dad hat, which features a surprise appearance from our friendly sheep mascot!",
+    "fourthwallUrl": "https://teaonalamb-shop.fourthwall.com/products/embroidered-logo-vintage-wash-dad-hat",
+    "variants": [
+      {
+        "name": "Black, One size",
+        "price": 22,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/embroidered-logo-vintage-wash-dad-hat?variant=373a3b6e-ef83-4887-ae77-5e72fc83d5f0",
+        "inStock": true
+      }
+    ],
+    "details": [
+      "Ultra-comfortable premium ring-spun cotton fabric",
+      "Pre-shrunk relaxed unisex streetwear fit",
+      "1 sizes and colorways available",
+      "Official Teaonalamb custom illustrated graphic"
+    ]
+  },
+  {
+    "id": "fourthwall-sheep-mascot-music-player-desk-mat",
+    "slug": "sheep-mascot-music-player-desk-mat",
+    "name": "Sheep Mascot Music Player Desk Mat",
+    "category": "Desk Mats",
+    "tag": "Desk Essential",
+    "price": 15,
+    "currency": "USD",
+    "images": [
+      "https://imgproxy.fourthwall.dev/LqSWuDtKjiPP-qSdKnvRrNnK11r-3-cQAVyRlz7M3mQ/w:1920/sm:1/enc/32iVqS2BLqchvBQl/iv-lXp6TfnnnXp96/jbUJE9pVLSX_wlgu/yLlr1BWKWep3rDuh/SOYrGof344HMJ6qU/uV5LK0e_DVWk_x_V/JCGjMU83gEl3y2H_/C31avUTx29FP2egA/duma1goK-ueCPJJR/OndQtw3qan8jMCb0/DFUoyHXB-smVCQzx/QfvMVeg_RHffEpki/Nvpfx_PMDtYVQhXv/rOiTmAVx-pnyQwid/8oA4AFCBOPg.jpg",
+      "https://imgproxy.fourthwall.dev/xEr0CkFfRblNW5Lgwc2EBnBxuZdj5aitULR9gKf3-Pw/w:1920/sm:1/enc/_Amdx-5pJFqzqC_u/ZsmeT5Lz1-kbck15/-wGa3UMi9cbYucFo/hBvy-oNQHaX2UJWc/QY3dXpuNA9h8KZBq/QHQkXYkfz634aBuA/Q9-db-rJ73wc6rbI/T_L-tgR6W3e-Nfxr/oGLg8pbbWjsqUP4-/Hg3G0cZpw1Ja84SI/3fOTv7LsBjse6r8K/pi0WNYljOAg_mNHB/N1_NT9Mbh6uni-3t/Bqri5KZ4B8RuPDbK/GcK6XomOgts.jpg",
+      "https://imgproxy.fourthwall.dev/72oqW96CzN99MezwGm-RFNzqWYxa-kvw65KUxqAShn0/w:1920/sm:1/enc/PukCYQ7yF1sBMf9f/gSKij-oxEvwMeLsC/UX6kE00sy4S0CbY9/mP84PiLLAVuRpqbo/yinjHGepHpPt02nD/q4C1vK3CtPve8Fgq/MRv9DZuZUD3zWy7e/GIZamJBt_NihQo4b/w9e_fAFXYNEjPHd0/gMIc1Wxb8PAXlzig/luH4rr2bBrQt8Sy2/pEeifx2Om77vgjNX/ZH7TD2nZLmlZw0kz/D6JvoFUD6LdUM0iR/cat3ePoDi6g.jpg"
+    ],
+    "description": "",
+    "fourthwallUrl": "https://teaonalamb-shop.fourthwall.com/products/sheep-mascot-music-player-desk-mat",
+    "variants": [
+      {
+        "name": "All-Over Print, 15.5\" x 31.5\"",
+        "price": 15,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/sheep-mascot-music-player-desk-mat?variant=53477cd4-beb4-44b3-a1c8-d328862f1199",
+        "inStock": true
+      }
+    ],
+    "details": [
+      "Smooth micro-weave cloth surface for precision mouse tracking",
+      "Anti-slip natural rubber base stays locked on desks",
+      "Durable stitched edges prevent fraying over time",
+      "Retro music player and sheep mascot aesthetic"
+    ]
+  },
+  {
+    "id": "fourthwall-teaonalamb-and-mascot-music-player-desk-mat",
+    "slug": "teaonalamb-and-mascot-music-player-desk-mat",
+    "name": "teaonalamb and Mascot Music Player Desk Mat",
+    "category": "Desk Mats",
+    "tag": "Desk Essential",
+    "price": 15,
+    "currency": "USD",
+    "images": [
+      "https://imgproxy.fourthwall.dev/o9iHt_akVVRjLeXbv6NrII8eHn9K6PeKqfdALF7LXBk/w:1920/sm:1/enc/HioBsBoTE1cIyMfL/Xq3xir_m0LJ4I4L4/eaBOMGsEPMHhmLs_/FSoXPbaVYbl9cTMp/4dkeAeEMc5LH_kB7/CpJ0zF1BMg9eLVjQ/R0bIA88wnEkv6MLg/LUVN1S_cbJjs_V0A/E5ILS8yQ2Mp3BuKG/NGp0fXVLtLMxdSr0/BG4cZt4_K2VacdHq/-dQhxJhJifjDO4OF/43s-hQLXx8NzeodC/65Bht59Dpe-CtBAz/NaKogQnVDw8.jpg",
+      "https://imgproxy.fourthwall.dev/9sucrjCRz4Ni8xPLuVio742VlMUBxtB1dznwcsOaYKY/w:1920/sm:1/enc/GoaVBPkCDsDqQWke/Tur8G1yBI8h6Hv_A/AOCwGU3wKFKCVsl2/Def6qS_NCiBDRB-U/b378-kiHQeKcJRR6/KPK3JZ4cfPWNxskf/z8KWjN4Vddq6ytaR/BRYrxNBxxvZrDIc3/EbOXR-K2LFkeQaJk/KfvKnldzQhV8dlg7/mwRkTrGQXCdt4wpD/-6eCEKzpFxOrkeeF/IGtscezilWyAUaXe/k6OcwDX51EusWCI2/41cokaemGcY.jpg",
+      "https://imgproxy.fourthwall.dev/Yyi5ue8TTLyJjjVOsXQfdHxS_aYZUI4K3JJ015V-lXw/w:1920/sm:1/enc/tDe-w8BM7-wmvbVf/sKTPjzv7b4ugR6tg/n9WaX5Q-Wd704vWw/lgpZ4Zv3cTcHY1-r/wiRGUbjFzZi1a8iF/aFCxvRo__wyJbnch/SclEYYuzRgYNoXCL/GQYvjsJD-mmoJke8/aljlpZEEY0vXAUhH/AroTG5RvZGKcfbRl/e6G1QCz4U95pg_E5/fVLM2fkWwIXzPyG-/DTc6cMFtBFFP2Qyb/O_CS4So0T8hnyJhu/XBM6XB5EI0U.jpg"
+    ],
+    "description": "",
+    "fourthwallUrl": "https://teaonalamb-shop.fourthwall.com/products/teaonalamb-and-mascot-music-player-desk-mat",
+    "variants": [
+      {
+        "name": "All-Over Print, 15.5\" x 31.5\"",
+        "price": 15,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/teaonalamb-and-mascot-music-player-desk-mat?variant=0e00e9fd-379c-47a9-a45c-72350597d1cb",
+        "inStock": true
+      }
+    ],
+    "details": [
+      "Smooth micro-weave cloth surface for precision mouse tracking",
+      "Anti-slip natural rubber base stays locked on desks",
+      "Durable stitched edges prevent fraying over time",
+      "Retro music player and sheep mascot aesthetic"
+    ]
+  },
+  {
+    "id": "fourthwall-onesie-music-player-desk-mat",
+    "slug": "onesie-music-player-desk-mat",
+    "name": "Onesie Music Player Desk Mat",
+    "category": "Desk Mats",
+    "tag": "Desk Essential",
+    "price": 15,
+    "currency": "USD",
+    "images": [
+      "https://imgproxy.fourthwall.dev/5PrHjStmsYmmTUUicYE_apPkMvUZojMlKpAzOrITLy0/w:1920/sm:1/enc/S3v4_URwotdBBt0s/Kwo7Bw6AhWziqCVV/dXp6SVP7Rr_cge2M/6rVhoTwttEg3W536/2xwTdZKba6q0mH4G/8Qbq4xhXxs8zE7GL/RZpYVvN1aFhYhdij/_1Z9LVYZZd89amgu/AimaaiCtVvA2skeV/mfK9uh5wYoJ_2TK1/eQHWhlS1eNSyR0I5/cdt5XdmtSMgoSKf3/A2y_Jfmbe7howiLv/v3gSd5VzHmiL8H4X/XyHM0mj2enA.jpg",
+      "https://imgproxy.fourthwall.dev/Rf9NXirLCSE_NSsh0W0IaiITt-pNnsbBvYBsfXfhMaQ/w:1920/sm:1/enc/ul2tGVR1mx1L53bZ/LFcsbmHhwanJXHbz/4E7OHbNeWpewFWkc/Mue7G-KpSXiUp4dJ/UxdbmyFVYjugdpOn/WX6b2k69l4kdJzYy/S1UoCCILiIARkeAh/546Mex-IgrWMoxKK/lg46IL3dq0EbxDcZ/OdgfQZlO5YPP3W2K/Hv1q6QOgVTmGz1oT/KPR8ekMBI9d15_8n/4xZLPKC5OpnN2Fdl/cctfrAY7PCGSIY03/1nBD2l8Ti7E.jpg",
+      "https://imgproxy.fourthwall.dev/GUoKWB888_7YUSyXunGaaiHOYBzXKoHdhEDuCtzb1eE/w:1920/sm:1/enc/8_c0rchgW7FKR-va/pzfQ8qS6hp2T3iOk/AnZdCsLrMwI0TPou/YJwhICidZARFoMB2/KbdXDLtcJ4m-ZDkM/pYNpXRF3HynIJBtS/1-1Zm410WCLQXxqs/Akd1L37cVkngtJFO/SrV147Fq2kYkVG4R/QmUG_AU-esoYUHcw/0FuOTHHqFEQOhx-T/bsz58bw_n-oKWJKN/B4N9dRw_zshYtQBQ/AaRv5YcqWJd-_YOU/uOFYJ-n-7aU.jpg"
+    ],
+    "description": "",
+    "fourthwallUrl": "https://teaonalamb-shop.fourthwall.com/products/onesie-music-player-desk-mat",
+    "variants": [
+      {
+        "name": "All-Over Print, 15.5\" x 31.5\"",
+        "price": 15,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/onesie-music-player-desk-mat?variant=dabf3bb8-0fad-4a44-b6d9-249a300d22e6",
+        "inStock": true
+      }
+    ],
+    "details": [
+      "Smooth micro-weave cloth surface for precision mouse tracking",
+      "Anti-slip natural rubber base stays locked on desks",
+      "Durable stitched edges prevent fraying over time",
+      "Retro music player and sheep mascot aesthetic"
+    ]
+  },
+  {
+    "id": "fourthwall-tea-in-a-cup-sticker",
+    "slug": "tea-in-a-cup-sticker",
+    "name": "Tea in a Cup Sticker",
+    "category": "Stickers & Accessories",
+    "tag": "Vinyl Die-Cut",
+    "price": 6,
+    "currency": "USD",
+    "images": [
+      "https://imgproxy.fourthwall.dev/-Z2VNQ35fvT9f1aDeLuKNkPaqShlzQGzFQnCJY29uQs/w:1920/sm:1/enc/qhvjUCbFf0sMGRVc/Xt4O8-QM-hqPVN-l/AJLRqsYm72vAlGj9/MBIOU2_GjyVqHjWj/8cScVig80e2cdWmU/bmi5ch_2pL0lr67u/zIh30ROF9W4tE1hF/JSMZ7Y5jHfZ1GHp2/_fhQJ_Le22y-TVh2/shjHkIoOTu7DwQRd/GRkyCI5taU1JDhqj/pIroO677btcTNEZx/bS9YiHxWuxWo-tfx/GLoJ03c4pvZpPJTt/AwYFERJcYdg.jpg",
+      "https://imgproxy.fourthwall.dev/KID_ikgZrlTtywk5Rnaiq2Dur8voGF45I-p8cATt96w/w:1920/sm:1/enc/UzSLp9ZCPSjT5aEh/PQaHnJvr3KDOJV4K/94aa70kW-9RPGzFy/JVPjFjrnGLV41ip-/5e5_cyLZ_9HR7r4X/5MkgnxPRVVtbS_qR/puntoYUFghTrg-eL/nO5X4qqzT_VYkvL3/D_0vJ4-r8zHYqK8I/korBmpRngaIfGiJL/Koak255zlWosVaPa/_DTBYR_26ZyB2GFR/Sek2dGsW7H4C87wS/4Bw6j_FKYsWmJtim/Bw25k4ug3eg.jpg",
+      "https://imgproxy.fourthwall.dev/3HWDyDGyyK0JNrz8EqqZFCKuGiGaMBDL7InVkP3dMY0/w:1920/sm:1/enc/UI-G8gSnmEQDIu_3/SJ7gVVNAGK1OunhT/7t4XnDebxi1qTS1O/k8AdS36W3uv0VdCR/ZUUMStL0FPyttBgS/bMbPqczKxKKDIc2D/rTFqVXdYqy1Fi1ZF/dn5emySEA_NY-HXr/tvNA6XHmO7PCPNts/gF9H1fvvSx_UXbDC/maVL2GlN4ApW4P-_/plIfPCFRUywgaHmG/RBuo7oKpDFE4HCL2/mwUW_Hc8Lfcxk4X1/flgsOx5w9LY.jpg"
+    ],
+    "description": "",
+    "fourthwallUrl": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-sticker",
+    "variants": [
+      {
+        "name": "White, 3\" x 3\"",
+        "price": 6,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-sticker?variant=f72e1cd3-eb52-4a2a-b4de-f3bdeee35c59",
+        "inStock": true
+      },
+      {
+        "name": "White, 4\" x 4\"",
+        "price": 6.2,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-sticker?variant=88933fe7-4974-4f91-8e5c-f97946cee504",
+        "inStock": true
+      },
+      {
+        "name": "White, 5.5\" x 5.5\"",
+        "price": 6.4,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/tea-in-a-cup-sticker?variant=59a957be-caf7-4867-8b8f-42a7263c2cf7",
+        "inStock": true
+      }
+    ],
+    "details": [
+      "High-durability scratch and water-resistant materials",
+      "Vibrant precision-cut print with rich color fidelity",
+      "Matches the cozy TeaOS blue and cloud palette",
+      "Ships worldwide directly from Fourthwall"
+    ]
+  },
+  {
+    "id": "fourthwall-teaonalamb-and-friends-picnic-sticker",
+    "slug": "teaonalamb-and-friends-picnic-sticker",
+    "name": "teaonalamb and Friends Picnic Sticker",
+    "category": "Stickers & Accessories",
+    "tag": "Vinyl Die-Cut",
+    "price": 5,
+    "currency": "USD",
+    "images": [
+      "https://imgproxy.fourthwall.dev/7jAzJhNRF7hkPwlgO2JU-zlJL8dBPQwOBuRUqRL5MCQ/w:1920/sm:1/enc/Xdw3PaGnbOV-wU3S/JlNaqfacqGgj68F4/w2jAVWddnjoIgRxl/LXc48KCA9A9himSv/KAp7cCJd1cmC8do9/ftlvrJ1JM7957kCG/0C3HhQxku-gnUu6A/yyF6kP5yAy2g7MpI/8htG-RjKvaFhq-Ru/yUIRja-qg5Q0V1sH/K0TIq02OerItvJIp/MDNzR2pwOidctoN_/JDXexZF6q6PN6CRz/4wQSOG2sInOgZXjl/aIT1DIoCHrQ.jpg",
+      "https://imgproxy.fourthwall.dev/pluxR_pDIME4HxPNAbcRwEzXGPurJdpJyBG1VRA5EWs/w:1920/sm:1/enc/6jtCh99cjz5OXS-J/oKAqYZjmnD-eYONi/AFGDB_vNz3BMqi_y/1nHlYVGtQzIuFxTs/8BBf2Y4AtgZrH5qW/H1FzyDyuwfvJP_aq/YTztPUDd-CItuzku/d5jJLvbtpNWOdGbI/9fL6zARtBr1O74cK/dVd6bWnpfxN2pp6c/yI36QaIUxAPScfEi/fpLC6OpYD-g4XbiJ/CKw_UA6VFFkXMEX9/r_rEw2z5_2Ek_JC8/xheTXjBs2lg.jpg",
+      "https://imgproxy.fourthwall.dev/rVSRe3iwFVWP8P5TrdBF3DR_UNco-U5bzjybJ7158as/w:1920/sm:1/enc/3-KYRQ-go8KYrPNI/HmPWlwblJ-rGxtvs/oOkgws0U0AXtd8S8/aangh5rI6jm_2hEA/JuyfnD83_vw8fMui/fX0lkip8j-rbHwjE/B-IgpL13s7cbxZDH/6GZAGYFmRE0FCjK6/Q8x1xQ_Mw6xhBsIy/QbXjMiLmF6mw43Ci/ad5wON_BbEyth6W9/i9fqecQXw3YWQX8w/PfwX65MHwgUPU2mj/lq2BGGNZsxe2bK15/Hz7qX5GKryQ.jpg"
+    ],
+    "description": "",
+    "fourthwallUrl": "https://teaonalamb-shop.fourthwall.com/products/teaonalamb-and-friends-picnic-sticker",
+    "variants": [
+      {
+        "name": "White, 3\" x 3\"",
+        "price": 5,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/teaonalamb-and-friends-picnic-sticker?variant=6cb89440-3049-479c-ad63-12d8546b0f1b",
+        "inStock": true
+      },
+      {
+        "name": "White, 4\" x 4\"",
+        "price": 5.2,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/teaonalamb-and-friends-picnic-sticker?variant=caa19a28-63c6-4a24-b167-1abc281fd816",
+        "inStock": true
+      },
+      {
+        "name": "White, 5.5\" x 5.5\"",
+        "price": 5.4,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/teaonalamb-and-friends-picnic-sticker?variant=664a36e0-bf45-426a-8796-5e00d8210d1f",
+        "inStock": true
+      },
+      {
+        "name": "White, 15″ x 3.75″",
+        "price": 8.05,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/teaonalamb-and-friends-picnic-sticker?variant=27be34d3-7037-44ee-b4d2-4a4d8f41ea03",
+        "inStock": true
+      }
+    ],
+    "details": [
+      "High-durability scratch and water-resistant materials",
+      "Vibrant precision-cut print with rich color fidelity",
+      "Matches the cozy TeaOS blue and cloud palette",
+      "Ships worldwide directly from Fourthwall"
+    ]
+  },
+  {
+    "id": "fourthwall-lamb-on-a-tea-mascot-iphone-case-black",
+    "slug": "lamb-on-a-tea-mascot-iphone-case-black",
+    "name": "Lamb on a Tea Mascot iPhone Case (Black)",
+    "category": "Stickers & Accessories",
+    "tag": "Phone Case",
+    "price": 12,
+    "currency": "USD",
+    "images": [
+      "https://imgproxy.fourthwall.dev/K0MoXWIFy35RUq775DRc_ztzSEBC2uXbZfriFOLisVY/w:1920/sm:1/enc/aFLNV59BAt7_anzX/XeDSEyiUr97rIIPO/kKi9Amf-MbJtzwSl/2KSq8bbedYzp11DQ/OOPTELCsWa3fIDQp/RoDQn9_1JB34K-Ht/cJkJ5bOR2lWHSNOj/6z4xmpav7_H1FlIW/ouZyTFFWie7-c12b/dggt2zgx7Fn59_6c/ZWPUlamuw06mhOjY/fOZa14m8kYbP440d/aBNPHOCILdXsat2Z/gWwCM0zZGmnYNdY-/P06FO_5L_Ns.jpg",
+      "https://imgproxy.fourthwall.dev/W3Ljpt7zaSshPhCAR4f0gwbvW619JNGx7MueHMl3Dw4/w:1920/sm:1/enc/Wm_8z23w4_IabrUj/l51naSh3LpvU57Pw/UV6Qm7CBx1AqlU7J/-_KAfyPa4SCKNKI_/HWyGauaVO1YlUTIX/YwgdwLuEIElwhLgE/XumNtQQxmW8w39TN/O5JQaezg-4aNlCir/b9gr_9uyUOUeSuFY/__XF5q3VnHpGBKWy/odXK3iGf2LrEgmV4/kAtri6WwfvBwd9Lk/m8oGjtG0ErOYFF1r/lHcqf1EwDkLxWIFp/1ej5At1TnFk.jpg",
+      "https://imgproxy.fourthwall.dev/vhb41-kapJWmFPWsXTiTLnYBE1I28UUix0kCdGtJh6s/w:1920/sm:1/enc/Hul2Zac8D8DpbP62/clR6ccVb4QM3N_ng/rlroG-Vaprxo1xXg/KCzC4l7rsCKiw4ML/FNnfWAB6l1HbaqGg/aaKrX0djChWnkhYI/seD-4Xz67ToXVq49/fOaZ9aTYa51I6dD0/bof1fmoRbLbufsQU/gjDp6hrvXOUGevo8/l1kKp-m5YnhP5K1a/o5lzZex1fFjKUK2x/e8JhsQPotZZHdIVJ/tSZwD_t9RxzX2FRW/vOgZeMAwldQ.jpg"
+    ],
+    "description": "",
+    "fourthwallUrl": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black",
+    "variants": [
+      {
+        "name": "All-Over Print, iPhone 7/8",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black?variant=374ff992-03ec-4e95-9ec0-5f11f09ab25f",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 11 Pro Max",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black?variant=65f08571-76d9-4eeb-9ff9-d31215f54788",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 11 Pro",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black?variant=10419608-0e3e-4a5d-ba73-8e66782a1e5b",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 11",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black?variant=d8752cfa-c7dd-41b4-a5bb-c5b26ac1e29c",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 12 mini",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black?variant=da9cb755-5ca7-41fa-9b43-dca76079f942",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 12 Pro",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black?variant=2d7522d8-2c19-4a3f-bf43-bd0f1dd9b527",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 12",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black?variant=15a7e1f5-2445-435b-bb64-01521b34d4d4",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 12 Pro Max",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black?variant=e912fe7b-193d-4a9f-90eb-3ead4cdfe81c",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 13 Pro Max",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black?variant=caa93116-4da9-4a24-9aad-c5c5417f4359",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 13 Pro",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black?variant=622d0a0a-4f4c-42e9-92ee-f219e135282c",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 13",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black?variant=24e22d42-02e7-485e-bdc9-5dd4801a90e3",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 13 mini",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black?variant=8ba8114f-dd01-4971-9d32-b39f619fcdc3",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 14 Pro",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black?variant=bd976ea4-6413-4ed4-818d-fce1d1ecbd79",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 14 Pro Max",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black?variant=a3df3cf7-89c8-44a0-bd6e-07890841f669",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 14 Plus",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black?variant=f9d2f3ab-2ae2-4705-ae0a-58605b115646",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 14",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black?variant=54a09aaf-0f54-42e5-8417-da69a7325caf",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 15 Pro Max",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black?variant=f0733058-f0ec-4d74-aa92-d07fd2cab614",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 15",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black?variant=e22ec0fc-5dc1-4101-a75e-4fecc60bf180",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 15 Pro",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black?variant=af75f607-0aec-48b8-a636-ad79a0a9ae56",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 15 Plus",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black?variant=3d239416-9d7f-438c-8d23-30cc4e64de31",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 16 Plus",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black?variant=610d4c04-85fa-4521-9c70-d539cf24906d",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 16 Pro Max",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black?variant=0d130267-c6aa-41d9-904d-951822bb2527",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 16 Pro",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black?variant=5c9a80f5-9fba-4ee6-948f-175146f9fb9e",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 16",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black?variant=309c929b-2d90-44d4-a8f3-18c2e95748ee",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone X/XS",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black?variant=abc3d9ba-c81f-44eb-8cc3-ffdbd455e679",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone XR",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black?variant=fe2f0d61-27c5-4594-82a4-fb9d951df1a2",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone SE",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-black?variant=10726bb5-4868-44e2-b099-85185be4bcbd",
+        "inStock": true
+      }
+    ],
+    "details": [
+      "High-durability scratch and water-resistant materials",
+      "Vibrant precision-cut print with rich color fidelity",
+      "Matches the cozy TeaOS blue and cloud palette",
+      "Ships worldwide directly from Fourthwall"
+    ]
+  },
+  {
+    "id": "fourthwall-lamb-on-a-tea-mascot-iphone-case-white",
+    "slug": "lamb-on-a-tea-mascot-iphone-case-white",
+    "name": "Lamb on a Tea Mascot iPhone Case (White)",
+    "category": "Stickers & Accessories",
+    "tag": "Phone Case",
+    "price": 12,
+    "currency": "USD",
+    "images": [
+      "https://imgproxy.fourthwall.dev/MTcmYt8399BVq9xXdLvzQ4_Vte1vdq_tCOoyDl6zDkw/w:1920/sm:1/enc/jKJoMvyPcp5vdc1v/02S1REyAOtXJRrKq/MGm6CooIjbdgAlBV/ABm70E7xooyjhyHc/W7jWTarRgpkzStCn/K3PM2n3D6i-Iq7LF/ulHgv4uUzF1epBLl/mq_o08t1BqRJzkkZ/g7f2yRUmWThIDhAb/QsGeLxa9vg0smw0F/ssgElkvCtpdAQChI/0NpJ4hRRkFmnlROY/ODCeTw0tO_L_U2xt/oNY3CP7rouB8cjo_/-ku9rdIwEtw.jpg",
+      "https://imgproxy.fourthwall.dev/pdTf0fv5se2WFHPMxc-o9jIbPpgEuUVjdHofHTSmMcY/w:1920/sm:1/enc/YOp9xB6yLb25tVZw/adqBmLnrpDfYVyvZ/Ojw3t7xgp5eaPuAE/Vbo0xWMuDx22jUNI/oBNeC0pSAdyTfbJr/8ldzZLJxCt-vqt-1/NmEGmLOsGvnOPvb6/vwVR90OtpLuv-QZU/91w68g_-RsPdHHLT/UqHNSRjBkVd23Vep/NZNzohYmXHNMKuYN/RR7P08jhecLRKCNY/TeL9jn0JpAjkvUhN/JbB959ia6MF5mzEy/Yx9LE_IJi-I.jpg",
+      "https://imgproxy.fourthwall.dev/nfBBoYo8ValMHWI1uvzwvZdH7bn0ij8ct2D5TRd6Tbs/w:1920/sm:1/enc/0_u9RKMCP3qljL7v/CLIuepV5v4-qmkS-/H5AV4JcNKIsWX6fI/KRQPSK1d7plW1OMi/8YdtrYneK24iYu2e/ggZM9hO7K-5QCF2g/uOzw4c4SWwfAbqNZ/CP2M1A0z_S6cfm81/44BZPI6T2czQWZ5l/aBWuXxm7j_2n23zH/kfHDCK5KRIpVoQwA/I54-daFuP6CcF8qF/BsVpWz4fc-wX7m1I/7Jcc8Fp3XQ9OgzV2/jkGoAhNAbjw.jpg"
+    ],
+    "description": "",
+    "fourthwallUrl": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white",
+    "variants": [
+      {
+        "name": "All-Over Print, iPhone 7/8",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white?variant=a6dcb0b8-dcab-4cfd-a543-8e8a3bb6b593",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 11 Pro Max",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white?variant=8a0d84d6-1b5e-4b44-99d1-7cfd20eeae3a",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 11 Pro",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white?variant=377eb6e4-f521-492d-aaf6-213659f1ad77",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 11",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white?variant=7c0b89b2-afa9-48ff-b093-0b4a7f3abe68",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 12 mini",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white?variant=dbcc81b3-a743-407a-9163-4d1ea6fb5a35",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 12 Pro",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white?variant=b7ea9c2c-124d-4412-9467-c93109b8ff33",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 12",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white?variant=5b002a11-a748-425f-902a-ea44df6e9ce0",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 12 Pro Max",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white?variant=bd62932d-43f5-452f-81bd-3cce2ed6bad7",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 13 Pro Max",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white?variant=97e56c80-2434-416d-a659-68f9da0d729a",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 13 Pro",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white?variant=ce5eddc4-e367-4a4d-b9d1-4a51b9b823f9",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 13",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white?variant=3004a3e3-1538-4e19-a9d7-cfe97c5eb267",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 13 mini",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white?variant=617493dc-a5e5-4e2e-ad0d-6bee25f6281c",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 14 Pro",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white?variant=e3ebc12a-abce-41b7-b4cd-86a6b4118525",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 14 Pro Max",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white?variant=16c1643d-41b1-490d-8198-79052c96071d",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 14 Plus",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white?variant=b6519e38-3322-4981-81d3-1af4854970d4",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 14",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white?variant=19da1e89-33be-4cfd-8258-9fcad90743ae",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 15 Pro Max",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white?variant=c055f115-3f75-47bf-bc4a-1fe28b32327f",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 15",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white?variant=22eb5ff1-b732-45eb-8391-b7d444122ef8",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 15 Pro",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white?variant=5fe8a84a-9efc-4a6f-bcff-be3749e108ed",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 15 Plus",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white?variant=5b349b32-c2e2-4f8e-abc3-a7b68c2a6698",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 16 Plus",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white?variant=143852fb-4ab2-4ae6-8d0e-be1dd795e38b",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 16 Pro Max",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white?variant=b10ccf02-6678-4a51-b776-a2fb61ae4074",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 16 Pro",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white?variant=cd6c0fe7-936b-4948-98df-22c05b2ded92",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone 16",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white?variant=396012c1-940d-4004-8602-0f39c6a7e7b2",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone X/XS",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white?variant=127b976d-32aa-4cfd-91ba-3cd81b56ff36",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone XR",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white?variant=5b048707-ec6c-4337-aad8-e1ea2e237715",
+        "inStock": true
+      },
+      {
+        "name": "All-Over Print, iPhone SE",
+        "price": 12,
+        "url": "https://teaonalamb-shop.fourthwall.com/products/lamb-on-a-tea-mascot-iphone-case-white?variant=eb0af44a-fedc-4a45-bdbc-baf198bbe65f",
+        "inStock": true
+      }
+    ],
+    "details": [
+      "High-durability scratch and water-resistant materials",
+      "Vibrant precision-cut print with rich color fidelity",
+      "Matches the cozy TeaOS blue and cloud palette",
+      "Ships worldwide directly from Fourthwall"
+    ]
+  }
+]

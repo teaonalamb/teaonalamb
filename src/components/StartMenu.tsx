@@ -128,8 +128,20 @@ export const StartMenu: React.FC<StartMenuProps> = ({
                 }}
                 className="w-full text-left px-3 py-2 rounded-md hover:bg-[#c9d9f3] text-[#093290] font-medium text-sm flex items-center gap-2.5 transition-colors"
               >
-                <span className="text-amber-600 text-base">📌</span>
+                <span className="text-[#4974C1] text-base">✉</span>
                 <span>Community Corkboard</span>
+              </button>
+
+              <button
+                onClick={() => {
+                  playRetroClick(soundEnabled);
+                  onSelectTab('merch');
+                  onClose();
+                }}
+                className="w-full text-left px-3 py-2 rounded-md hover:bg-[#c9d9f3] text-[#093290] font-medium text-sm flex items-center gap-2.5 transition-colors"
+              >
+                <span className="text-[#093290] text-base">♡</span>
+                <span>Tea Room Merch Shelf</span>
               </button>
 
               <div className="my-1.5 border-t border-[#c3d3ee]" />

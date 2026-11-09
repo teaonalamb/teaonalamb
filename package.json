@@ -8,6 +8,10 @@
     "build": "vite build",
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",
+    "sync:blog": "tsx scripts/sync-latest-blog.ts",
+    "sync:podcast": "tsx scripts/sync-podcast-rss.ts",
+    "sync:socials": "tsx scripts/sync-socials.ts",
+    "sync:merch": "tsx scripts/sync-fourthwall.ts",
     "lint": "tsc --noEmit"
   },
   "dependencies": {

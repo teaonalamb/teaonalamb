@@ -101,7 +101,7 @@ export const TwitchStreamCard: React.FC<TwitchStreamCardProps> = ({ soundEnabled
 
         {/* Subtitle status bar */}
         <div className="absolute bottom-1.5 left-0 right-0 flex justify-center text-[10px] sm:text-[11px] text-[#cfe0ff]/70 font-pixel pointer-events-none">
-          <span>twitch.tv/teaonalamb ★ Official Partner Channel</span>
+          <span>twitch.tv/teaonalamb ★ Official Twitch Affiliate</span>
         </div>
       </div>
     </div>

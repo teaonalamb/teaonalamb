@@ -66,7 +66,11 @@ export const GuestbookCorkboard: React.FC<GuestbookCorkboardProps> = ({
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) {
-        return JSON.parse(saved);
+        const parsed: GuestbookNote[] = JSON.parse(saved);
+        const cleaned = parsed.filter(
+          (n) => !['note-1', 'note-2', 'note-3', 'note-4', 'note-5'].includes(n.id)
+        );
+        return cleaned.length > 0 ? cleaned : DEFAULT_GUESTBOOK_NOTES;
       }
     } catch (e) {
       console.error('Failed to read notes from storage', e);
