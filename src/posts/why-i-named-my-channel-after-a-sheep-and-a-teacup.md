@@ -1,7 +1,7 @@
 ---
 title: "Why I named my channel after a sheep and a teacup"
 date: 2026-11-02 12:00
-category: Origin Story
+category: Personal Story
 tags: Origin Story, High School, Twitch, Streaming
 excerpt: "Plot twist: I can't even take credit for my own name. Let's rewind to 2014 or 2015. I honestly can't remember which, it was that long ago..."
 ---
