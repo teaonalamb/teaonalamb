@@ -13,6 +13,7 @@ import { CounterNumber } from './components/CounterNumber';
 import { GuestbookCorkboard } from './components/GuestbookCorkboard';
 import { DeskHotspotTour } from './components/DeskHotspotTour';
 import { MerchShelf } from './components/MerchShelf';
+import { MediaKit } from './components/MediaKit';
 import { playRetroClick, playChime, toggleLofiLounge } from './audio';
 
 export default function App() {
@@ -32,7 +33,8 @@ export default function App() {
     const handleHash = () => {
       const rawHash = window.location.hash.replace('#', '');
       const parts = rawHash.split('/');
-      const tab = parts[0] as PageTab;
+      const tab = parts[0] === 'media-kit' ? 'socials' : (parts[0] as PageTab);
+      if (parts[0] === 'media-kit') window.history.replaceState(null, '', '#socials');
       const validTabs: PageTab[] = [
         'home',
         'socials',
@@ -446,6 +448,47 @@ export default function App() {
 
                       {/* Home Body Content */}
                       <div className="max-w-4xl mx-auto px-4 py-8 pb-16">
+                        <motion.section
+                          initial={{ opacity: 0, y: 18 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.45, ease: 'easeOut' }}
+                          className="mb-8"
+                        >
+                          <div className="card rounded-xl overflow-hidden border border-[#b5c9ea] bg-white shadow-[0_4px_0_rgba(9,50,144,0.12)]">
+                            <div className="px-4 py-2 bg-gradient-to-r from-[#093290] to-[#5870B3] text-white font-pixel text-xs">welcome_to_teaos.txt</div>
+                            <div className="p-5 sm:p-7 grid grid-cols-1 md:grid-cols-[auto_1.4fr_0.8fr] gap-5 items-center">
+                              <motion.div
+                                initial={{ opacity: 0, scale: 0.9, rotate: -3 }}
+                                animate={{ opacity: 1, scale: 1, rotate: 0 }}
+                                transition={{ delay: 0.12, type: 'spring', stiffness: 180, damping: 16 }}
+                                whileHover={{ y: -4, rotate: 1 }}
+                                className="mx-auto md:mx-0"
+                              >
+                                <img
+                                  src="/assets/teaonalamb-intro-portrait.jpg"
+                                  alt="Teaonalamb"
+                                  className="h-52 w-40 rounded-2xl object-contain bg-[#EAF1FB] border-4 border-white shadow-[0_5px_0_rgba(9,50,144,0.16)]"
+                                />
+                              </motion.div>
+                              <div>
+                                <p className="font-pixel text-xs text-[#4974C1] mb-2">START HERE</p>
+                                <h2 className="font-pixel text-2xl text-[#0D1D56] font-bold">Hi, I&apos;m Teaonalamb.</h2>
+                                <p className="mt-3 text-sm leading-relaxed text-[#33477f]">I&apos;m a multi-platform content creator, Twitch streamer, podcaster, and blogger making a cozy corner for games, honest conversations, and everyday creative life. Whether you&apos;re here to hang out, listen in, or read along, there&apos;s always a warm cup waiting.</p>
+                                <div className="mt-4 flex flex-wrap gap-2">
+                                  <button onClick={() => switchTab('twitch')} className="px-3 py-2 rounded bg-[#6441a5] text-white font-pixel text-xs font-bold hover:brightness-110">Watch live</button>
+                                  <button onClick={() => switchTab('podcast')} className="px-3 py-2 rounded bg-[#093290] text-white font-pixel text-xs font-bold hover:bg-[#4974C1]">Listen to Tea Talks</button>
+                                  <button onClick={() => switchTab('blog')} className="px-3 py-2 rounded bg-[#eaf1fb] text-[#093290] font-pixel text-xs font-bold hover:bg-[#dbe6f8]">Read the journal</button>
+                                </div>
+                              </div>
+                              <button onClick={() => switchTab('socials')} className="rounded-lg border border-[#c3d3ee] bg-[#eaf1fb] p-5 text-left hover:bg-[#dbe6f8] transition-colors">
+                                <p className="font-pixel text-xs text-[#4974C1]">FOR PARTNERS &amp; COLLABS</p>
+                                <p className="mt-2 font-semibold text-[#0D1D56]">Open the creator media kit →</p>
+                                <p className="mt-1 text-xs leading-relaxed text-[#5E778C]">Brand work, podcast guests, press, and creative partnerships.</p>
+                              </button>
+                            </div>
+                          </div>
+                        </motion.section>
+
                         <div className="flex items-center gap-2 mb-1">
                           <span className="font-pixel text-xl sm:text-2xl text-[#093290] font-bold">
                             Find me everywhere
@@ -644,6 +687,7 @@ export default function App() {
                           </motion.div>
                         </div>
                       </div>
+
                     </motion.div>
                   )}
 
@@ -661,7 +705,7 @@ export default function App() {
                         <div className="flex items-center gap-3 mb-1">
                           <MascotSheep size={42} soundEnabled={soundEnabled} outfit="classic" />
                           <h2 className="font-pixel text-2xl sm:text-3xl text-[#093290] font-bold m-0">
-                            Socials
+                            Socials + Media Kit
                           </h2>
                         </div>
                         <p className="text-[#33477f] text-sm mb-6">
@@ -713,7 +757,16 @@ export default function App() {
                             </motion.div>
                           ))}
                         </div>
-                      </div>
+
+
+                        <div className="h-10" />
+                        <div className="border-t border-dashed border-[#b5c9ea] pt-8">
+                          <div className="flex items-center gap-2 mb-4">
+                            <span className="font-pixel text-xs text-[#4974C1]">creator_media_kit.pdf</span>
+                            <span className="text-xs text-[#5E778C]">Brand work, press, guest pitches, and creative partnerships.</span>
+                          </div>
+                          <MediaKit soundEnabled={soundEnabled} />
+                        </div>                      </div>
                     </motion.div>
                   )}
 

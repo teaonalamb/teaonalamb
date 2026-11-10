@@ -38,6 +38,9 @@ export interface PodcastEpisode {
   isExplicit: boolean;
   url: string;
   description: string;
+  audioUrl?: string;
+  imageUrl?: string;
+  transcriptUrl?: string;
 }
 
 export interface BlogPostData {

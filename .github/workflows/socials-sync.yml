@@ -1,0 +1,43 @@
+name: Sync follower counts
+
+on:
+  schedule:
+    - cron: '0 14 * * *'   # once a day
+  workflow_dispatch:
+  push:
+    paths:
+      - 'src/followers-manual.json'   # runs when you edit your manual numbers
+
+permissions:
+  contents: write
+
+concurrency:
+  group: socials-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Build follower data
+        run: node scripts/sync-socials.mjs
+      - name: Commit changes
+        run: |
+          git config user.name "socials-sync"
+          git config user.email "socials-sync@users.noreply.github.com"
+          git add src/socials-data.json
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Update follower counts"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+

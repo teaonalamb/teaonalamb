@@ -1,0 +1,15 @@
+// Cloudflare Worker configuration for the Vite single-page app.
+// Preview and production builds publish the generated dist directory.
+// Cloudflare runs the Vite build before invoking Wrangler.
+// Fresh previews inherit the saved preview build configuration.
+// This comment retriggers the connected Cloudflare preview.
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "teaonalamb",
+  "compatibility_date": "2026-11-04",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
+  },
+  "previews": {}
+}
