@@ -40,6 +40,8 @@ export interface PodcastEpisode {
   url: string;
   description: string;
   audioUrl?: string;
+  imageUrl?: string;
+  transcriptUrl?: string;
 }
 
 export interface BlogPostData {
