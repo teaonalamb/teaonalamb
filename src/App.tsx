@@ -466,7 +466,7 @@ export default function App() {
                                 className="mx-auto md:mx-0"
                               >
                                 <img
-                                  src="/assets/aistudio/IMG_0440_acdf6e51.png"
+                                  src="/assets/teaonalamb-intro-portrait.png"
                                   alt="Teaonalamb"
                                   className="h-40 w-40 rounded-2xl object-cover border-4 border-white shadow-[0_5px_0_rgba(9,50,144,0.16)]"
                                 />
