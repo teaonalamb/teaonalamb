@@ -13,6 +13,7 @@ import { CounterNumber } from './components/CounterNumber';
 import { GuestbookCorkboard } from './components/GuestbookCorkboard';
 import { DeskHotspotTour } from './components/DeskHotspotTour';
 import { MerchShelf } from './components/MerchShelf';
+import { MediaKit } from './components/MediaKit';
 import { playRetroClick, playChime, toggleLofiLounge } from './audio';
 
 export default function App() {
@@ -41,6 +42,7 @@ export default function App() {
         'podcast',
         'guestbook',
         'merch',
+        'media-kit',
       ];
 
       if (validTabs.includes(tab)) {
@@ -283,7 +285,7 @@ export default function App() {
               {/* Window Strip: Full-Width 7 Tabs */}
               <div className="flex items-end px-1 sm:px-2 pt-1 sm:pt-1.5 bg-gradient-to-b from-[#c9d9f3] to-[#b3c8ec] border-b border-[#a6bfdf]">
                 <div
-                  className="grid grid-cols-7 items-end gap-0.5 sm:gap-1 w-full"
+                  className="grid grid-cols-8 items-end gap-0.5 sm:gap-1 w-full"
                   role="tablist"
                   aria-label="Site pages"
                 >
@@ -295,6 +297,7 @@ export default function App() {
                     { id: 'podcast', label: 'Podcast', shortLabel: 'Pod', icon: '♪' },
                     { id: 'guestbook', label: 'Guestbook', shortLabel: 'Notes', icon: '✉' },
                     { id: 'merch', label: 'Shop', shortLabel: 'Shop', icon: '♡' },
+                    { id: 'media-kit', label: 'Media Kit', shortLabel: 'Kit', icon: '✦' },
                   ].map((tab) => {
                     const isSelected = activeTab === tab.id;
                     return (
@@ -644,6 +647,28 @@ export default function App() {
                           </motion.div>
                         </div>
                       </div>
+                      <section className="mx-auto max-w-5xl px-4 pb-8">
+                        <div className="card rounded-xl overflow-hidden border border-[#b5c9ea] bg-white shadow-[0_4px_0_rgba(9,50,144,0.12)]">
+                          <div className="px-4 py-2 bg-gradient-to-r from-[#093290] to-[#5870B3] text-white font-pixel text-xs">welcome_to_teaos.txt</div>
+                          <div className="p-5 sm:p-7 grid grid-cols-1 md:grid-cols-[1.4fr_0.8fr] gap-5 items-center">
+                            <div>
+                              <p className="font-pixel text-xs text-[#4974C1] mb-2">START HERE</p>
+                              <h2 className="font-pixel text-2xl text-[#0D1D56] font-bold">Hi, I&apos;m Teaonalamb.</h2>
+                              <p className="mt-3 text-sm leading-relaxed text-[#33477f]">I&apos;m a multi-platform content creator, Twitch streamer, podcaster, and blogger making a cozy corner for games, honest conversations, and everyday creative life. Whether you&apos;re here to hang out, listen in, or read along, there&apos;s always a warm cup waiting.</p>
+                              <div className="mt-4 flex flex-wrap gap-2">
+                                <button onClick={() => switchTab('twitch')} className="px-3 py-2 rounded bg-[#6441a5] text-white font-pixel text-xs font-bold hover:brightness-110">Watch live</button>
+                                <button onClick={() => switchTab('podcast')} className="px-3 py-2 rounded bg-[#093290] text-white font-pixel text-xs font-bold hover:bg-[#4974C1]">Listen to Tea Talks</button>
+                                <button onClick={() => switchTab('blog')} className="px-3 py-2 rounded bg-[#eaf1fb] text-[#093290] font-pixel text-xs font-bold hover:bg-[#dbe6f8]">Read the journal</button>
+                              </div>
+                            </div>
+                            <button onClick={() => switchTab('media-kit')} className="rounded-lg border border-[#c3d3ee] bg-[#eaf1fb] p-5 text-left hover:bg-[#dbe6f8] transition-colors">
+                              <p className="font-pixel text-xs text-[#4974C1]">FOR PARTNERS &amp; COLLABS</p>
+                              <p className="mt-2 font-semibold text-[#0D1D56]">Open the creator media kit →</p>
+                              <p className="mt-1 text-xs leading-relaxed text-[#5E778C]">Brand work, podcast guests, press, and creative partnerships.</p>
+                            </button>
+                          </div>
+                        </div>
+                      </section>
                     </motion.div>
                   )}
 
@@ -989,6 +1014,14 @@ export default function App() {
                           A podcast by Twitch streamer teaonalamb. Season 2 is here.
                         </p>
                       </div>
+                    </motion.div>
+                  )}
+
+                  {/* CREATOR MEDIA KIT TAB */}
+                  {activeTab === 'media-kit' && (
+                    <motion.div key="media-kit" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.25 }}>
+                      <div className="porcelain-bar" />
+                      <MediaKit soundEnabled={soundEnabled} />
                     </motion.div>
                   )}
 
