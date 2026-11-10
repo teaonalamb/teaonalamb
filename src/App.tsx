@@ -468,7 +468,7 @@ export default function App() {
                                 <img
                                   src="/assets/teaonalamb-intro-portrait.png"
                                   alt="Teaonalamb"
-                                  className="h-40 w-40 rounded-2xl object-cover border-4 border-white shadow-[0_5px_0_rgba(9,50,144,0.16)]"
+                                  className="h-52 w-40 rounded-2xl object-contain bg-[#EAF1FB] border-4 border-white shadow-[0_5px_0_rgba(9,50,144,0.16)]"
                                 />
                               </motion.div>
                               <div>
