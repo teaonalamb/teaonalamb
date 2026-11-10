@@ -1,5 +1,6 @@
 // Cloudflare Worker configuration for the Vite single-page app.
 // Preview and production builds publish the generated dist directory.
+// Cloudflare runs the Vite build before invoking Wrangler.
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "teaonalamb",
