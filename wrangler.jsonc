@@ -2,6 +2,7 @@
 // Preview and production builds publish the generated dist directory.
 // Cloudflare runs the Vite build before invoking Wrangler.
 // Fresh previews inherit the saved preview build configuration.
+// This comment retriggers the connected Cloudflare preview.
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "teaonalamb",
