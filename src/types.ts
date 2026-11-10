@@ -5,7 +5,8 @@ export type PageTab =
   | 'twitch'
   | 'podcast'
   | 'guestbook'
-  | 'merch';
+  | 'merch'
+  | 'media-kit';
 
 export interface GuestbookNote {
   id: string;
