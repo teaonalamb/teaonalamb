@@ -1,0 +1,10 @@
+{
+  "_note": "Edit these numbers by hand. Twitch and YouTube update by themselves when the sync can reach them. TikTok, Instagram, X and Discord are always read from here.",
+  "Twitch": 720,
+  "TikTok": 1742,
+  "Instagram": 668,
+  "X": 317,
+  "YouTube": 143,
+  "Discord": 89
+}
+

@@ -1,68 +1,75 @@
 [
   {
     "platform": "Twitch",
-    "count": "720",
-    "numericCount": 720,
     "label": "followers",
     "url": "https://twitch.tv/teaonalamb",
     "handle": "@teaonalamb",
     "filename": "twitch.exe",
     "color": "#6441a5",
-    "lastSynced": "2026-11-09T09:24:33.177Z"
+    "count": "720",
+    "numericCount": 720,
+    "lastSynced": "2026-11-10T09:23:28.020Z",
+    "source": "manual"
   },
   {
     "platform": "TikTok",
-    "count": "1.3k",
-    "numericCount": 1300,
     "label": "followers",
     "url": "https://tiktok.com/@teaonalamb",
     "handle": "@teaonalamb",
     "filename": "tiktok.exe",
     "color": "#ee1d52",
-    "lastSynced": "2026-11-09T09:24:33.177Z"
+    "count": "1,742",
+    "numericCount": 1742,
+    "lastSynced": "2026-11-10T09:23:28.020Z",
+    "source": "manual"
   },
   {
     "platform": "Instagram",
-    "count": "668",
-    "numericCount": 668,
     "label": "followers",
     "url": "https://instagram.com/teaonalamb",
     "handle": "@teaonalamb",
     "filename": "instagram.exe",
     "color": "#c13584",
-    "lastSynced": "2026-11-09T09:24:33.177Z"
+    "count": "668",
+    "numericCount": 668,
+    "lastSynced": "2026-11-10T09:23:28.020Z",
+    "source": "manual"
   },
   {
     "platform": "X",
-    "count": "317",
-    "numericCount": 317,
     "label": "followers",
     "url": "https://x.com/teaonalamb",
     "handle": "@teaonalamb",
     "filename": "x.exe",
     "color": "#0f1419",
-    "lastSynced": "2026-11-09T09:24:33.177Z"
+    "count": "317",
+    "numericCount": 317,
+    "lastSynced": "2026-11-10T09:23:28.020Z",
+    "source": "manual"
   },
   {
     "platform": "YouTube",
-    "count": "48",
-    "numericCount": 48,
     "label": "subscribers",
     "url": "https://youtube.com/@teaonalamb",
     "handle": "@teaonalamb",
     "filename": "youtube.exe",
     "color": "#ff0000",
-    "lastSynced": "2026-11-09T09:24:33.177Z"
+    "count": "143",
+    "numericCount": 143,
+    "lastSynced": "2026-11-10T09:23:28.020Z",
+    "source": "manual"
   },
   {
     "platform": "Discord",
-    "count": "89",
-    "numericCount": 89,
     "label": "members",
     "url": "https://discord.com/invite/VEJYDJP7xM",
     "handle": "",
     "filename": "discord.exe",
     "color": "#5865f2",
-    "lastSynced": "2026-11-09T09:24:33.177Z"
+    "count": "89",
+    "numericCount": 89,
+    "lastSynced": "2026-11-10T09:23:28.020Z",
+    "source": "manual"
   }
 ]
+

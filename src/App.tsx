@@ -33,7 +33,8 @@ export default function App() {
     const handleHash = () => {
       const rawHash = window.location.hash.replace('#', '');
       const parts = rawHash.split('/');
-      const tab = parts[0] as PageTab;
+      const tab = parts[0] === 'media-kit' ? 'socials' : (parts[0] as PageTab);
+      if (parts[0] === 'media-kit') window.history.replaceState(null, '', '#socials');
       const validTabs: PageTab[] = [
         'home',
         'socials',
@@ -42,7 +43,6 @@ export default function App() {
         'podcast',
         'guestbook',
         'merch',
-        'media-kit',
       ];
 
       if (validTabs.includes(tab)) {
@@ -285,7 +285,7 @@ export default function App() {
               {/* Window Strip: Full-Width 7 Tabs */}
               <div className="flex items-end px-1 sm:px-2 pt-1 sm:pt-1.5 bg-gradient-to-b from-[#c9d9f3] to-[#b3c8ec] border-b border-[#a6bfdf]">
                 <div
-                  className="grid grid-cols-8 items-end gap-0.5 sm:gap-1 w-full"
+                  className="grid grid-cols-7 items-end gap-0.5 sm:gap-1 w-full"
                   role="tablist"
                   aria-label="Site pages"
                 >
@@ -297,7 +297,6 @@ export default function App() {
                     { id: 'podcast', label: 'Podcast', shortLabel: 'Pod', icon: '♪' },
                     { id: 'guestbook', label: 'Guestbook', shortLabel: 'Notes', icon: '✉' },
                     { id: 'merch', label: 'Shop', shortLabel: 'Shop', icon: '♡' },
-                    { id: 'media-kit', label: 'Media Kit', shortLabel: 'Kit', icon: '✦' },
                   ].map((tab) => {
                     const isSelected = activeTab === tab.id;
                     return (
@@ -481,7 +480,7 @@ export default function App() {
                                   <button onClick={() => switchTab('blog')} className="px-3 py-2 rounded bg-[#eaf1fb] text-[#093290] font-pixel text-xs font-bold hover:bg-[#dbe6f8]">Read the journal</button>
                                 </div>
                               </div>
-                              <button onClick={() => switchTab('media-kit')} className="rounded-lg border border-[#c3d3ee] bg-[#eaf1fb] p-5 text-left hover:bg-[#dbe6f8] transition-colors">
+                              <button onClick={() => switchTab('socials')} className="rounded-lg border border-[#c3d3ee] bg-[#eaf1fb] p-5 text-left hover:bg-[#dbe6f8] transition-colors">
                                 <p className="font-pixel text-xs text-[#4974C1]">FOR PARTNERS &amp; COLLABS</p>
                                 <p className="mt-2 font-semibold text-[#0D1D56]">Open the creator media kit →</p>
                                 <p className="mt-1 text-xs leading-relaxed text-[#5E778C]">Brand work, podcast guests, press, and creative partnerships.</p>
@@ -706,7 +705,7 @@ export default function App() {
                         <div className="flex items-center gap-3 mb-1">
                           <MascotSheep size={42} soundEnabled={soundEnabled} outfit="classic" />
                           <h2 className="font-pixel text-2xl sm:text-3xl text-[#093290] font-bold m-0">
-                            Socials
+                            Socials + Media Kit
                           </h2>
                         </div>
                         <p className="text-[#33477f] text-sm mb-6">
@@ -758,7 +757,16 @@ export default function App() {
                             </motion.div>
                           ))}
                         </div>
-                      </div>
+
+
+                        <div className="h-10" />
+                        <div className="border-t border-dashed border-[#b5c9ea] pt-8">
+                          <div className="flex items-center gap-2 mb-4">
+                            <span className="font-pixel text-xs text-[#4974C1]">creator_media_kit.pdf</span>
+                            <span className="text-xs text-[#5E778C]">Brand work, press, guest pitches, and creative partnerships.</span>
+                          </div>
+                          <MediaKit soundEnabled={soundEnabled} />
+                        </div>                      </div>
                     </motion.div>
                   )}
 
@@ -1034,14 +1042,6 @@ export default function App() {
                           A podcast by Twitch streamer teaonalamb. Season 2 is here.
                         </p>
                       </div>
-                    </motion.div>
-                  )}
-
-                  {/* CREATOR MEDIA KIT TAB */}
-                  {activeTab === 'media-kit' && (
-                    <motion.div key="media-kit" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.25 }}>
-                      <div className="porcelain-bar" />
-                      <MediaKit soundEnabled={soundEnabled} />
                     </motion.div>
                   )}
 
