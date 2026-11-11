@@ -1,81 +1,74 @@
 %PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document (opensource)
 1 0 obj
-<< /Type /Catalog /Pages 2 0 R >>
+<<
+/F1 2 0 R /F2 3 0 R
+>>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
 endobj
 4 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+<<
+/Contents 8 0 R /MediaBox [ 0 0 612 792 ] /Parent 7 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 5 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+<<
+/PageMode /UseNone /Pages 7 0 R /Type /Catalog
+>>
 endobj
 6 0 obj
-<< /Length 3070 >>
+<<
+/Author (Teaonalamb) /CreationDate (D:20261111023314-08'00') /Creator (anonymous) /Keywords () /ModDate (D:20261111023314-08'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (unspecified) /Title (Teaonalamb Creator Media Kit) /Trapped /False
+>>
+endobj
+7 0 obj
+<<
+/Count 1 /Kids [ 4 0 R ] /Type /Pages
+>>
+endobj
+8 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 2355
+>>
 stream
-0.05 0.11 0.34 rg 0 666 612 126 re f
-0.81 0.88 1 rg BT /F2 8 Tf 46 756 Td (CREATOR MEDIA KIT) Tj ET
-1 1 1 rg BT /F2 27 Tf 46 709 Td (Teaonalamb) Tj ET
-0.81 0.88 1 rg BT /F2 7.5 Tf 392 756 Td (STREAMER, PODCASTER, BLOGGER) Tj ET
-1 1 1 rg BT /F1 12 Tf 392 710 Td (Let's make something cozy.) Tj ET
-0.92 0.95 0.99 rg 46 554 520 86 re f
-0.76 0.83 0.93 RG 0.7 w 46 554 520 86 re S
-0.29 0.45 0.76 rg BT /F2 8 Tf 62 619 Td (ABOUT TEAONALAMB) Tj ET
-0.05 0.11 0.34 rg BT /F1 9.3 Tf 62 598 Td (A multi-platform creator making welcoming content.) Tj ET
-0.05 0.11 0.34 rg BT /F1 9.3 Tf 62 583 Td (Games, honest conversations, and creative life.) Tj ET
-0.29 0.45 0.76 rg BT /F2 8 Tf 352 619 Td (CREATOR FOCUS) Tj ET
-0.05 0.11 0.34 rg BT /F1 9 Tf 352 598 Td (Cozy gaming, community conversations,) Tj ET
-0.05 0.11 0.34 rg BT /F1 9 Tf 352 583 Td (lifestyle, and creative life.) Tj ET
-1 1 1 rg 46 402 252 128 re f
-0.76 0.83 0.93 RG 0.7 w 46 402 252 128 re S
-0.29 0.45 0.76 rg BT /F2 8 Tf 62 505 Td (COLLAB FORMATS) Tj ET
-0.05 0.11 0.34 rg BT /F2 13 Tf 62 481 Td (Ways to work together) Tj ET
-0.05 0.11 0.34 rg BT /F1 8.7 Tf 62 458 Td (Sponsored streams and creator campaigns) Tj ET
-0.05 0.11 0.34 rg BT /F1 8.7 Tf 62 442 Td (Podcast guests and co-hosted conversations) Tj ET
-0.05 0.11 0.34 rg BT /F1 8.7 Tf 62 426 Td (Product, game, and community features) Tj ET
-1 1 1 rg 314 402 252 128 re f
-0.76 0.83 0.93 RG 0.7 w 314 402 252 128 re S
-0.29 0.45 0.76 rg BT /F2 8 Tf 330 505 Td (BRAND FIT) Tj ET
-0.05 0.11 0.34 rg BT /F2 13 Tf 330 481 Td (The vibe) Tj ET
-0.05 0.11 0.34 rg BT /F1 8.7 Tf 330 458 Td (Warm, candid, playful, and community-first.) Tj ET
-0.05 0.11 0.34 rg BT /F1 8.7 Tf 330 442 Td (Each partnership should feel useful to the) Tj ET
-0.05 0.11 0.34 rg BT /F1 8.7 Tf 330 426 Td (audience and true to the Teaonalamb world.) Tj ET
-0.29 0.45 0.76 rg BT /F2 8 Tf 46 365 Td (PLATFORM HIGHLIGHTS) Tj ET
-1 1 1 rg 46 251 520 92 re f
-0.76 0.83 0.93 RG 0.7 w 46 251 520 92 re S
-0.76 0.83 0.93 RG 0.7 w 219 251 m 219 251 l S
-0.76 0.83 0.93 RG 0.7 w 219 251 m 311 251 l S
-0.76 0.83 0.93 RG 0.7 w 219 251 m 219 343 l S 393 251 m 393 343 l S
-0.05 0.11 0.34 rg BT /F2 12 Tf 62 316 Td (Twitch) Tj ET
-0.05 0.11 0.34 rg BT /F1 8.7 Tf 62 296 Td (Cozy variety streams and) Tj ET
-0.05 0.11 0.34 rg BT /F1 8.7 Tf 62 281 Td (live community time.) Tj ET
-0.05 0.11 0.34 rg BT /F2 12 Tf 235 316 Td (Tea Talks) Tj ET
-0.05 0.11 0.34 rg BT /F1 8.7 Tf 235 296 Td (Thoughtful podcast conversations) Tj ET
-0.05 0.11 0.34 rg BT /F1 8.7 Tf 235 281 Td (and guest features.) Tj ET
-0.05 0.11 0.34 rg BT /F2 12 Tf 409 316 Td (Blog and Socials) Tj ET
-0.05 0.11 0.34 rg BT /F1 8.7 Tf 409 296 Td (Personal writing and) Tj ET
-0.05 0.11 0.34 rg BT /F1 8.7 Tf 409 281 Td (community-first posts.) Tj ET
-0.04 0.20 0.56 rg 46 148 520 60 re f
-1 1 1 rg BT /F2 13 Tf 63 183 Td (Have an idea? Lets make something cozy.) Tj ET
-1 1 1 rg BT /F1 10 Tf 63 164 Td (teaonalamb@gmail.com) Tj ET
-0.37 0.47 0.55 rg BT /F1 7.5 Tf 46 116 Td (Starter draft. Add audience numbers, campaign results, and press quotes before sharing.) Tj ET
-endstream
+Gau0E>Ar9+&q9SYR$Zat.2&b-d=m!P-ZN$/:0cGo$-o;\bI1/g0dJbF(Am-9L88XrF`t6n%LQ1Q=Ia:hSG?bf0lZY)e,M(AJBJ4I]j\]96n;ZnOUt5p'Fc&6kCN9@@8aWU*"d-c.]CpN!b_@Y#X6OB>XF^klGLCDPj\f"32)b\kZ+aTK@7>:-a^JTcchj:8I.EpU)\WmRZ3'LF9_K7lgYPS`mMOEqB&*IZo.=$/je0P6L>rY&RsOVAcR;\I%FYO%Hiio>u%9+\"d(2':j/s,8^H<^u;2XiC](A-#m)+=e'te;]!U#n[.!/PhA00:8iONFb[mnjmTCW.#TE$)@&Hk78c'$ISQn(DUPhh*LJ-mL4@D<?'.%K:=jcK"hkD\;:9M#3`1T/0M1CdJ_Ak@$]h@e)me9"g@[3L#!T1An/rftSrkdm,]88*p!E:sI"i+E\9pFF3@k@[q9mf3P9fLRFt/nI)X4dT&/+Ko^aRVqbK`5L[@pp+!AZ7n@>":<J[K\VfF0Ae.(NV""p&@#3'g(cm;-NFp-F,A#m!LU(Y\i*bNWL>d:bLf(f#h[QX/L[UejmV(uGstlu'5:43dJuoaQ^m5jii!P?r(3\65(s%Z;fnS$IW.rgFU<GY'[G>EWe>oP0#V9Rao[\LWsOJ`4%to;"R*/6u\g]k5AHj9UYu[_Y4E2Z;V?J]9n]l#V[&(@jihS@fHf5I&%VqhH2@]H3+TY!t*p(k/'+RR[6-:W(gJI[jbUaV*Uh1/3Wp!qE!7lPcMiCK,c5b8hCA'<eGrGP\_?h;PCIl$AD_edsJhmdRJVC1&2A,m\c+057bD\7ZKA-J(sl@N9I8J3fa-.C/g(<al8IBJURa7FO>cNTQ:cB\q8m>c*T4crA'Gbk"hI+`FEIS2m*1cg&7uObToIJ_!2-Z&E$uRoF+4r!3hp1C./+$0kJ5pa=99OZO$DP13oH)A9;IT,j;#qOV8)&&"N:8U\LhSe.?9l)C);KELi2T4MZ,eClbN&jU%3G0IU0O0uG-k2kMu5CssU4Io"3TCM.0B_UA"9rr*,>6<)GeQ,X%D(bV+O`s#3'r963p>_Iu5<S6\PaUf]@Q(n;:Ib:DK)f(n0Ltcn%'?ep%I&\_]HPqD)jBgJW&HAkimnLc$$u)mep-\9n/\tk01^*P_U\;XIe42r@JFdNo2!8,Im,$CegH'M*k5,g>f)U"WLP2O@[6+I+S@(aP.JC8+K8N4f(J?+1`T<Rmq#sg9kQZJb"*CBQ;2/8nSK=nL'l0j+V0_]?)?FJM/bVPSLPKdR!rcs-K2bY1np8Bo14%i@:B;ZN8P^41"g((mAC1)8p5"7c#b_/5)j/=(21SY#6(U.'7g9u]<JHZ1O-hj&%eW_'0!rdnM`T:!kB63%1on'5QX&pSK0XOs"qAU]+4S;FkEqQpGUZ324F`S\6@@DD2nMep*3+=RBta(RHZ;Os,9#2F#;kb?:lfT1FNjMl3iM#cP3-"rX,\]bK?0I_CcTCFDT/cJiu=P^<PQ#BnEgn7P0Kh[=.4)6gA@q1%2NLVV<2`C0K>hN7UWYh+$X.,8?>WJp!69Nl:goHD&`H,a3.9ZJbVZA6*Ji%k/mE+m6iUo4WA1)r<s*A,Tu0`bEms3U6X.FrJ?^*MNZpn(R^',q_'09tZS:9)?kNNF<LFe*GBV-!dEC[bbEG*1Q8('!]G"^M^%c:Dm7jMm=mIH2]^Wch$A6AW:+)0tBbO-eE$&WPnMn!ZKu*PAAtFCp%b2r$L%*cZQD<;jT?S%V8B7/3EI!eu$V/!U-h4J@/1Ya4f9D=l[@=iLYf(SO55fVs3OXT=:TZe'TK":Y$N@IC#?rZDd<W]n@u/)/FZMY;^%C>j0A&kB*,VrLktc64k:!(E:-lG7s)#(/;*;bh\.7J8TU>Q,LqMlEedA^_VcI\VR6Km4a>NAo$FZHBW5doHc$>HZ4&Vo6>W4f22PnWnlXW)0NtYiubq^q27mW;Ju7%.B`5_=J5?Onf5)@r4:Tnp>W*cYI[i4<SdT2IEp`c]B0*49:'-jLoV2uF\T0oSC>/[<[;g9hBtDn%AU,LEnS"".k?S@`NI3/?c;au:=hp_]PL$T#S*2Plf$.c/oE8mh\:kp!oK/<i-2^[n2:(GlG,f]YXHES@#5/=qhBooOID!hWJQFa!tjdiAS7Uag,'Cq_XPnne':6XN1E@'Wt4*9,/>lYa/P9i';^]YgE^M4<R]31!]APhAn17OIm:Nur9fc"CF]X6r0,j".=obCqnm@<4AI[;"0oHEp'ZbQE9kUT7qqp'&/#ppM(Oh.q5l[MU#V]A6TX"iF<.*uf-XeQkaGeb83WWX*UR*?(3R4F&AL>lcUn*>qbbQI^["H.r!?A#*d%~>endstream
 endobj
 xref
-0 7
+0 9
 0000000000 65535 f 
-0000000009 00000 n 
-0000000058 00000 n 
-0000000115 00000 n 
-0000000251 00000 n 
+0000000061 00000 n 
+0000000102 00000 n 
+0000000209 00000 n 
 0000000321 00000 n 
-0000000396 00000 n 
+0000000514 00000 n 
+0000000582 00000 n 
+0000000864 00000 n 
+0000000923 00000 n 
 trailer
-<< /Size 7 /Root 1 0 R >>
+<<
+/ID 
+[<6eee71912fd838a258814c0af1c8233f><6eee71912fd838a258814c0af1c8233f>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 6 0 R
+/Root 5 0 R
+/Size 9
+>>
 startxref
-3518
+3369
 %%EOF
