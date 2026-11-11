@@ -13,8 +13,7 @@ import { CounterNumber } from './components/CounterNumber';
 import { GuestbookCorkboard } from './components/GuestbookCorkboard';
 import { DeskHotspotTour } from './components/DeskHotspotTour';
 import { MerchShelf } from './components/MerchShelf';
-import { MediaKit } from './components/MediaKit';
-import { playRetroClick, playChime, toggleLofiLounge } from './audio';
+import { playRetroClick, playChime, playSheepBaa, playCupSip, toggleLofiLounge } from './audio';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<PageTab>('home');
@@ -27,6 +26,36 @@ export default function App() {
   const [currentTime, setCurrentTime] = useState<string>('');
   const [currentDate, setCurrentDate] = useState<string>('');
   const [toastMessage, setToastMessage] = useState<string | null>(null);
+
+  // Easter Egg States
+  const [konamiIndex, setKonamiIndex] = useState(0);
+  const [sheepFlockCount, setSheepFlockCount] = useState(0);
+  const [teaSipsCount, setTeaSipsCount] = useState(0);
+  const [secretThemeActive, setSecretThemeActive] = useState(false);
+
+  // Konami Code Listener: ArrowUp, ArrowUp, ArrowDown, ArrowDown, ArrowLeft, ArrowRight, ArrowLeft, ArrowRight, b, a
+  const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key.toLowerCase() === konamiCode[konamiIndex].toLowerCase()) {
+        const nextIndex = konamiIndex + 1;
+        setKonamiIndex(nextIndex);
+        if (nextIndex === konamiCode.length) {
+          playChime(soundEnabled);
+          setSecretThemeActive(true);
+          setToastMessage('★ KONAMI CODE UNLOCKED! Welcome to Cyberpunk Neon Tea mode!');
+          setKonamiIndex(0);
+          setTimeout(() => setToastMessage(null), 5000);
+        }
+      } else {
+        setKonamiIndex(0);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [konamiIndex, soundEnabled]);
 
   // Sync URL hash with active tab and blog post routing
   useEffect(() => {
@@ -165,9 +194,9 @@ export default function App() {
   };
 
   return (
-    <div className="relative w-screen h-screen overflow-hidden select-none flex flex-col font-sans-clean">
+    <div className={`relative w-screen h-screen overflow-hidden select-none flex flex-col font-sans-clean ${secretThemeActive ? 'bg-black text-emerald-400' : ''}`}>
       {/* Sky Background */}
-      <div className="sky-bg">
+      <div className={secretThemeActive ? 'absolute inset-0 bg-gradient-to-b from-black via-emerald-950 to-black z-0 pointer-events-none' : 'sky-bg'}>
         {/* Shooting Star */}
         <div className="absolute -top-10 left-10 w-28 h-[2px] bg-gradient-to-r from-transparent via-white to-transparent animate-shooting-star pointer-events-none" />
 
@@ -217,8 +246,30 @@ export default function App() {
               {/* Retro OS Window Title Bar with Controls (Always visible in upper right) */}
               <div className="flex items-center justify-between px-2.5 py-1 bg-gradient-to-r from-[#093290] via-[#4974C1] to-[#5870B3] text-white text-[11px] font-pixel select-none border-b border-[#000425]/30">
                 <div className="flex items-center gap-1.5 min-w-0">
-                  <span className="text-amber-300">☁</span>
-                  <span className="font-bold truncate text-[11px] sm:text-xs">teaonalamb.com ☁️ TeaOS</span>
+                  <span
+                    className="text-amber-300 cursor-pointer hover:rotate-45 transition-transform"
+                    title="Easter Egg: Click to sip tea!"
+                    onClick={() => {
+                      playCupSip(soundEnabled);
+                      setTeaSipsCount((c) => c + 1);
+                      setToastMessage(`☕ *Sip* Ahh, perfect jasmine tea. Total Sips: ${teaSipsCount + 1}`);
+                      setTimeout(() => setToastMessage(null), 3000);
+                    }}
+                  >
+                    ☕
+                  </span>
+                  <span
+                    className="font-bold truncate text-[11px] sm:text-xs cursor-pointer"
+                    title="Easter Egg: Click to baa!"
+                    onClick={() => {
+                      playSheepBaa(soundEnabled);
+                      setSheepFlockCount((c) => c + 1);
+                      setToastMessage(`🐑 Baaaaa! Flock count: ${sheepFlockCount + 1}`);
+                      setTimeout(() => setToastMessage(null), 3000);
+                    }}
+                  >
+                    teaonalamb.com ☁️ TeaOS {sheepFlockCount > 0 ? `(Flock: ${sheepFlockCount})` : ''} {teaSipsCount > 0 ? `(Sips: ${teaSipsCount})` : ''}
+                  </span>
                 </div>
 
                 {/* Upper Right Window Controls: Minimize, Maximize, Exit + Audio */}
@@ -354,15 +405,31 @@ export default function App() {
                 </button>
 
                 {/* Animated URL Bar */}
-                <div className="flex-1 min-w-0 flex items-center px-3 py-1 rounded-full bg-white border border-[#c3d3ee] shadow-inner text-xs sm:text-sm text-[#33477f] font-mono">
+                <div
+                  className="flex-1 min-w-0 flex items-center px-3 py-1 rounded-full bg-white border border-[#c3d3ee] shadow-inner text-xs sm:text-sm text-[#33477f] font-mono cursor-pointer"
+                  onClick={() => {
+                    playCupSip(soundEnabled);
+                    setTeaSipsCount((c) => c + 1);
+                    setToastMessage(`☕ *Sip* Address bar tea refill! Total Sips: ${teaSipsCount + 1}`);
+                    setTimeout(() => setToastMessage(null), 3000);
+                  }}
+                  title="Click for tea sip!"
+                >
                   <span className="text-[#4974C1] mr-1.5 font-sans-clean font-bold">🔒</span>
                   <span className="truncate">{currentAddressText()}</span>
+                  <span className="ml-auto text-[10px] bg-amber-100 text-amber-800 px-1.5 py-0.2 rounded font-pixel hidden sm:inline">
+                    ☕ Sip [Click]
+                  </span>
                 </div>
 
                 <button
-                  onClick={() => playChime(soundEnabled)}
-                  title="Bookmark Teaonalamb"
-                  className="text-amber-400 hover:scale-125 transition-transform text-sm px-1"
+                  onClick={() => {
+                    playSheepBaa(soundEnabled);
+                    setToastMessage('🐑 Baa! You found the secret star bookmark easter egg!');
+                    setTimeout(() => setToastMessage(null), 3000);
+                  }}
+                  title="Bookmark Easter Egg"
+                  className="text-amber-400 hover:scale-125 transition-transform text-sm px-1 cursor-pointer"
                 >
                   ★
                 </button>
@@ -371,149 +438,328 @@ export default function App() {
               {/* Page Body Scrollable View */}
               <main
                 id="window-scroll-container"
-                className="flex-1 min-h-0 overflow-y-auto page-cloud-bg"
+                className="flex-1 min-h-0 overflow-y-auto bg-gradient-to-b from-[#F5F8FD] to-[#EAF1FB]"
               >
-                <AnimatePresence mode="wait">
-                  {/* HOME TAB */}
-                  {activeTab === 'home' && (
-                    <motion.div
-                      key="home"
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -10 }}
-                      transition={{ duration: 0.25 }}
-                    >
-                      {/* Hero Section */}
-                      <div className="relative bg-gradient-to-b from-[#000425] via-[#0D1D56] to-[#1c3a8c] text-white overflow-hidden text-center pt-8 pb-14 px-4">
-                        {/* Twinkling star decorations */}
-                        <span className="absolute left-[10%] top-[18%] text-amber-300 text-xl animate-twinkle">
-                          ★
-                        </span>
-                        <span
-                          className="absolute right-[12%] top-[14%] text-amber-300 text-2xl animate-twinkle"
-                          style={{ animationDelay: '1s' }}
+                {/* HOME TAB */}
+                {activeTab === 'home' && (
+                  <motion.div
+                    key="home"
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.25 }}
+                  >
+                    {/* Hero Section */}
+                    <div className="relative bg-gradient-to-b from-[#000425] via-[#0D1D56] to-[#1c3a8c] text-white overflow-hidden text-center pt-8 pb-14 px-4">
+                      {/* Twinkling star decorations */}
+                      <span className="absolute left-[10%] top-[18%] text-amber-300 text-xl animate-twinkle">
+                        ★
+                      </span>
+                      <span
+                        className="absolute right-[12%] top-[14%] text-amber-300 text-2xl animate-twinkle"
+                        style={{ animationDelay: '1s' }}
+                      >
+                        ★
+                      </span>
+                      <span
+                        className="absolute left-[24%] top-[62%] text-amber-200 text-sm animate-twinkle"
+                        style={{ animationDelay: '2s' }}
+                      >
+                        ✦
+                      </span>
+                      <span
+                        className="absolute right-[22%] top-[58%] text-amber-200 text-base animate-twinkle"
+                        style={{ animationDelay: '0.5s' }}
+                      >
+                        ✦
+                      </span>
+
+                      {/* Bottom cloud curve on hero */}
+                      <div className="absolute -bottom-16 -left-[10%] -right-[10%] h-32 rounded-[50%] bg-[radial-gradient(closest-side,rgba(200,220,255,0.8),rgba(160,190,240,0.3)_70%,transparent)] blur-[10px] pointer-events-none" />
+
+                      {/* Hero Mascot and Logo Row */}
+                      <div className="relative z-10 flex flex-wrap md:flex-nowrap items-end justify-center gap-2 sm:gap-4 md:gap-6 max-w-4xl mx-auto">
+                        {/* Left: Mascot Sheep */}
+                        <div
+                          className="order-2 md:order-1 flex justify-center shrink-0 cursor-pointer"
+                          onClick={() => {
+                            playSheepBaa(soundEnabled);
+                            setSheepFlockCount((c) => c + 1);
+                            setToastMessage(`🐑 Baaaaa! Flock count: ${sheepFlockCount + 1}`);
+                            setTimeout(() => setToastMessage(null), 3000);
+                          }}
+                          title="Click me!"
                         >
-                          ★
-                        </span>
-                        <span
-                          className="absolute left-[24%] top-[62%] text-amber-200 text-sm animate-twinkle"
-                          style={{ animationDelay: '2s' }}
+                          <MascotSheep soundEnabled={soundEnabled} outfit="teacup-hat" />
+                        </div>
+
+                        {/* Center: Bouncing Logo and Tagline - Dominant size on mobile */}
+                        <div className="order-1 md:order-2 w-full basis-full md:basis-auto md:flex-1 flex flex-col items-center px-2">
+                          <motion.img
+                            src="/logo.png"
+                            alt="Teaonalamb logo"
+                            className="w-[88vw] max-w-[360px] sm:max-w-[460px] md:max-w-[560px] h-auto drop-shadow-[0_0_26px_rgba(120,160,255,0.55)] cursor-pointer"
+                            animate={{ y: [0, -8, 0] }}
+                            transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+                            whileHover={{ scale: 1.03 }}
+                            whileTap={{ scale: 0.98 }}
+                            onClick={() => {
+                              playChime(soundEnabled);
+                              setToastMessage('✨ Easter Egg: Try the Konami code (↑↑↓↓←→←→BA)!');
+                              setTimeout(() => setToastMessage(null), 4000);
+                            }}
+                          />
+
+                          <p className="mt-2.5 text-[#cfe0ff] text-xs sm:text-base md:text-lg font-light max-w-md mx-auto leading-relaxed">
+                            Streamer and host of Tea Talks. Pull up a cloud, the tea is hot.
+                          </p>
+                        </div>
+
+                        {/* Right: Mascot Teacup */}
+                        <div
+                          className="order-3 flex justify-center shrink-0 cursor-pointer"
+                          onClick={() => {
+                            playCupSip(soundEnabled);
+                            setTeaSipsCount((c) => c + 1);
+                            setToastMessage(`☕ *Sip* Delicious! Total Sips: ${teaSipsCount + 1}`);
+                            setTimeout(() => setToastMessage(null), 3000);
+                          }}
+                          title="Click me!"
                         >
-                          ✦
-                        </span>
-                        <span
-                          className="absolute right-[22%] top-[58%] text-amber-200 text-base animate-twinkle"
-                          style={{ animationDelay: '0.5s' }}
-                        >
-                          ✦
-                        </span>
-
-                        {/* Bottom cloud curve on hero */}
-                        <div className="absolute -bottom-16 -left-[10%] -right-[10%] h-32 rounded-[50%] bg-[radial-gradient(closest-side,rgba(200,220,255,0.8),rgba(160,190,240,0.3)_70%,transparent)] blur-[10px] pointer-events-none" />
-
-                        {/* Hero Mascot and Logo Row */}
-                        <div className="relative z-10 flex flex-wrap md:flex-nowrap items-end justify-center gap-2 sm:gap-4 md:gap-6 max-w-4xl mx-auto">
-                          {/* Left: Mascot Sheep */}
-                          <div className="order-2 md:order-1 flex justify-center shrink-0">
-                            <MascotSheep soundEnabled={soundEnabled} outfit="teacup-hat" />
-                          </div>
-
-                          {/* Center: Bouncing Logo and Tagline - Dominant size on mobile */}
-                          <div className="order-1 md:order-2 w-full basis-full md:basis-auto md:flex-1 flex flex-col items-center px-2">
-                            <motion.img
-                              src="/logo.png"
-                              alt="Teaonalamb logo"
-                              className="w-[88vw] max-w-[360px] sm:max-w-[460px] md:max-w-[560px] h-auto drop-shadow-[0_0_26px_rgba(120,160,255,0.55)] cursor-pointer"
-                              animate={{ y: [0, -8, 0] }}
-                              transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
-                              whileHover={{ scale: 1.03 }}
-                              whileTap={{ scale: 0.98 }}
-                              onClick={() => playChime(soundEnabled)}
-                            />
-
-                            <p className="mt-2.5 text-[#cfe0ff] text-xs sm:text-base md:text-lg font-light max-w-md mx-auto leading-relaxed">
-                              Streamer and host of Tea Talks. Pull up a cloud, the tea is hot.
-                            </p>
-                          </div>
-
-                          {/* Right: Mascot Teacup */}
-                          <div className="order-3 flex justify-center shrink-0">
-                            <MascotCup soundEnabled={soundEnabled} />
-                          </div>
+                          <MascotCup soundEnabled={soundEnabled} />
                         </div>
                       </div>
+                    </div>
 
-                      {/* Scalloped Porcelain Border */}
-                      <div className="porcelain-bar" />
+                    {/* Scalloped Porcelain Border */}
+                    <div className="porcelain-bar" />
 
-                      {/* Home Body Content */}
-                      <div className="max-w-4xl mx-auto px-4 py-8 pb-16">
-                        <motion.section
-                          initial={{ opacity: 0, y: 18 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.45, ease: 'easeOut' }}
-                          className="mb-8"
-                        >
-                          <div className="card rounded-xl overflow-hidden border border-[#b5c9ea] bg-white shadow-[0_4px_0_rgba(9,50,144,0.12)]">
-                            <div className="px-4 py-2 bg-gradient-to-r from-[#093290] to-[#5870B3] text-white font-pixel text-xs">welcome_to_teaos.txt</div>
-                            <div className="p-5 sm:p-7 grid grid-cols-1 md:grid-cols-[auto_1.4fr_0.8fr] gap-5 items-center">
-                              <motion.div
-                                initial={{ opacity: 0, scale: 0.9, rotate: -3 }}
-                                animate={{ opacity: 1, scale: 1, rotate: 0 }}
-                                transition={{ delay: 0.12, type: 'spring', stiffness: 180, damping: 16 }}
-                                whileHover={{ y: -4, rotate: 1 }}
-                                className="mx-auto md:mx-0"
-                              >
-                                <img
-                                  src="/assets/teaonalamb-intro-portrait.jpg"
-                                  alt="Teaonalamb"
-                                  className="h-52 w-40 rounded-2xl object-contain bg-[#EAF1FB] border-4 border-white shadow-[0_5px_0_rgba(9,50,144,0.16)]"
-                                />
-                              </motion.div>
-                              <div>
-                                <p className="font-pixel text-xs text-[#4974C1] mb-2">START HERE</p>
-                                <h2 className="font-pixel text-2xl text-[#0D1D56] font-bold">Hi, I&apos;m Teaonalamb.</h2>
-                                <p className="mt-3 text-sm leading-relaxed text-[#33477f]">I&apos;m a multi-platform content creator, Twitch streamer, podcaster, and blogger making a cozy corner for games, honest conversations, and everyday creative life. Whether you&apos;re here to hang out, listen in, or read along, there&apos;s always a warm cup waiting.</p>
-                                <div className="mt-4 flex flex-wrap gap-2">
-                                  <button onClick={() => switchTab('twitch')} className="px-3 py-2 rounded bg-[#6441a5] text-white font-pixel text-xs font-bold hover:brightness-110">Watch live</button>
-                                  <button onClick={() => switchTab('podcast')} className="px-3 py-2 rounded bg-[#093290] text-white font-pixel text-xs font-bold hover:bg-[#4974C1]">Listen to Tea Talks</button>
-                                  <button onClick={() => switchTab('blog')} className="px-3 py-2 rounded bg-[#eaf1fb] text-[#093290] font-pixel text-xs font-bold hover:bg-[#dbe6f8]">Read the journal</button>
-                                </div>
+                    {/* Home Body Content */}
+                    <div className="max-w-4xl mx-auto px-4 py-8 pb-16">
+                      <motion.section
+                        initial={{ opacity: 0, y: 18 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.45, ease: 'easeOut' }}
+                        className="mb-8"
+                      >
+                        <div className="card rounded-xl overflow-hidden border border-[#b5c9ea] bg-white shadow-[0_4px_0_rgba(9,50,144,0.12)]">
+                          <div className="px-4 py-2 bg-gradient-to-r from-[#093290] to-[#5870B3] text-white font-pixel text-xs">welcome_to_teaos.txt</div>
+                          <div className="p-5 sm:p-7 grid grid-cols-1 md:grid-cols-[auto_1.4fr_0.8fr] gap-5 items-center">
+                            <motion.div
+                              initial={{ opacity: 0, scale: 0.9, rotate: -3 }}
+                              animate={{ opacity: 1, scale: 1, rotate: 0 }}
+                              transition={{ delay: 0.12, type: 'spring', stiffness: 180, damping: 16 }}
+                              whileHover={{ y: -4, rotate: 1 }}
+                              className="mx-auto md:mx-0"
+                            >
+                              <img
+                                src="/assets/teaonalamb-intro-portrait.jpg"
+                                alt="Teaonalamb"
+                                className="h-52 w-40 rounded-2xl object-contain bg-[#EAF1FB] border-4 border-white shadow-[0_5px_0_rgba(9,50,144,0.16)]"
+                              />
+                            </motion.div>
+                            <div>
+                              <p className="font-pixel text-xs text-[#4974C1] mb-2">START HERE</p>
+                              <h2 className="font-pixel text-2xl text-[#0D1D56] font-bold">Hi, I&apos;m Teaonalamb.</h2>
+                              <p className="mt-3 text-sm leading-relaxed text-[#33477f]">I&apos;m a multi-platform content creator, Twitch streamer, podcaster, and blogger making a cozy corner for games, honest conversations, and everyday creative life. Whether you&apos;re here to hang out, listen in, or read along, there&apos;s always a warm cup waiting.</p>
+                              <div className="mt-4 flex flex-wrap gap-2">
+                                <button onClick={() => switchTab('twitch')} className="px-3 py-2 rounded bg-[#6441a5] text-white font-pixel text-xs font-bold hover:brightness-110">Watch live</button>
+                                <button onClick={() => switchTab('podcast')} className="px-3 py-2 rounded bg-[#093290] text-white font-pixel text-xs font-bold hover:bg-[#4974C1]">Listen to Tea Talks</button>
+                                <button onClick={() => switchTab('blog')} className="px-3 py-2 rounded bg-[#eaf1fb] text-[#093290] font-pixel text-xs font-bold hover:bg-[#dbe6f8]">Read the journal</button>
                               </div>
-                              <button onClick={() => switchTab('socials')} className="rounded-lg border border-[#c3d3ee] bg-[#eaf1fb] p-5 text-left hover:bg-[#dbe6f8] transition-colors">
-                                <p className="font-pixel text-xs text-[#4974C1]">FOR PARTNERS &amp; COLLABS</p>
-                                <p className="mt-2 font-semibold text-[#0D1D56]">Open the creator media kit →</p>
-                                <p className="mt-1 text-xs leading-relaxed text-[#5E778C]">Brand work, podcast guests, press, and creative partnerships.</p>
-                              </button>
+                            </div>
+                            <div className="bg-[#EAF1FB]/70 p-4 rounded-xl border border-[#b5c9ea] text-xs space-y-2">
+                              <p className="font-pixel font-bold text-[#093290]">★ Quick Vibe Check</p>
+                              <p className="text-[#33477f]"><strong>Location:</strong> Northern California</p>
+                              <p className="text-[#33477f]"><strong>Favorite Game:</strong> Apex Legends</p>
+                              <p className="text-[#33477f]"><strong>Currently Playing:</strong> Pokemon Alpha Sapphire</p>
+                              <p className="text-[#33477f]"><strong>Current Tea:</strong> Chrysanthemum Tea</p>
+                              <div className="mt-2 text-[11px] text-[#4974C1] font-mono">
+                                ☕ Sips: {teaSipsCount} | 🐑 Flock: {sheepFlockCount}
+                              </div>
                             </div>
                           </div>
-                        </motion.section>
-
-                        <div className="flex items-center gap-2 mb-1">
-                          <span className="font-pixel text-xl sm:text-2xl text-[#093290] font-bold">
-                            Find me everywhere
-                          </span>
                         </div>
-                        <p className="text-[#33477f] text-sm mb-6">
-                          Follower counts across my channels. Pick a tab above to dig in.
-                        </p>
+                      </motion.section>
 
-                        {/* Top 3 Social Follower Stat Cards with Counter Animation */}
-                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
-                          {SOCIALS_DATA.slice(0, 3).map((item, idx) => (
-                            <motion.div
-                              key={item.platform}
-                              initial={{ opacity: 0, y: 15 }}
-                              animate={{ opacity: 1, y: 0 }}
-                              transition={{ delay: idx * 0.1, duration: 0.3 }}
-                              whileHover={{ y: -4 }}
-                              className="card rounded-lg overflow-hidden border border-[#b5c9ea] bg-white shadow-[0_4px_0_rgba(9,50,144,0.12)] card-cloud-corner"
-                            >
-                              <div className="flex justify-between items-center px-3 py-1.5 bg-gradient-to-r from-[#093290] to-[#5870B3] text-white font-pixel text-xs">
-                                <span>{item.filename}</span>
-                                <span>●</span>
+                      {/* Top 3 Social Follower Stat Cards with Counter Animation */}
+                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+                        {SOCIALS_DATA.slice(0, 3).map((item, idx) => (
+                          <motion.div
+                            key={item.platform}
+                            initial={{ opacity: 0, y: 15 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: idx * 0.1, duration: 0.3 }}
+                            whileHover={{ y: -4 }}
+                            className="card rounded-lg overflow-hidden border border-[#b5c9ea] bg-white shadow-[0_4px_0_rgba(9,50,144,0.12)] card-cloud-corner"
+                          >
+                            <div className="flex justify-between items-center px-3 py-1.5 bg-gradient-to-r from-[#093290] to-[#5870B3] text-white font-pixel text-xs">
+                              <span>{item.filename}</span>
+                              <span>●</span>
+                            </div>
+                            <div className="p-4">
+                              <div className="font-pixel text-3xl sm:text-4xl text-[#093290] font-bold leading-none">
+                                <CounterNumber
+                                  value={item.count}
+                                  numericTarget={item.numericCount}
+                                />
                               </div>
-                              <div className="p-4">
+                              <div className="text-xs text-[#5E778C] mt-1">
+                                {item.label} on {item.platform}
+                              </div>
+                            </div>
+                          </motion.div>
+                        ))}
+                      </div>
+
+                      {/* Quick Action Navigation Cards */}
+                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <motion.div
+                          whileHover={{ y: -4 }}
+                          className="card rounded-lg overflow-hidden border border-[#b5c9ea] bg-white shadow-[0_4px_0_rgba(9,50,144,0.12)]"
+                        >
+                          <div className="px-3 py-1.5 bg-gradient-to-r from-[#093290] to-[#5870B3] text-white font-pixel text-xs">
+                            latest_post.txt
+                          </div>
+                          <div className="p-4 flex flex-col justify-between h-[calc(100%-28px)]">
+                            <div>
+                              <h3 className="font-semibold text-base text-[#0D1D56] mb-1">
+                                Newest on the blog
+                              </h3>
+                              <p className="text-xs text-[#5E778C] leading-relaxed">
+                                {BLOG_POSTS[0] ? BLOG_POSTS[0].title : 'New posts coming soon.'}
+                              </p>
+                            </div>
+                            <button
+                              onClick={() => {
+                                setSelectedPost(BLOG_POSTS[0]);
+                                switchTab('blog');
+                              }}
+                              className="mt-4 inline-block text-center px-4 py-1.5 rounded-md bg-[#093290] text-white font-semibold text-xs shadow-[0_3px_0_#000425] hover:bg-[#4974C1] transition-colors"
+                            >
+                              Read the blog
+                            </button>
+                          </div>
+                        </motion.div>
+
+                        <motion.div
+                          whileHover={{ y: -4 }}
+                          className="card rounded-lg overflow-hidden border border-[#b5c9ea] bg-white shadow-[0_4px_0_rgba(9,50,144,0.12)]"
+                        >
+                          <div className="px-3 py-1.5 bg-gradient-to-r from-[#093290] to-[#5870B3] text-white font-pixel text-xs">
+                            stream.exe
+                          </div>
+                          <div className="p-4 flex flex-col justify-between h-[calc(100%-28px)]">
+                            <div>
+                              <h3 className="font-semibold text-base text-[#0D1D56] mb-1">
+                                Next stream
+                              </h3>
+                              <p className="text-xs text-[#5E778C] leading-relaxed">
+                                Live Monday to Friday, 2:00 to 5:00 PM PST on Twitch.
+                              </p>
+                            </div>
+                            <button
+                              onClick={() => switchTab('twitch')}
+                              className="mt-4 inline-block text-center px-4 py-1.5 rounded-md bg-[#6441a5] text-white font-semibold text-xs shadow-[0_3px_0_#000425] hover:bg-[#7d5bbe] transition-colors"
+                            >
+                              Open Twitch page
+                            </button>
+                          </div>
+                        </motion.div>
+
+                        <motion.div
+                          whileHover={{ y: -4 }}
+                          className="card rounded-lg overflow-hidden border border-[#b5c9ea] bg-white shadow-[0_4px_0_rgba(9,50,144,0.12)]"
+                        >
+                          <div className="px-3 py-1.5 bg-gradient-to-r from-[#093290] to-[#5870B3] text-white font-pixel text-xs">
+                            podcast.mp3
+                          </div>
+                          <div className="p-4 flex flex-col justify-between h-[calc(100%-28px)]">
+                            <div>
+                              <h3 className="font-semibold text-base text-[#0D1D56] mb-1">
+                                Tea Talks, S2 E1
+                              </h3>
+                              <p className="text-xs text-[#5E778C] leading-relaxed">
+                                Mental Health and Self Discovery, ft. GodofPixelz.
+                              </p>
+                            </div>
+                            <button
+                              onClick={() => switchTab('podcast')}
+                              className="mt-4 inline-block text-center px-4 py-1.5 rounded-md bg-[#093290] text-white font-semibold text-xs shadow-[0_3px_0_#000425] hover:bg-[#4974C1] transition-colors"
+                            >
+                              Listen now
+                            </button>
+                          </div>
+                        </motion.div>
+
+                        <motion.div
+                          whileHover={{ y: -4 }}
+                          className="card rounded-lg overflow-hidden border border-[#b5c9ea] bg-white shadow-[0_4px_0_rgba(9,50,144,0.12)]"
+                        >
+                          <div className="px-3 py-1.5 bg-gradient-to-r from-[#093290] to-[#5870B3] text-white font-pixel text-xs flex items-center justify-between">
+                            <span>merch_shelf.exe</span>
+                            <span>♡</span>
+                          </div>
+                          <div className="p-4 flex flex-col justify-between h-[calc(100%-28px)]">
+                            <div>
+                              <h3 className="font-semibold text-base text-[#0D1D56] mb-1">
+                                Fourthwall Merch Room
+                              </h3>
+                              <p className="text-xs text-[#5E778C] leading-relaxed">
+                                Official t-shirts, hoodies, music player desk mats, and stickers!
+                              </p>
+                            </div>
+                            <button
+                              onClick={() => switchTab('merch')}
+                              className="mt-4 inline-block text-center px-4 py-1.5 rounded-md bg-[#093290] text-white font-semibold text-xs shadow-[0_3px_0_#000425] hover:bg-[#4974C1] transition-colors"
+                            >
+                              Browse Merch ♡
+                            </button>
+                          </div>
+                        </motion.div>
+                      </div>
+                    </div>
+                  </motion.div>
+                )}
+
+                {/* SOCIALS TAB */}
+                {activeTab === 'socials' && (
+                  <motion.div
+                    key="socials"
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.25 }}
+                  >
+                    <div className="porcelain-bar" />
+                    <div className="max-w-4xl mx-auto px-4 py-8 pb-16">
+                      <div className="flex items-center gap-3 mb-1">
+                        <MascotSheep size={42} soundEnabled={soundEnabled} outfit="classic" />
+                        <h2 className="font-pixel text-2xl sm:text-3xl text-[#093290] font-bold m-0">
+                          Socials
+                        </h2>
+                      </div>
+                      <p className="text-[#33477f] text-sm mb-6">
+                        Where the flock hangs out. I am @teaonalamb on every platform. Come hang out wherever you like.
+                      </p>
+
+                      {/* All Social Cards Grid */}
+                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                        {SOCIALS_DATA.map((item, idx) => (
+                          <motion.div
+                            key={item.platform}
+                            initial={{ opacity: 0, y: 15 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: idx * 0.08, duration: 0.3 }}
+                            whileHover={{ y: -4 }}
+                            className="card rounded-lg overflow-hidden border border-[#b5c9ea] bg-white shadow-[0_4px_0_rgba(9,50,144,0.12)] card-cloud-corner"
+                          >
+                            <div className="flex justify-between items-center px-3 py-1.5 bg-gradient-to-r from-[#093290] to-[#5870B3] text-white font-pixel text-xs">
+                              <span>{item.platform}</span>
+                              <span>●</span>
+                            </div>
+                            <div className="p-4 flex flex-col justify-between h-[calc(100%-28px)]">
+                              <div>
                                 <div className="font-pixel text-3xl sm:text-4xl text-[#093290] font-bold leading-none">
                                   <CounterNumber
                                     value={item.count}
@@ -521,575 +767,176 @@ export default function App() {
                                   />
                                 </div>
                                 <div className="text-xs text-[#5E778C] mt-1">
-                                  {item.label} on {item.platform}
+                                  {item.label}
                                 </div>
+                                {item.handle && (
+                                  <div className="text-xs font-semibold text-[#0D1D56] mt-2">
+                                    {item.handle}
+                                  </div>
+                                )}
                               </div>
-                            </motion.div>
-                          ))}
-                        </div>
-
-                        {/* Quick Action Navigation Cards */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                          <motion.div
-                            whileHover={{ y: -4 }}
-                            className="card rounded-lg overflow-hidden border border-[#b5c9ea] bg-white shadow-[0_4px_0_rgba(9,50,144,0.12)]"
-                          >
-                            <div className="px-3 py-1.5 bg-gradient-to-r from-[#093290] to-[#5870B3] text-white font-pixel text-xs">
-                              latest_post.txt
-                            </div>
-                            <div className="p-4 flex flex-col justify-between h-[calc(100%-28px)]">
-                              <div>
-                                <h3 className="font-semibold text-base text-[#0D1D56] mb-1">
-                                  Newest on the blog
-                                </h3>
-                                <p className="text-xs text-[#5E778C] leading-relaxed">
-                                  {BLOG_POSTS[0] ? BLOG_POSTS[0].title : 'New posts coming soon.'}
-                                </p>
-                              </div>
-                              <button
-                                onClick={() => {
-                                  setSelectedPost(BLOG_POSTS[0]);
-                                  switchTab('blog');
-                                }}
+                              <a
+                                href={item.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={() => playRetroClick(soundEnabled)}
                                 className="mt-4 inline-block text-center px-4 py-1.5 rounded-md bg-[#093290] text-white font-semibold text-xs shadow-[0_3px_0_#000425] hover:bg-[#4974C1] transition-colors"
                               >
-                                Read the blog
-                              </button>
+                                {item.platform === 'Discord' ? 'Join Discord' : `Visit ${item.platform}`}
+                              </a>
                             </div>
                           </motion.div>
-
-                          <motion.div
-                            whileHover={{ y: -4 }}
-                            className="card rounded-lg overflow-hidden border border-[#b5c9ea] bg-white shadow-[0_4px_0_rgba(9,50,144,0.12)]"
-                          >
-                            <div className="px-3 py-1.5 bg-gradient-to-r from-[#093290] to-[#5870B3] text-white font-pixel text-xs">
-                              stream.exe
-                            </div>
-                            <div className="p-4 flex flex-col justify-between h-[calc(100%-28px)]">
-                              <div>
-                                <h3 className="font-semibold text-base text-[#0D1D56] mb-1">
-                                  Next stream
-                                </h3>
-                                <p className="text-xs text-[#5E778C] leading-relaxed">
-                                  Live Monday to Friday, 2:00 to 5:00 PM PST on Twitch.
-                                </p>
-                              </div>
-                              <button
-                                onClick={() => switchTab('twitch')}
-                                className="mt-4 inline-block text-center px-4 py-1.5 rounded-md bg-[#6441a5] text-white font-semibold text-xs shadow-[0_3px_0_#000425] hover:bg-[#7d5bbe] transition-colors"
-                              >
-                                Open Twitch page
-                              </button>
-                            </div>
-                          </motion.div>
-
-                          <motion.div
-                            whileHover={{ y: -4 }}
-                            className="card rounded-lg overflow-hidden border border-[#b5c9ea] bg-white shadow-[0_4px_0_rgba(9,50,144,0.12)]"
-                          >
-                            <div className="px-3 py-1.5 bg-gradient-to-r from-[#093290] to-[#5870B3] text-white font-pixel text-xs">
-                              podcast.mp3
-                            </div>
-                            <div className="p-4 flex flex-col justify-between h-[calc(100%-28px)]">
-                              <div>
-                                <h3 className="font-semibold text-base text-[#0D1D56] mb-1">
-                                  Tea Talks, S2 E1
-                                </h3>
-                                <p className="text-xs text-[#5E778C] leading-relaxed">
-                                  Mental Health and Self Discovery, ft. GodofPixelz.
-                                </p>
-                              </div>
-                              <button
-                                onClick={() => switchTab('podcast')}
-                                className="mt-4 inline-block text-center px-4 py-1.5 rounded-md bg-[#093290] text-white font-semibold text-xs shadow-[0_3px_0_#000425] hover:bg-[#4974C1] transition-colors"
-                              >
-                                Listen now
-                              </button>
-                            </div>
-                          </motion.div>
-
-                          <motion.div
-                            whileHover={{ y: -4 }}
-                            className="card rounded-lg overflow-hidden border border-[#b5c9ea] bg-white shadow-[0_4px_0_rgba(9,50,144,0.12)]"
-                          >
-                            <div className="px-3 py-1.5 bg-gradient-to-r from-[#093290] to-[#5870B3] text-white font-pixel text-xs flex items-center justify-between">
-                              <span>desk_tour.exe</span>
-                              <span>🎧</span>
-                            </div>
-                            <div className="p-4 flex flex-col justify-between h-[calc(100%-28px)]">
-                              <div>
-                                <h3 className="font-semibold text-base text-[#0D1D56] mb-1">
-                                  Cozy Desk Tour
-                                </h3>
-                                <p className="text-xs text-[#5E778C] leading-relaxed">
-                                  Inspect mic, tea kettle, lighting, and streaming equipment.
-                                </p>
-                              </div>
-                              <button
-                                onClick={() => switchTab('twitch')}
-                                className="mt-4 inline-block text-center px-4 py-1.5 rounded-md bg-[#093290] text-white font-semibold text-xs shadow-[0_3px_0_#000425] hover:bg-[#4974C1] transition-colors"
-                              >
-                                View desk setup 🎧
-                              </button>
-                            </div>
-                          </motion.div>
-
-                          <motion.div
-                            whileHover={{ y: -4 }}
-                            className="card rounded-lg overflow-hidden border border-[#b5c9ea] bg-white shadow-[0_4px_0_rgba(9,50,144,0.12)]"
-                          >
-                            <div className="px-3 py-1.5 bg-gradient-to-r from-[#093290] to-[#5870B3] text-white font-pixel text-xs flex items-center justify-between">
-                              <span>corkboard.app</span>
-                              <span>✉</span>
-                            </div>
-                            <div className="p-4 flex flex-col justify-between h-[calc(100%-28px)]">
-                              <div>
-                                <h3 className="font-semibold text-base text-[#0D1D56] mb-1">
-                                  Community Corkboard
-                                </h3>
-                                <p className="text-xs text-[#5E778C] leading-relaxed">
-                                  Pin sticky notes, shoutouts, and cute stickers for Tea!
-                                </p>
-                              </div>
-                              <button
-                                onClick={() => switchTab('guestbook')}
-                                className="mt-4 inline-block text-center px-4 py-1.5 rounded-md bg-[#093290] text-white font-semibold text-xs shadow-[0_3px_0_#000425] hover:bg-[#4974C1] transition-colors"
-                              >
-                                View corkboard ✉
-                              </button>
-                            </div>
-                          </motion.div>
-
-                          <motion.div
-                            whileHover={{ y: -4 }}
-                            className="card rounded-lg overflow-hidden border border-[#b5c9ea] bg-white shadow-[0_4px_0_rgba(9,50,144,0.12)]"
-                          >
-                            <div className="px-3 py-1.5 bg-gradient-to-r from-[#093290] to-[#5870B3] text-white font-pixel text-xs flex items-center justify-between">
-                              <span>merch_shelf.exe</span>
-                              <span>♡</span>
-                            </div>
-                            <div className="p-4 flex flex-col justify-between h-[calc(100%-28px)]">
-                              <div>
-                                <h3 className="font-semibold text-base text-[#0D1D56] mb-1">
-                                  Fourthwall Merch Room
-                                </h3>
-                                <p className="text-xs text-[#5E778C] leading-relaxed">
-                                  Official t-shirts, hoodies, music player desk mats, and stickers!
-                                </p>
-                              </div>
-                              <button
-                                onClick={() => switchTab('merch')}
-                                className="mt-4 inline-block text-center px-4 py-1.5 rounded-md bg-[#093290] text-white font-semibold text-xs shadow-[0_3px_0_#000425] hover:bg-[#4974C1] transition-colors"
-                              >
-                                Browse Merch ♡
-                              </button>
-                            </div>
-                          </motion.div>
-                        </div>
+                        ))}
                       </div>
+                    </div>
+                  </motion.div>
+                )}
 
-                    </motion.div>
-                  )}
-
-                  {/* SOCIALS TAB */}
-                  {activeTab === 'socials' && (
-                    <motion.div
-                      key="socials"
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -10 }}
-                      transition={{ duration: 0.25 }}
-                    >
-                      <div className="porcelain-bar" />
-                      <div className="max-w-4xl mx-auto px-4 py-8 pb-16">
-                        <div className="flex items-center gap-3 mb-1">
-                          <MascotSheep size={42} soundEnabled={soundEnabled} outfit="classic" />
-                          <h2 className="font-pixel text-2xl sm:text-3xl text-[#093290] font-bold m-0">
-                            Socials + Media Kit
-                          </h2>
-                        </div>
-                        <p className="text-[#33477f] text-sm mb-6">
-                          Where the flock hangs out. I am @teaonalamb on every platform. Come hang out wherever you like.
-                        </p>
-
-                        {/* All Social Cards Grid */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                          {SOCIALS_DATA.map((item, idx) => (
-                            <motion.div
-                              key={item.platform}
-                              initial={{ opacity: 0, y: 15 }}
-                              animate={{ opacity: 1, y: 0 }}
-                              transition={{ delay: idx * 0.08, duration: 0.3 }}
-                              whileHover={{ y: -4 }}
-                              className="card rounded-lg overflow-hidden border border-[#b5c9ea] bg-white shadow-[0_4px_0_rgba(9,50,144,0.12)] card-cloud-corner"
-                            >
-                              <div className="flex justify-between items-center px-3 py-1.5 bg-gradient-to-r from-[#093290] to-[#5870B3] text-white font-pixel text-xs">
-                                <span>{item.platform}</span>
-                                <span>●</span>
-                              </div>
-                              <div className="p-4 flex flex-col justify-between h-[calc(100%-28px)]">
-                                <div>
-                                  <div className="font-pixel text-3xl sm:text-4xl text-[#093290] font-bold leading-none">
-                                    <CounterNumber
-                                      value={item.count}
-                                      numericTarget={item.numericCount}
-                                    />
-                                  </div>
-                                  <div className="text-xs text-[#5E778C] mt-1">
-                                    {item.label}
-                                  </div>
-                                  {item.handle && (
-                                    <div className="text-xs font-semibold text-[#0D1D56] mt-2">
-                                      {item.handle}
-                                    </div>
-                                  )}
-                                </div>
-                                <a
-                                  href={item.url}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  onClick={() => playRetroClick(soundEnabled)}
-                                  className="mt-4 inline-block text-center px-4 py-1.5 rounded-md bg-[#093290] text-white font-semibold text-xs shadow-[0_3px_0_#000425] hover:bg-[#4974C1] transition-colors"
-                                >
-                                  {item.platform === 'Discord' ? 'Join Discord' : `Visit ${item.platform}`}
-                                </a>
-                              </div>
-                            </motion.div>
-                          ))}
-                        </div>
-
-
-                        <div className="h-10" />
-                        <div className="border-t border-dashed border-[#b5c9ea] pt-8">
-                          <div className="flex items-center gap-2 mb-4">
-                            <span className="font-pixel text-xs text-[#4974C1]">creator_media_kit.pdf</span>
-                            <span className="text-xs text-[#5E778C]">Brand work, press, guest pitches, and creative partnerships.</span>
+                {/* BLOG TAB */}
+                {activeTab === 'blog' && (
+                  <motion.div
+                    key="blog"
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.25 }}
+                  >
+                    <div className="porcelain-bar" />
+                    <div className="max-w-4xl mx-auto px-4 py-8 pb-16">
+                      {selectedPost ? (
+                        <BlogPostView
+                          post={selectedPost}
+                          onBack={handleBackToBlogList}
+                          nextPost={
+                            BLOG_POSTS[(BLOG_POSTS.findIndex((p) => p.id === selectedPost.id) + 1) % BLOG_POSTS.length]
+                          }
+                          onSelectNextPost={handleSelectPost}
+                          soundEnabled={soundEnabled}
+                        />
+                      ) : (
+                        <div>
+                          <div className="flex items-center gap-3 mb-1">
+                            <MascotCup size={40} soundEnabled={soundEnabled} />
+                            <h2 className="font-pixel text-2xl sm:text-3xl text-[#093290] font-bold m-0">
+                              Blog
+                            </h2>
                           </div>
-                          <MediaKit soundEnabled={soundEnabled} />
-                        </div>                      </div>
-                    </motion.div>
-                  )}
+                          <p className="text-[#33477f] text-sm mb-6">
+                            Guides and tutorials, personal stories, podcast behind the scenes, and anything in between.
+                          </p>
 
-                  {/* BLOG TAB (Multipage Listing or Dedicated Post View) */}
-                  {activeTab === 'blog' && (
-                    <motion.div
-                      key="blog"
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -10 }}
-                      transition={{ duration: 0.25 }}
-                    >
-                      <div className="porcelain-bar" />
-                      <div className="max-w-4xl mx-auto px-4 py-8 pb-16">
-                        {selectedPost ? (
-                          /* Dedicated Blog Post Page */
-                          <BlogPostView
-                            post={selectedPost}
-                            onBack={handleBackToBlogList}
-                            nextPost={
-                              BLOG_POSTS[(BLOG_POSTS.findIndex((p) => p.id === selectedPost.id) + 1) % BLOG_POSTS.length]
-                            }
-                            onSelectNextPost={handleSelectPost}
+                          <BlogList
+                            posts={BLOG_POSTS}
+                            onSelectPost={handleSelectPost}
                             soundEnabled={soundEnabled}
                           />
-                        ) : (
-                          /* Blog Listing Page */
-                          <div>
-                            <div className="flex items-center gap-3 mb-1">
-                              <MascotCup size={40} soundEnabled={soundEnabled} />
-                              <h2 className="font-pixel text-2xl sm:text-3xl text-[#093290] font-bold m-0">
-                                Blog
-                              </h2>
-                            </div>
-                            <p className="text-[#33477f] text-sm mb-6">
-                              Guides and tutorials, personal stories, podcast behind the scenes, and anything in between.
-                            </p>
+                        </div>
+                      )}
+                    </div>
+                  </motion.div>
+                )}
 
-                            <BlogList
-                              posts={BLOG_POSTS}
-                              onSelectPost={handleSelectPost}
-                              soundEnabled={soundEnabled}
-                            />
-                          </div>
-                        )}
-                      </div>
-                    </motion.div>
-                  )}
+                {/* TWITCH TAB */}
+                {activeTab === 'twitch' && (
+                  <motion.div
+                    key="twitch"
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.25 }}
+                  >
+                    <div className="porcelain-bar" />
+                    <div className="max-w-4xl mx-auto px-4 py-8 pb-16">
+                      <TwitchStreamCard soundEnabled={soundEnabled} />
 
-                  {/* TWITCH TAB */}
-                  {activeTab === 'twitch' && (
-                    <motion.div
-                      key="twitch"
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -10 }}
-                      transition={{ duration: 0.25 }}
+                      <div className="h-6" />
+
+                      {/* Desk Battlestation Render & Specs Tour */}
+                      <DeskHotspotTour soundEnabled={soundEnabled} />
+                    </div>
+                  </motion.div>
+                )}
+
+                {/* PODCAST TAB */}
+                {activeTab === 'podcast' && (
+                  <motion.div
+                    key="podcast"
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.25 }}
+                  >
+                    <div className="porcelain-bar" />
+                    <div className="max-w-4xl mx-auto px-4 py-8 pb-16">
+                      <PodcastPlayer
+                        soundEnabled={soundEnabled}
+                        isPlayingMusic={isPlayingMusic}
+                        onMusicStateChange={(state) => setIsPlayingMusic(state)}
+                      />
+                    </div>
+                  </motion.div>
+                )}
+
+                {/* GUESTBOOK TAB */}
+                {activeTab === 'guestbook' && (
+                  <motion.div
+                    key="guestbook"
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.25 }}
+                  >
+                    <div className="porcelain-bar" />
+                    <div className="max-w-5xl mx-auto px-4 py-8 pb-16">
+                      <GuestbookCorkboard soundEnabled={soundEnabled} />
+                    </div>
+                  </motion.div>
+                )}
+
+                {/* MERCH SHELF TAB */}
+                {activeTab === 'merch' && (
+                  <motion.div
+                    key="merch"
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.25 }}
+                  >
+                    <div className="porcelain-bar" />
+                    <div className="max-w-5xl mx-auto px-4 py-8 pb-16">
+                      <MerchShelf soundEnabled={soundEnabled} />
+                    </div>
+                  </motion.div>
+                )}
+
+                {/* Normal Scrollable Footer */}
+                <footer className="relative mt-12 pt-8 pb-12 text-center text-[#cfe0ff] bg-gradient-to-b from-[#0D1D56] to-[#000425] scalloped-top">
+                  <div className="flex items-center justify-center gap-3 px-4">
+                    <span
+                      className="cursor-pointer hover:scale-110 transition-transform"
+                      onClick={() => {
+                        playSheepBaa(soundEnabled);
+                        setSheepFlockCount((c) => c + 1);
+                        setToastMessage(`🐑 Baa! Flock count: ${sheepFlockCount + 1}`);
+                        setTimeout(() => setToastMessage(null), 3000);
+                      }}
                     >
-                      <div className="porcelain-bar" />
-                      <div className="max-w-4xl mx-auto px-4 py-8 pb-16">
-                        <div className="flex items-center gap-3 mb-1">
-                          <MascotSheep size={42} soundEnabled={soundEnabled} outfit="classic" />
-                          <h2 className="font-pixel text-2xl sm:text-3xl text-[#093290] font-bold m-0">
-                            Twitch
-                          </h2>
-                        </div>
-                        <p className="text-[#33477f] text-sm mb-6">
-                          Cozy games, chatting, and tea. Come say hi in chat.
-                        </p>
-
-                        {/* Stream Player & Schedule Grid */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                          <TwitchStreamCard soundEnabled={soundEnabled} />
-
-                          <div className="card rounded-lg overflow-hidden border border-[#b5c9ea] bg-white shadow-[0_4px_0_rgba(9,50,144,0.12)] flex flex-col">
-                            <div className="px-3 py-1.5 bg-gradient-to-r from-[#093290] to-[#5870B3] text-white font-pixel text-xs">
-                              schedule.xls
-                            </div>
-                            <div className="p-5 flex-1 flex flex-col justify-between">
-                              <div>
-                                <h3 className="font-semibold text-lg text-[#0D1D56] mb-3">
-                                  Weekly schedule
-                                </h3>
-                                <table className="w-full border-collapse text-sm mb-4">
-                                  <tbody>
-                                    <tr className="border-b border-dashed border-[#b5c9ea]">
-                                      <td className="py-2.5 font-bold text-[#093290] w-28">
-                                        Mon to Fri
-                                      </td>
-                                      <td className="py-2.5 text-[#0D1D56]">
-                                        2:00 to 5:00 PM PST
-                                      </td>
-                                    </tr>
-                                    <tr className="border-b border-dashed border-[#b5c9ea]">
-                                      <td className="py-2.5 font-bold text-[#093290]">
-                                        Wednesday
-                                      </td>
-                                      <td className="py-2.5 text-[#0D1D56]">
-                                        Tea Talks Podcast at 7:00 PM PST
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td className="py-2.5 font-bold text-[#5E778C]">
-                                        Weekends
-                                      </td>
-                                      <td className="py-2.5 text-[#5E778C]">
-                                        Off / Discord Community Hangouts
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-
-                                <p className="text-xs text-[#5E778C] leading-relaxed">
-                                  Live on Twitch every weekday afternoon. Join the Discord for stream news and schedule updates.
-                                </p>
-                              </div>
-
-                              <a
-                                className="mt-4 inline-block text-center px-4 py-2 rounded-md bg-[#6441a5] text-white font-semibold text-xs shadow-[0_3px_0_#000425] hover:bg-[#7d5bbe] transition-colors"
-                                href="https://twitch.tv/teaonalamb"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                onClick={() => playRetroClick(soundEnabled)}
-                              >
-                                Follow on Twitch
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className="h-6" />
-
-                        {/* Interactive Desk Hotspot Tour (Idea 4) */}
-                        <DeskHotspotTour soundEnabled={soundEnabled} />
-
-                        <div className="h-6" />
-
-                        {/* About the Stream */}
-                        <div className="card rounded-lg overflow-hidden border border-[#b5c9ea] bg-white shadow-[0_4px_0_rgba(9,50,144,0.12)]">
-                          <div className="px-3 py-1.5 bg-gradient-to-r from-[#093290] to-[#5870B3] text-white font-pixel text-xs">
-                            about_me.txt
-                          </div>
-                          <div className="p-5 text-[#0D1D56] text-sm leading-relaxed space-y-2">
-                            <h3 className="font-semibold text-base text-[#093290]">
-                              About the stream
-                            </h3>
-                            <p>
-                              Welcome to the flock! Here you will find cozy variety gaming, deep life chats, and warm cups of tea.
-                              Whether we are navigating indie adventures, chilling with community games, or catching up on the latest tea,
-                              this corner of the internet is built to feel like home.
-                            </p>
-                            <p className="text-xs text-[#5E778C]">
-                              Chat rules: Be kind, respect fellow lambs, keep the vibes cozy, and never forget to hydrate.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </motion.div>
-                  )}
-
-                  {/* PODCAST TAB */}
-                  {activeTab === 'podcast' && (
-                    <motion.div
-                      key="podcast"
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -10 }}
-                      transition={{ duration: 0.25 }}
-                    >
-                      <div className="porcelain-bar" />
-                      <div className="max-w-4xl mx-auto px-4 py-8 pb-16">
-                        <div className="flex items-center gap-3 mb-1">
-                          <MascotCup size={40} soundEnabled={soundEnabled} />
-                          <h2 className="font-pixel text-2xl sm:text-3xl text-[#093290] font-bold m-0">
-                            Tea Talks with Teaonalamb
-                          </h2>
-                        </div>
-                        <p className="text-[#33477f] text-sm mb-6">
-                          Real talk over tea, with guests. New episodes every Wednesday at 7 PM PST.
-                        </p>
-
-                        {/* Audio Player and Episodes Catalog */}
-                        <PodcastPlayer
-                          soundEnabled={soundEnabled}
-                          isPlayingMusic={isPlayingMusic}
-                          onMusicStateChange={(playing) => setIsPlayingMusic(playing)}
-                        />
-
-                        <div className="h-4" />
-
-                        {/* Podcast Links and Info Grid */}
-                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                          <div className="card rounded-lg overflow-hidden border border-[#b5c9ea] bg-white shadow-[0_4px_0_rgba(9,50,144,0.12)] p-4 flex flex-col justify-between">
-                            <div>
-                              <div className="font-pixel text-xs text-[#5E778C] mb-1">schedule.xls</div>
-                              <h3 className="font-semibold text-base text-[#0D1D56] mb-1">New episodes</h3>
-                              <p className="text-xs text-[#5E778C] mb-3">Every Wednesday at 7 PM PST.</p>
-                            </div>
-                            {/* BUTTON ORDER: YouTube FIRST, Spotify second, Apple Podcasts third! */}
-                            <div className="flex flex-wrap gap-1.5">
-                              <a
-                                className="px-3 py-1.5 rounded bg-[#ff0000] text-white font-semibold text-xs shadow-[0_2px_0_#000425] hover:bg-[#cc0000] transition-colors"
-                                href="https://www.youtube.com/@teatalkspodcast"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                onClick={() => playRetroClick(soundEnabled)}
-                              >
-                                YouTube
-                              </a>
-                              <a
-                                className="px-3 py-1.5 rounded bg-[#1db954] text-white font-semibold text-xs shadow-[0_2px_0_#000425] hover:bg-[#1ed760] transition-colors"
-                                href="https://open.spotify.com/search/Tea%20Talks%20with%20teaonalamb"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                onClick={() => playRetroClick(soundEnabled)}
-                              >
-                                Spotify
-                              </a>
-                              <a
-                                className="px-3 py-1.5 rounded bg-[#093290] text-white font-semibold text-xs shadow-[0_2px_0_#000425] hover:bg-[#4974C1] transition-colors"
-                                href="https://podcasts.apple.com/podcast/id1681250633"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                onClick={() => playRetroClick(soundEnabled)}
-                              >
-                                Apple Podcasts
-                              </a>
-                            </div>
-                          </div>
-
-                          <div className="card rounded-lg overflow-hidden border border-[#b5c9ea] bg-white shadow-[0_4px_0_rgba(9,50,144,0.12)] p-4 flex flex-col justify-between">
-                            <div>
-                              <div className="font-pixel text-xs text-[#5E778C] mb-1">be_a_guest.txt</div>
-                              <h3 className="font-semibold text-base text-[#0D1D56] mb-1">Want to be a guest?</h3>
-                              <p className="text-xs text-[#5E778C] leading-relaxed">
-                                Email <span className="font-semibold text-[#093290]">teaonalamb@gmail.com</span> with your topic, why you want to be on, your name (or handle), and your age.
-                              </p>
-                            </div>
-                          </div>
-
-                          <div className="card rounded-lg overflow-hidden border border-[#b5c9ea] bg-white shadow-[0_4px_0_rgba(9,50,144,0.12)] p-4 flex flex-col justify-between">
-                            <div>
-                              <div className="font-pixel text-xs text-[#5E778C] mb-1">support.exe</div>
-                              <h3 className="font-semibold text-base text-[#0D1D56] mb-1">Support the show</h3>
-                              <p className="text-xs text-[#5E778C] mb-3 leading-relaxed">
-                                Tips keep the tea flowing. Vote on episode polls and chat in Discord.
-                              </p>
-                            </div>
-                            <div className="flex flex-wrap gap-2">
-                              <a
-                                className="px-3 py-1 rounded bg-[#093290] text-white font-semibold text-xs shadow-[0_2px_0_#000425] hover:bg-[#4974C1] transition-colors"
-                                href="https://streamelements.com/teaonalamb/tip"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                onClick={() => playRetroClick(soundEnabled)}
-                              >
-                                Send a tip
-                              </a>
-                              <a
-                                className="px-3 py-1 rounded bg-[#5865f2] text-white font-semibold text-xs shadow-[0_2px_0_#000425] hover:bg-[#4752c4] transition-colors"
-                                href="https://discord.com/invite/VEJYDJP7xM"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                onClick={() => playRetroClick(soundEnabled)}
-                              >
-                                Join Discord
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-
-                        <p className="text-xs text-[#5E778C] mt-5">
-                          A podcast by Twitch streamer teaonalamb. Season 2 is here.
-                        </p>
-                      </div>
-                    </motion.div>
-                  )}
-
-                  {/* GUESTBOOK CORKBOARD TAB */}
-                  {activeTab === 'guestbook' && (
-                    <motion.div
-                      key="guestbook"
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -10 }}
-                      transition={{ duration: 0.25 }}
-                    >
-                      <div className="porcelain-bar" />
-                      <div className="max-w-5xl mx-auto px-4 py-8 pb-16">
-                        <GuestbookCorkboard soundEnabled={soundEnabled} />
-                      </div>
-                    </motion.div>
-                  )}
-
-                  {/* MERCH SHELF TAB (Idea 5) */}
-                  {activeTab === 'merch' && (
-                    <motion.div
-                      key="merch"
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -10 }}
-                      transition={{ duration: 0.25 }}
-                    >
-                      <div className="porcelain-bar" />
-                      <div className="max-w-5xl mx-auto px-4 py-8 pb-16">
-                        <MerchShelf soundEnabled={soundEnabled} />
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-
-                {/* Footer with Scalloped Top and Both Mascots */}
-                <footer className="relative mt-8 pt-10 pb-8 text-center text-[#cfe0ff] bg-gradient-to-b from-[#0D1D56] to-[#000425] scalloped-top">
-                  <div className="flex items-center justify-center gap-3">
-                    <img
-                      src="/sheep-tea.png"
-                      alt="Tea mascot with teacup"
-                      className="w-10 h-auto drop-shadow-sm animate-bob"
-                    />
-                    <p className="m-0 text-xs sm:text-sm font-medium">
-                      Teaonalamb, 2026. Find me at @teaonalamb on every platform.
+                      <MascotSheep size={36} soundEnabled={soundEnabled} />
+                    </span>
+                    <p className="font-pixel text-xs text-[#cfe0ff]">
+                      © 2026 Teaonalamb. Built with cozy code and hot tea. Sips: {teaSipsCount} | Flock: {sheepFlockCount}
                     </p>
-                    <MascotCup size={36} soundEnabled={soundEnabled} />
+                    <span
+                      className="cursor-pointer hover:scale-110 transition-transform"
+                      onClick={() => {
+                        playCupSip(soundEnabled);
+                        setTeaSipsCount((c) => c + 1);
+                        setToastMessage(`☕ Sip! Total Sips: ${teaSipsCount + 1}`);
+                        setTimeout(() => setToastMessage(null), 3000);
+                      }}
+                    >
+                      <MascotCup size={32} soundEnabled={soundEnabled} />
+                    </span>
                   </div>
                 </footer>
               </main>
