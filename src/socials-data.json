@@ -6,9 +6,9 @@
     "handle": "@teaonalamb",
     "filename": "twitch.exe",
     "color": "#6441a5",
-    "count": "720",
-    "numericCount": 720,
-    "lastSynced": "2026-11-19T14:43:06.697Z",
+    "count": "721",
+    "numericCount": 721,
+    "lastSynced": "2026-11-21T14:40:44.467Z",
     "source": "decapi.me"
   },
   {
@@ -18,10 +18,10 @@
     "handle": "@teaonalamb",
     "filename": "tiktok.exe",
     "color": "#ee1d52",
-    "count": "1,742",
-    "numericCount": 1742,
-    "lastSynced": "2026-11-19T14:43:06.697Z",
-    "source": "manual"
+    "count": "1,932",
+    "numericCount": 1932,
+    "lastSynced": "2026-11-21T14:40:44.467Z",
+    "source": "tiktok.com"
   },
   {
     "platform": "Instagram",
@@ -32,7 +32,7 @@
     "color": "#c13584",
     "count": "668",
     "numericCount": 668,
-    "lastSynced": "2026-11-19T14:43:06.697Z",
+    "lastSynced": "2026-11-21T14:40:44.467Z",
     "source": "manual"
   },
   {
@@ -44,7 +44,7 @@
     "color": "#0f1419",
     "count": "317",
     "numericCount": 317,
-    "lastSynced": "2026-11-19T14:43:06.697Z",
+    "lastSynced": "2026-11-21T14:40:44.467Z",
     "source": "manual"
   },
   {
@@ -56,7 +56,7 @@
     "color": "#ff0000",
     "count": "143",
     "numericCount": 143,
-    "lastSynced": "2026-11-19T14:43:06.697Z",
+    "lastSynced": "2026-11-21T14:40:44.467Z",
     "source": "manual"
   },
   {
@@ -68,7 +68,7 @@
     "color": "#5865f2",
     "count": "89",
     "numericCount": 89,
-    "lastSynced": "2026-11-19T14:43:06.697Z",
+    "lastSynced": "2026-11-21T14:40:44.467Z",
     "source": "manual"
   }
 ]
